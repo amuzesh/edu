@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        High Rating Bengali Movies at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "High Rating Bengali Movies",
+  "datePublished": "2022-05-30T20:11:42Z",
+  "image": "https://tse1.mm.bing.net/th?q=high%20rating%20bengali%20movies",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=high%20rating%20bengali%20movies&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=high%20rating%20bengali%20movies" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=high%20rating%20bengali%20movies" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            High Rating Bengali Movies at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">High Rating Bengali Movies</h2>
+    <p><strong>High Rating Bengali Movies</strong>. The film was struck many controversies for the number of intimate frames. Abhijit (amitabh bacchan) enters the movie in a large hat and as a stranger in the tea gardens of darjeeling.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=high%20rating%20bengali%20movies" alt="Top 10 Bengali Movies of Dev WittyColumn" />
+        <br>
+        <figcaption>Top 10 Bengali Movies of Dev WittyColumn from wittycolumn.com</figcaption>
+    </figure>
+        <p>
+        Chatrak (2001) this bengali film, stars anubrat basu and paoli dam. Check out top 30 best language movies of 2019 that. The story is based on a famous novel chowringhee written by the author mani shankar mukherjee aka shankar.
+    </p>
+    <h3>Top 10 Bengali Movies of Dev WittyColumn</h3>
+    <p>Suprabhat banerjee, ambarish bhattacharya, arjun chakraborty, anindita bose, director: To know more details, please check the wiki details below. 2) chander pahar chander pahar, 2013 adventure action based movie whereas directed by kamaleshwar mukherjee starring dev, gerard rudolf, and martin citto otto. Watch full bengali movies online anytime &amp; anywhere on zee5.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Debi 2021 Bangla Movie 720p UNCUT HDRip 600MB ESubs Download Latest" data-src="https://i2.wp.com/i.imgur.com/wYrtPhc.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.banglafullmovies.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Most of us are very much aware of bengali culture, but the culture also falls prey to many stereotypes. You can stream them from your phones, laptops, and smart tvs from anywhere and at your convenience. The bengali film industry is centered in the tollygunge. The story was adapted from the novel anushandhan by shaktipada rajguru. Chhabi biswas, sardar akhtar,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Top Rated New Bengali Movies You Must Watch" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/8yu9L2QXd6ONICWXC7QrQPIFikxERnvJAz7BcLYYodlPiQsGpz8z52LsILEWSRaiNETKCb4U3pe4yQM51Ql5wIJy8ATn53t5Dw2iaVw5gInrQ-jg6AQxJejvLm3sjrHgILVRjldY9_9MMCz4lEN28YmPAR--aHF1ToRCLRWG_xhLCHm_iI-HZtywXmqskl0Ylw=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thebengalitoday.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Suprabhat banerjee, ambarish bhattacharya, arjun chakraborty, anindita bose, director: The directorial debut of satyajit ray and the first movie in the apu trilogy, pather panchali is based on bibhutibhushan bandyopadhyay’s novel of the same name. Check out top 30 best language movies of 2019 that. Chatrak (2001) this bengali film, stars anubrat basu and paoli dam. You can stream them.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dui Prithibi (2010 film) Complete Wiki Ratings Photos Videos Cast" data-src="https://i2.wp.com/alchetron.com/cdn/Dui-Prithibi-2010-film-images-7566f9bc-66f8-42ca-b609-d64cdf8bbf4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: alchetron.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">An adaptation of tagore’s novel by the same name, noukadubi is a story about two couples estranged by a fateful boat wreck. Aparajito (1956) following his father&#039;s death, a boy leaves home to study in calcutta, while his mother must face a life alone. This bold bengali film starred rituparna sengupta in the lead role and had intimate scenes from.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="From ‘Uma’ to ‘Ek Je Chhilo Raja’ The highest rated Bengali movie" data-src="https://i2.wp.com/static.toiimg.com/thumb/65887434.cms?width=680&amp;height=512&amp;imgsize=145641" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The story is based on a famous novel chowringhee written by the author mani shankar mukherjee aka shankar. ⭐ ⭐ ⭐ ⭐ ⭐ proxy bengali movie ‼ from buy.fineproxy.org! Hosting india’s largest content library, zee5 has the best picks of bengali movies at your disposal. Here, is a list of 5 bengali movies that have crossed the limits of nudity.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Shesh Khela 2020 Bangla Dubbed Full Movie 720p HDRip 900MB x264 AAC MKV" data-src="https://i2.wp.com/fs1.extraimage.org/2020/11/27/Sesh-Khela-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: newhdmovies24.site</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Also, explore 41+ bengali movies online in full hd from our latest bengali movies collection. Some of the better bengali films in recent years, such as sthaniyo sangbad, nagarkirtan and rajlokhi o srikanto aren&#039;t available on streaming. Check out the bengali new movies, latest movies list (2022) and (2021). To know more details, please check the wiki details below. 2).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Top 10 Bengali Movies of Dev WittyColumn" data-src="https://i2.wp.com/wittycolumn.com/wp-content/uploads/2019/09/dev.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wittycolumn.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This bengali movie is directed by srijit mukherji and produced by svf entertainment. Etimes brings to you the list of top rated bengali movies of 2019. The film was struck many controversies for the number of intimate frames. Some of the better bengali films in recent years, such as sthaniyo sangbad, nagarkirtan and rajlokhi o srikanto aren&#039;t available on streaming..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tui Sudhu Amar (2018) Bengali Full Movie 720p HDTVRip 700MB x264 AAC" data-src="https://i2.wp.com/hdmusic27.com/wp-content/uploads/2019/01/Tui-Sudhu-Amar.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hdmusic27.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hosting india’s largest content library, zee5 has the best picks of bengali movies at your disposal. Directed by kamaleshwar mukherjee , amazon obhijaan is an adventure film that follows an explorer’s search for the mythical golden city of el dorado. 2) chander pahar chander pahar, 2013 adventure action based movie whereas directed by kamaleshwar mukherjee starring dev, gerard rudolf, and.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Top Rated New Bengali Movies You Must Watch" data-src="https://i2.wp.com/m.media-amazon.com/images/M/MV5BNTFmMGQ4OTktZmZmYi00OTI4LTlhZjEtYTVjODdmOTJlNWQyXkEyXkFqcGdeQXVyMzQ5MzkwMDY@._V1_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thebengalitoday.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Get access to unlimited free song download, new movies, videos streaming, recent video songs, short films, latest tv shows and much more at hungama. The film will make you laugh and emotional at the same time. Jalsaghar (1958) not rated | 95 min | drama, music. Check out top 30 best language movies of 2019 that. You can stream them.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kaali 2018 Bengali Full Movie 720p UNCUT HDRip 700MB x264" data-src="https://i2.wp.com/hdmusic27.com/wp-content/uploads/2018/11/Kaali-2018-Bengali-Full-Movie-720p-UNCUT-HDRip-700MB-x264.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hdmusic27.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Check out top 30 best language movies of 2019 that. Hosting india’s largest content library, zee5 has the best picks of bengali movies at your disposal. Watch full bengali movies online anytime &amp; anywhere on zee5. Etimes brings to you the list of top rated bengali movies of 2019. Their lives float apart and as they start to rediscover love.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pobitro Bondhan 2019 Bangla Dubbed Full Movie 720p HDRip 1GB Download" data-src="https://i2.wp.com/i.imgur.com/aaNbhLf.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hdstarmovieboss.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Alia bhatt (31) allu arjun (64) amitabh bachchan (225) anupam kher (270) benedict cumberbatch (80) chris evans (60) chris hemsworth (47) deepika padukone (57) abbas alibhai burmawalla (18) Abhijit (amitabh bacchan) enters the movie in a large hat and as a stranger in the tea gardens of darjeeling. The film starred paoli dam and anubrat basu in lead roles. An.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-aliyah.html" class="be-post-title">
+				 <h6>what is the meaning of aliyah </h6>
+                </a>
+                <a href="what-is-the-meaning-of-aliyah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20aliyah&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of aliyah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bengali-summary-example.html" class="be-post-title">
+				 <h6>bengali summary example </h6>
+                </a>
+                <a href="bengali-summary-example.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bengali%20summary%20example&amp;w=50&amp;h=50&amp;c=7" alt="bengali summary example">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="solar-eclipse-name-in-marathi.html" class="be-post-title">
+				 <h6>solar eclipse name in marathi </h6>
+                </a>
+                <a href="solar-eclipse-name-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=solar%20eclipse%20name%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="solar eclipse name in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aisha-name-meaning-in-marathi.html" class="be-post-title">
+				 <h6>aisha name meaning in marathi </h6>
+                </a>
+                <a href="aisha-name-meaning-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aisha%20name%20meaning%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="aisha name meaning in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="rates-for-a-heloc.html" class="be-post-title">
+				 <h6>rates for a heloc </h6>
+                </a>
+                <a href="rates-for-a-heloc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=rates%20for%20a%20heloc&amp;w=50&amp;h=50&amp;c=7" alt="rates for a heloc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="connexus-energy-cost-per-kwh.html" class="be-post-title">
+				 <h6>connexus energy cost per kwh </h6>
+                </a>
+                <a href="connexus-energy-cost-per-kwh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=connexus%20energy%20cost%20per%20kwh&amp;w=50&amp;h=50&amp;c=7" alt="connexus energy cost per kwh">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-1-part-of-something-mean.html" class="be-post-title">
+				 <h6>what does 1 part of something mean </h6>
+                </a>
+                <a href="what-does-1-part-of-something-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%201%20part%20of%20something%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does 1 part of something mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-name-of-ayan.html" class="be-post-title">
+				 <h6>meaning name of ayan </h6>
+                </a>
+                <a href="meaning-name-of-ayan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20name%20of%20ayan&amp;w=50&amp;h=50&amp;c=7" alt="meaning name of ayan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-you-use-hair-sticks.html" class="be-post-title">
+				 <h6>how do you use hair sticks </h6>
+                </a>
+                <a href="how-do-you-use-hair-sticks.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20you%20use%20hair%20sticks&amp;w=50&amp;h=50&amp;c=7" alt="how do you use hair sticks">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="definition-legal-translation-in-english.html" class="be-post-title">
+				 <h6>definition legal translation in english </h6>
+                </a>
+                <a href="definition-legal-translation-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=definition%20legal%20translation%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="definition legal translation in english">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

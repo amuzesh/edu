@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cafe Racer Adalah at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Cafe Racer Adalah",
+  "datePublished": "2022-06-19T02:01:15Z",
+  "image": "https://tse1.mm.bing.net/th?q=cafe%20racer%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=cafe%20racer%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cafe%20racer%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cafe%20racer%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cafe Racer Adalah at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Cafe Racer Adalah</h2>
+    <p><strong>Cafe Racer Adalah</strong>. Tetapi ada satu pihak lagi berpendapat istilah cafe racer ini adalah diwujudkan oleh sekumpulan penunggang yang berlagak. Motor café racer adalah salah satu dari 13 aliran custom motor yang banyak dianut biker di berbagai negara termasuk di indonesia.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=cafe%20racer%20adalah" alt="caferacersofinstagram Cafe racer, Super bikes, Ducati 900ss" />
+        <br>
+        <figcaption>caferacersofinstagram Cafe racer, Super bikes, Ducati 900ss from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Beberapa motor café racer seringkali didesain terlalu klasik sehingga membuatnya kehilangan daya tarik. Minimal dapat berlari 100 mil perjam (160 km/jam).bayangkan dengan keterbatasan teknologi otomotif disaat itu sudah mencapai kecepatan seperti itu. Modifikasi bergaya retro memiliki banyak aliran, di antaranya adalah scrambler dan cafe racer.
+    </p>
+    <h3>caferacersofinstagram Cafe racer, Super bikes, Ducati 900ss</h3>
+    <p>36 motor baru cafe racer yang dijual di indonesia. Jadi bisa dibilang, aliran cafe racer ini salah satu budaya modifikasi yang sangat berpengaruh di dunia. 6 langkah mudah membuat cafe racer. Cafe racer sebenarnya adalah istilah untuk anak mudah yang hobi nongkrong di cafe, lalu balapan dari.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="17+ Harga Motor Kawasaki W175 Cafe Racer, Inspirasi Terpopuler!" data-src="https://i2.wp.com/bmspeed7.com/wp-content/uploads/2019/01/Kawasaki-W175-Cafe-Racer-2019-Grey.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: motorterhits.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bicara tentang model motor cafe racer terbaik, maka yamaha xsr 155, benelli motobi 152, husqvarna svartpilen 401, husqvarna vitpilen 701 dan royal enfield continental gt 650. Budaya café racer terus berkembang saat itu. Tetapi ada satu pihak lagi berpendapat istilah cafe racer ini adalah diwujudkan oleh sekumpulan penunggang yang berlagak. 6 langkah mudah membuat cafe racer. Termurah adalah motobi 152.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Motor Yamaha RXG Cafe Racer adalah Cyclone Cafe racer, Motorcycle" data-src="https://i.pinimg.com/originals/e6/e1/82/e6e1820ad5dd7096a8d9b5771dbfefc2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dapatkan penawaran terbaik dan promo motor baru cafe racer di indonesia. Berbeda halnya dengan chooper yang secara fisik dapat dikenali dari model setangnya yang tinggi. Cafe racer sendiri bermula sejak era setelah perang dunia. Yamaha, benelli, husqvarna, royal enfield dan cleveland cyclewerks adalah merek cafe racer yang paling populer. Dan yang terbaru adalah bmw r nine t racer.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="caferacersofinstagram Cafe racer, Super bikes, Ducati 900ss" data-src="https://i.pinimg.com/originals/e2/16/de/e216de0aa0a96a0ad707358c2402f25b.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dapatkan penawaran terbaik dan promo motor cafe racer di indonesia. Lihat detil harga (termasuk dp &amp; cicilan), review, konsumsi bbm, gambar, spesifikasi, detail setiap varian dan lainnya. Ciri yang paling umum adalah. Mereka ini berasal dari […] Tujuan awal membangun motor cafe racer adalah untuk merasakan sensasi berkendara dalam kecepatan tinggi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Motor Yamaha RXG Cafe Racer adalah Cyclone Cafe racer, Cafe racing" data-src="https://i.pinimg.com/originals/45/6b/8c/456b8c442d54e5ea953f8a8f002a61db.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: in.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ciri khas motor cafe racer. Meski terkesan mirip, ada perbedaan diantara scrambler dan caferacer. Termurah adalah motobi 152 seharga rp 27 juta dan paling mahal adalah r nine t dengan rp 644 juta. Pada bagian setang biasanya menggunakan tipe underyoke yang ditempatkan dibawah fork. Tau gak motor ini aslinya apa</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cmc Cafe Racer Daytona" data-src="https://i2.wp.com/roadstarmag.com/wp-content/uploads/2019/02/IMG_2110.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hitcaferacer.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">36 motor baru cafe racer yang dijual di indonesia. 100 mil perjam diberi istilah ‘ton’. Cafe racer sendiri bermula sejak era setelah perang dunia. Ciri yang paling umum adalah. Cafe racer cafe racer adalah jenis motor custom yang menurut saya unik dari cara penggunaannya karena cafe racer memiliki stang motor pendek ( umum nya stang jepit ) yang posisi nya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Royal Enfield Continental GT Cafe Racer, Kental Unsur Mengotak" data-src="https://i2.wp.com/asset.kompas.com/crops/sM5yvM_QFYc1VP9FksWNL7f2sBA=/0x222:1200x1022/750x500/data/photo/2020/09/04/5f5126d2b7a71.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: otomotif.kompas.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Motor cafe racer bmw tersebut memiliki desain sangat klasik dengan menggunakan bikini firing yang mencerminkan motor sport jaman dulu. Cafe paling popular waktu itu ialah ace cafe di london yang masih wujud sehingga ke hari ini. Tetapi ada satu pihak lagi berpendapat istilah cafe racer ini adalah diwujudkan oleh sekumpulan penunggang yang berlagak. Cafe racer berasal dari kata cafe dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Modifikasi Yamaha XSR155 Cafe Racer Yellow Dari Thailand, Velgnya Unik" data-src="https://i2.wp.com/pertamax7.com/wp-content/uploads/2020/05/Modifikasi-Yamaha-XSR155-Cafe-Racer-Yellow-Kanan.jpg?is-pending-load=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pertamax7.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ducati menyasar motor ini untuk semua kalangan,. Dari sekian banyak tipe modifikasi sepeda motor itu, salah satu yang paling klasik dan masih sangat digemari hingga saat ini adalah café racer. Lihat promo dan simulasi kredit di bulan juli di kota anda. 7 motor cafe racer terpopuler di dunia Banyak yang bilang bahwa rencana yang baik adalah awal kesuksesan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Identik, Simple dan Elegan Yamaha Scorpio 225 Cafe RacerKustomGaras" data-src="https://i2.wp.com/1.bp.blogspot.com/-Ur4d9JgJ3tA/Xab5fyeYUnI/AAAAAAAADJM/QioSkLAU9iwjqiwR6lLktnnmrMVL-VKHACLcBGAsYHQ/s1600/Identik%2BSimple%2Bdan%2BElegan%2B-%2BYamaha%2BScorpio%2B225%2BCafe%2BRacer%2B1.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kustomgaras.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Termurah adalah motobi 152 seharga rp 27 juta dan paling mahal adalah r nine t dengan rp 644 juta. Lihat harga benelli caferacer 2022, spesifikasi, fitur, warna, konsumsi bbm, review redaksi oto. Minimal dapat berlari 100 mil perjam (160 km/jam).bayangkan dengan keterbatasan teknologi otomotif disaat itu sudah mencapai kecepatan seperti itu. Sepintas untuk ukuran orang awam, cukup sulit membedakan kedua.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="71 Kumpulan Motor Cafe Racer Inggris Modifikasi Motor" data-src="https://i2.wp.com/4.bp.blogspot.com/-npdPkGKCmFY/VyjRmmfG-tI/AAAAAAAAAVw/Xgbq4IF6qgYbqrKnAU3xOWp6pj7D9_DqwCKgB/w1200-h630-p-k-no-nu/palatina-t15-caferacer-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: modifceferacer.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cafe racer ini memiliki banyak arti berbeda bagi beberapa orang ada yang untuk tampilan yang keren dan juga kepada kemampuan mesin. 36 motor baru cafe racer yang dijual di indonesia. Beberapa tahun belakangan ini, motor tipe cafe racer cukup digemari oleh bike enthusiasts. Minimal dapat berlari 100 mil perjam (160 km/jam).bayangkan dengan keterbatasan teknologi otomotif disaat itu sudah mencapai kecepatan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="13 Motor Cafe Racer Murah Terbaik Dari Pabrik 2020" data-src="https://i2.wp.com/otomotifcom.web.id/wp-content/uploads/2020/03/cafe-racers.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: otomotifcom.web.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Sebagai salah satu contoh adalah kawasaki z900rs yang menggabungkan konsep cafe racer dengan gaya modern. Minimal dapat berlari 100 mil perjam (160 km/jam).bayangkan dengan keterbatasan teknologi otomotif disaat itu sudah mencapai kecepatan seperti itu. Hal ini juga berlaku untuk para builder. Cafe racer berasal dari kata cafe dan racer, cafe merupakan suatu tempat yang sering didatangi dengan tujuan untuk makan,.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="beau-homme-meaning-in-english.html" class="be-post-title">
+				 <h6>beau homme meaning in english </h6>
+                </a>
+                <a href="beau-homme-meaning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=beau%20homme%20meaning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="beau homme meaning in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="miss-you-much-meaning.html" class="be-post-title">
+				 <h6>miss you much meaning </h6>
+                </a>
+                <a href="miss-you-much-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=miss%20you%20much%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="miss you much meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="best-islamic-quotes-from-quran-in-arabic.html" class="be-post-title">
+				 <h6>best islamic quotes from quran in arabic </h6>
+                </a>
+                <a href="best-islamic-quotes-from-quran-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=best%20islamic%20quotes%20from%20quran%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="best islamic quotes from quran in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-mad-in-arabic.html" class="be-post-title">
+				 <h6>what is mad in arabic </h6>
+                </a>
+                <a href="what-is-mad-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20mad%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="what is mad in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-arshiya-in-hindi.html" class="be-post-title">
+				 <h6>what is the meaning of arshiya in hindi </h6>
+                </a>
+                <a href="what-is-the-meaning-of-arshiya-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20arshiya%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of arshiya in hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="quel-bel-homme-en-anglais.html" class="be-post-title">
+				 <h6>quel bel homme en anglais </h6>
+                </a>
+                <a href="quel-bel-homme-en-anglais.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=quel%20bel%20homme%20en%20anglais&amp;w=50&amp;h=50&amp;c=7" alt="quel bel homme en anglais">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-affan-in-english.html" class="be-post-title">
+				 <h6>meaning of affan in english </h6>
+                </a>
+                <a href="meaning-of-affan-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20affan%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="meaning of affan in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kannada-words-in-english-pdf.html" class="be-post-title">
+				 <h6>kannada words in english pdf </h6>
+                </a>
+                <a href="kannada-words-in-english-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kannada%20words%20in%20english%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="kannada words in english pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="malayalam-sentences-in-english-with-meaning.html" class="be-post-title">
+				 <h6>malayalam sentences in english with meaning </h6>
+                </a>
+                <a href="malayalam-sentences-in-english-with-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=malayalam%20sentences%20in%20english%20with%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="malayalam sentences in english with meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="comment-savoir-qui-m-appelle-en-numéro-masqué.html" class="be-post-title">
+				 <h6>comment savoir qui m&#039;appelle en numéro masqué </h6>
+                </a>
+                <a href="comment-savoir-qui-m-appelle-en-numéro-masqué.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=comment%20savoir%20qui%20m%27appelle%20en%20num%C3%A9ro%20masqu%C3%A9&amp;w=50&amp;h=50&amp;c=7" alt="comment savoir qui m&amp;#039;appelle en numéro masqué">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

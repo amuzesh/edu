@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Beyit Nedir Örnek at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Beyit Nedir Örnek",
+  "datePublished": "2022-06-30T21:20:43Z",
+  "image": "https://tse1.mm.bing.net/th?q=beyit%20nedir%20%C3%B6rnek",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=beyit%20nedir%20%C3%B6rnek&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=beyit%20nedir%20%C3%B6rnek" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=beyit%20nedir%20%C3%B6rnek" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Beyit Nedir Örnek at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Beyit Nedir Örnek</h2>
+    <p><strong>Beyit Nedir Örnek</strong>. Bazen bir beyit üzerinde günlerce uğraştığı olurdu. Beyit iki mısradan meydana gelen nazım parçası.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=beyit%20nedir%20%C3%B6rnek" alt="Şiir konu anlatımı Özge Öğretmen" />
+        <br>
+        <figcaption>Şiir konu anlatımı Özge Öğretmen from www.ozgeogretmen.com</figcaption>
+    </figure>
+        <p>
+        Divan şiirinde çok yaygın olarak kullanılmıştır. Bulmacada beyit bulmacada anlam bakımından birbirine bağlı iki dizeden oluşmuş şiir parçası sorusunun cevabı nedir? Çoklukla anlamın tamamlandığı bir bölüm beyitin bir nâzım birimi olarak kabul edilmesi yüzünden, divan.
+    </p>
+    <h3>Şiir konu anlatımı Özge Öğretmen</h3>
+    <p>Beyit sözcüğüyle ilgili merak edilen bilgileri sizler için derledik. Ferd ( müfred beyit ) nedir ve örnekler. Mısra, beyit ve ölçü nedir, örnekleri çeşitleri. Anlam bakımından birbirine bağlı iki dizeden oluşmuş şiir parçası (isim) örnek cümleler:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nedir Tunç Kafiye" data-src="https://i2.wp.com/www.toplumdusmani.net/sozluk_resim/pics/5353/1407738559_75_5353.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.toplumdusmani.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">4 mayıs 2009 mesaj #1. Mazmun kelime anlamı olarak anlam, kavram demektir. Bu makalemizde beyit nedir, beyit örnekleri, beyit özellikleri gibi konuları ele alacağız. Beyit tdk sözlükte 2 anlama gelmektedir. Çoklukla anlamın tamamlandığı bir bölüm beyitin bir nâzım birimi olarak kabul edilmesi yüzünden, divan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sanat, Edebiyat, Dil, Kültür, Osmanlıca Recez Bahrinde Tam, Meczu" data-src="https://i2.wp.com/1.bp.blogspot.com/-oRTRCb10C04/YE0GaV-EkEI/AAAAAAAACG4/4HwT39TmbzIqsQQcenzBsytxLdIQC_2HACLcBGAsYHQ/w1200-h630-p-k-no-nu/nefi%2Bmusammat%2Brecez%2Bkaside%2Bm%25C3%25BCstefil%25C3%25BCn.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dedemindili.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mazmun kelime anlamı olarak anlam, kavram demektir. Kesme, kesme yeri, orta yerinden kesilen herhangi bir. 1.^ güncel türkçe sözlük 2.^ a b bsts / edebiyat ve söz sanatı terimleri sözlüğü. Beyit nedir, beyit ne demek, beyit anlamı, beyit hakkında bilgi bulunduran paylaşım platformu. Beyit uzun şiirlerde anlatım birimi olarak sık sık kullanılır.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7. Sınıf türkçe çalışma kitabı sayfa 24,25,26 yapar mısınız 1. etkinlik" data-src="https://i2.wp.com/tr-static.eodev.com/files/d16/55712fdd905b861f72427a8c7961c46a.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: eodev.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Batı edebiyatında beyte kuple denir. Beyit beyit ne demek beyit nedir beyit örnekleri. Beyit nedir, beyit ne demek, beyit anlamı, beyit hakkında bilgi bulunduran paylaşım platformu. Beyit, iki mısradan meydana gelen nazım parçası. Bulmacada beyit bulmacada anlam bakımından birbirine bağlı iki dizeden oluşmuş şiir parçası sorusunun cevabı nedir?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dini Sohbetler Ayet, Hadis ve Dini Kıssalar Etkili İslami Sohbetler Oku" data-src="https://i2.wp.com/hidayetrehberim.com/wp-content/uploads/2020/03/Beyit-Sakın-Terk-i-Edepten-600x417.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hidayetrehberim.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">4 mayıs 2009 mesaj #1. Tek, bir, yekta, eşi, benzeri olmayan, bîhemta olan, tek bir insan tek bir birey anlamlarındadır. En i̇yi cevap var güncelleme: İşte, merak edilen tüm detaylar. Bazen bir beyit üzerinde günlerce uğraştığı olurdu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kaside Nedir? İslam ve İhsan" data-src="https://i2.wp.com/www.islamveihsan.com/wp-content/uploads/2019/02/kaside-nedir-702x336.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.islamveihsan.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Beyit aynı ölçüyle söylenmiş iki mısradan oluşan nazım birimine divan edebiyatı şiir geleneğinde beyit denmiştir. Divan edebiyatında nazım birimi sayılan beyit, aynı vezinde olan ve birbiri peşinden gelen iki mısradır. İşte, merak edilen tüm detaylar. Bazen bir beyit üzerinde günlerce uğraştığı olurdu. Çoklukla anlamın tamamlandığı bir bölüm beyitin bir nâzım birimi olarak kabul edilmesi yüzünden, divan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Şiir konu anlatımı Özge Öğretmen" data-src="https://i2.wp.com/www.dilbilgisi.net/wp-content/uploads/2018/12/Siir-Birimleri-696x316.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ozgeogretmen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Divan edebiyatında nazım birimi sayılan beyit, aynı vezinde olan ve birbiri peşinden gelen iki mısradır. Mısra, beyit ve ölçü nedir, örnekleri çeşitleri. Beyit nedir kısaca beyit nedir ve örnekleri. Beyit uzun şiirlerde anlatım birimi olarak sık sık kullanılır. Edebiyatta, bazı düşüncelerin ifadesinde kullanılan klişeleşmiş söz ve anlatımlara denir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="sanatın en kırılgan hali yumurta oyma sanatı türkçe çalışma kitabı" data-src="https://i2.wp.com/tr-static.eodev.com/files/d83/9d98e8c2e99773ccf43ba1606fdcd4b4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: eodev.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Taç beyit, edebiyatın önemli konularından bir t. Bazen bir beyit üzerinde günlerce uğraştığı olurdu. M anzum edebiyat yapıtlarının her bir satırına verilen isimdir. Divan edebiyatında nef’i, fuzili, i̇shak çelebi, ahmet yari gibi ünlü beyit nazım türü yazarları bulunurken, batı dünyasında da william shakespeare’in soneleri oldukça meşhurdur. Batı edebiyatında beyite kuple denir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gazel77 şiiri Cevâî" data-src="https://i2.wp.com/i.edebiyatdefteri.com/resim/resimli_siir/buyuk/976882.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.edebiyatdefteri.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En küçük anlamlı nazım birimi olan mısra, bir şiirin parçası olabileceği gibi, bağımsız bir bütün de olabilir. Üç hademe, ebe, hasta bakıcı merdivenin orta sahanlığında sıkışmışlar, sedyeyi çevirmeye çalışıyorlar. Gazel ve kasidelerin son beyitlerinde şairin adını da bünyesinde bulundurduğu için ayni zamanda mahlas beyiti denir. (edebiyat) divan şiiri örneklerinde şairin adının geçtiği beyte verilen ad, mühür beyti olarak da geçer..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nazım Birimi Nedir? Nazım Nedir? Öğrenci Yardım" data-src="https://i2.wp.com/ogrenciyardim.com/wp-content/uploads/2020/11/mehmet-akif-ersoy-uyan-siiri.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ogrenciyardim.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dar bir yere zorla sığmak veya sığdırılmak örnek: İki mısradan meydana gelen nâzım parçası. Beyit uzun şiirlerde anlatım birimi olarak sık sık kullanılır. Edebiyatta, bazı düşüncelerin ifadesinde kullanılan klişeleşmiş söz ve anlatımlara denir. Batı edebiyatında beyite kuple denir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mısraı Berceste Nedir" data-src="https://i2.wp.com/www.nedir.org/resim-ekle/yazi-resmi/754/3_screenshot_2016-10-29-23-19-23.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: misra-i-berceste.nedir.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">1.^ güncel türkçe sözlük 2.^ a b bsts / edebiyat ve söz sanatı terimleri sözlüğü. Beyitlerin kendi aralarındaki kafiyeleşişleri nazım şekillerini oluşturur. En küçük anlamlı nazım birimi olan mısra, bir şiirin parçası olabileceği gibi, bağımsız bir bütün de olabilir. (edebiyat) divan şiiri örneklerinde şairin adının geçtiği beyte verilen ad, mühür beyti olarak da geçer. Gönlü kendine bağlayan yandım senin elinden.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-it-mean-on-snapchat-when-it-says-accept-friend.html" class="be-post-title">
+				 <h6>what does it mean on snapchat when it says accept friend </h6>
+                </a>
+                <a href="what-does-it-mean-on-snapchat-when-it-says-accept-friend.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20it%20mean%20on%20snapchat%20when%20it%20says%20accept%20friend&amp;w=50&amp;h=50&amp;c=7" alt="what does it mean on snapchat when it says accept friend">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-main-language-of-karnataka.html" class="be-post-title">
+				 <h6>what is the main language of karnataka </h6>
+                </a>
+                <a href="what-is-the-main-language-of-karnataka.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20main%20language%20of%20karnataka&amp;w=50&amp;h=50&amp;c=7" alt="what is the main language of karnataka">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="this-is-evident-in-a-sentence.html" class="be-post-title">
+				 <h6>this is evident in a sentence </h6>
+                </a>
+                <a href="this-is-evident-in-a-sentence.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=this%20is%20evident%20in%20a%20sentence&amp;w=50&amp;h=50&amp;c=7" alt="this is evident in a sentence">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="connexus-locations.html" class="be-post-title">
+				 <h6>connexus locations </h6>
+                </a>
+                <a href="connexus-locations.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=connexus%20locations&amp;w=50&amp;h=50&amp;c=7" alt="connexus locations">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-vuestra-mean-in-english.html" class="be-post-title">
+				 <h6>what is vuestra mean in english </h6>
+                </a>
+                <a href="what-is-vuestra-mean-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20vuestra%20mean%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is vuestra mean in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-a-nice-surprise-in-french-language.html" class="be-post-title">
+				 <h6>what a nice surprise in french language </h6>
+                </a>
+                <a href="what-a-nice-surprise-in-french-language.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20a%20nice%20surprise%20in%20french%20language&amp;w=50&amp;h=50&amp;c=7" alt="what a nice surprise in french language">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="you-lost-me-meaning-in-marathi.html" class="be-post-title">
+				 <h6>you lost me meaning in marathi </h6>
+                </a>
+                <a href="you-lost-me-meaning-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=you%20lost%20me%20meaning%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="you lost me meaning in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-ambiance-in-english-and-urdu.html" class="be-post-title">
+				 <h6>meaning of ambiance in english and urdu </h6>
+                </a>
+                <a href="meaning-of-ambiance-in-english-and-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20ambiance%20in%20english%20and%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="meaning of ambiance in english and urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="let-s-go-for-it-ne-demek.html" class="be-post-title">
+				 <h6>let&#039;s go for it ne demek </h6>
+                </a>
+                <a href="let-s-go-for-it-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=let%27s%20go%20for%20it%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="let&amp;#039;s go for it ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-ashanti-mean-in-indian.html" class="be-post-title">
+				 <h6>what does ashanti mean in indian </h6>
+                </a>
+                <a href="what-does-ashanti-mean-in-indian.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20ashanti%20mean%20in%20indian&amp;w=50&amp;h=50&amp;c=7" alt="what does ashanti mean in indian">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

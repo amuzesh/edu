@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kishmish Bengali Movie Rating at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Kishmish Bengali Movie Rating",
+  "datePublished": "2022-04-23T03:15:07Z",
+  "image": "https://tse1.mm.bing.net/th?q=kishmish%20bengali%20movie%20rating",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kishmish%20bengali%20movie%20rating&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kishmish%20bengali%20movie%20rating" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kishmish%20bengali%20movie%20rating" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kishmish Bengali Movie Rating at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kishmish Bengali Movie Rating</h2>
+    <p><strong>Kishmish Bengali Movie Rating</strong>. (2022) full movie watch #kishmish online free 123 movies streaming.hd!![watch] kishmish (2022) online hd free 123movies. 2h 21m • comedy, romantic • u • 29 apr, 2022.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kishmish%20bengali%20movie%20rating" alt="DevRukmini’s ‘Kishmish’ hits the shooting floor, winter release" />
+        <br>
+        <figcaption>DevRukmini’s ‘Kishmish’ hits the shooting floor, winter release from timesofindia.indiatimes.com</figcaption>
+    </figure>
+        <p>
+        Bengali new movie kishmish full movie review by soumo chakrabortydevrukmonikhorajdev entertenmentkishmish castingkishmish movie reviewkishmish traler reviewk. Get access to unlimited free song download, new movies, videos streaming, recent video songs, short films, latest tv shows and much more at hungama. Book your favourite movie view all.
+    </p>
+    <h3>DevRukmini’s ‘Kishmish’ hits the shooting floor, winter release</h3>
+    <p>Kishmish is a bengali movie starring dev, rukmini maitra. 2h 21m • comedy, romantic • u • 29 apr, 2022. Get access to unlimited free song download, new movies, videos streaming, recent video songs, short films, latest tv shows and much more at hungama. Kishmish was released on apr 29, 2022 and was directed by rahool mukherjee.this movie is 2 hr 21 min in duration and is available in.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Swastika Mukherjee Caress the crevices of your body, handle them with" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-85233950,width-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-135562/85233950.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">02 feb 2022, 10:23 am ist lata jha. About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators. Kharaj mukherjee in prominent roles. You can change your language preference here. It is a romantic movie directed &amp; written by rahool mukherjee with dev adhikari as producer,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="IN PICS These adorable clicks of DevRukmini will give you major" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-76834935,imgsize-283095,width-800,height-600,resizemode-75/76834935.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Is netflix, amazon, hulu, crackle, itunes, etc. This film is jointly produced by dev entertainment ventures and m. 1.5m ratings 277k ratings see, that’s what the app is perfect for. Kaju kishmish niyat bhatar lage ta is a bhojpuri pop album released on 2022.music of kaju kishmish niyat bhatar lage ta songs are composed by sidnath kumar.kaju kishmish niyat bhatar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DevRukmini’s ‘Kishmish’ hits the shooting floor, winter release" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-85233058,width-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-458833/85233058.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is a romantic movie directed &amp; written by rahool mukherjee with dev adhikari. Dev, rukmini wrap up ‘kishmish’ shoot with hilarious nagin dance; Get access to unlimited free song download, new movies, videos streaming, recent video songs, short films, latest tv shows and much more at hungama. Select kishmish film show timings at the nearest theatres &amp; cinemas in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kishmish Movie release date, cast, story, teaser, trailer, first look" data-src="https://i2.wp.com/www.thebeyondnews.com/assets/admin/images/postimage/The-beyond-news-Kishmish Movie- release date, cast, story, teaser, trailer, first look, rating, reviews, box office collection and preview.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thebeyondnews.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The bengali film industry is centered in the tollygunge neighborhood of the city of kolkata, west bengal, and has been known by the nickname tollywood, a portmanteau of the words tollygunge and hollywood, since 1932. You can change your language preference here. Find details of kishmish along with its showtimes, movie review, trailer, teaser, full video songs, showtimes and cast..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="June Malia plays Rukmini Maitra’s mother in ‘Kishmish’ Bengali Movie" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-80363007,width-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-40800/80363007.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">2h 21m • comedy, romantic • u • 29 apr, 2022. About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators. Search kishmish (film) on amazon. (2022) full movie watch #kishmish online free 123 movies streaming.hd!![watch] kishmish (2022) online hd free 123movies. Kishmish bengali movie songs.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="This is when DevRukmini’s ‘Kishmish’ will hit the floors Bengali" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-79041159,imgsize-218138,width-800,height-600,resizemode-75/79041159.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(2022) full movie watch #kishmish online free 123 movies streaming.hd!![watch] kishmish (2022) online hd free 123movies. 1.5m ratings 277k ratings see, that’s what the app is perfect for. Kishmish was released on apr 29, 2022 and was directed by rahool mukherjee.this movie is 2 hr 21 min in duration and is available in. Kishmish is a bengali movie starring dev,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="EXCLUSIVE Sean to debut on big screen with Rituparna Bengali Movie" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-80365610,width-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-53678/80365610.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Channel telegram audience statistics of kishmish bengali movie hd download telegram channel. Kharaj mukherjee in prominent roles. Kharaj mukherjee in prominent roles. Kishmish is a bengali movie starring dev, rukmini maitra. The film stars dev and rukmini maitra in the lead roles along with june malia, anjana basu, kharaj mukherjee and kamaleshwar mukherjee as the supporting cast.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="June Malia plays Rukmini Maitra’s mother in ‘Kishmish’ Bengali Movie" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-80363007,imgsize-40800,width-800,height-600,resizemode-75/80363007.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kishmish is a bengali movie starring dev, rukmini maitra. Kharaj mukherjee in prominent roles. The supporting cast includes kharaj mukherjee, anjana basu, june malia and kamaleshwar mukherjee. Kharaj mukherjee in prominent roles. About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DevRukmini’s ‘Kishmish’ hits the shooting floor, winter release" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-85233058,imgsize-458833,width-800,height-600,resizemode-75/85233058.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kharaj mukherjee in prominent roles. This film is jointly produced by dev entertainment ventures and m. Channel telegram audience statistics of kishmish bengali movie hd download telegram channel. Is netflix, amazon, hulu, crackle, itunes, etc. Kishmish was released on apr 29, 2022 and was directed by rahool mukherjee.this movie is 2 hr 21 min in duration and is available in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Popular Bengali actor Dev is happy to have Srabanti on the sets of" data-src="https://i2.wp.com/images.ottplay.com/articles/2021q3/Popular_Bengali_acto_OTTplay_news_cover_image_1_554.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ottplay.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is a romantic movie directed &amp; written by rahool mukherjee with dev adhikari as producer, forming part of the crew. Book kishmish movie tickets online in kolkata at paytm.com. 02 feb 2022, 10:23 am ist lata jha. He went to college and fell in love with rohini. Select kishmish film show timings at the nearest theatres &amp; cinemas in.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-means-pseudonym-in-spanish.html" class="be-post-title">
+				 <h6>what means pseudonym in spanish </h6>
+                </a>
+                <a href="what-means-pseudonym-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20means%20pseudonym%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what means pseudonym in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-california-connections-academy-good.html" class="be-post-title">
+				 <h6>is california connections academy good </h6>
+                </a>
+                <a href="is-california-connections-academy-good.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20california%20connections%20academy%20good&amp;w=50&amp;h=50&amp;c=7" alt="is california connections academy good">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-eclipse-a-boy-name.html" class="be-post-title">
+				 <h6>is eclipse a boy name </h6>
+                </a>
+                <a href="is-eclipse-a-boy-name.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20eclipse%20a%20boy%20name&amp;w=50&amp;h=50&amp;c=7" alt="is eclipse a boy name">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-lupi-mean-in-portuguese.html" class="be-post-title">
+				 <h6>what does lupi mean in portuguese </h6>
+                </a>
+                <a href="what-does-lupi-mean-in-portuguese.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20lupi%20mean%20in%20portuguese&amp;w=50&amp;h=50&amp;c=7" alt="what does lupi mean in portuguese">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-inspiring-in-marathi.html" class="be-post-title">
+				 <h6>meaning of inspiring in marathi </h6>
+                </a>
+                <a href="meaning-of-inspiring-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20inspiring%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="meaning of inspiring in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="exam-kaisa-hua-in-english-translation.html" class="be-post-title">
+				 <h6>exam kaisa hua in english translation </h6>
+                </a>
+                <a href="exam-kaisa-hua-in-english-translation.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=exam%20kaisa%20hua%20in%20english%20translation&amp;w=50&amp;h=50&amp;c=7" alt="exam kaisa hua in english translation">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-tds-meter-used-for.html" class="be-post-title">
+				 <h6>what is tds meter used for </h6>
+                </a>
+                <a href="what-is-tds-meter-used-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20tds%20meter%20used%20for&amp;w=50&amp;h=50&amp;c=7" alt="what is tds meter used for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-narrative-poem-ks2.html" class="be-post-title">
+				 <h6>what is a narrative poem ks2 </h6>
+                </a>
+                <a href="what-is-a-narrative-poem-ks2.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20narrative%20poem%20ks2&amp;w=50&amp;h=50&amp;c=7" alt="what is a narrative poem ks2">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="current-of-air-meaning-in-urdu.html" class="be-post-title">
+				 <h6>current of air meaning in urdu </h6>
+                </a>
+                <a href="current-of-air-meaning-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=current%20of%20air%20meaning%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="current of air meaning in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-best-definition-of-love-in-hindi.html" class="be-post-title">
+				 <h6>what is the best definition of love in hindi </h6>
+                </a>
+                <a href="what-is-the-best-definition-of-love-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20best%20definition%20of%20love%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="what is the best definition of love in hindi">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

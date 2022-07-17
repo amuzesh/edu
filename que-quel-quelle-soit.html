@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Quel Quelle Soit at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Que Quel Quelle Soit",
+  "datePublished": "2022-07-16T04:39:07Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20quel%20quelle%20soit",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20quel%20quelle%20soit&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20quel%20quelle%20soit" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20quel%20quelle%20soit" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Quel Quelle Soit at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Quel Quelle Soit</h2>
+    <p><strong>Que Quel Quelle Soit</strong>. Homonymes quoique, quoi que 1.62. Homonymes sans s&#039;en sang cent 1.67.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20quel%20quelle%20soit" alt="Quel que soit notre passé, quelle que soit la manière dont nous avons" />
+        <br>
+        <figcaption>Quel que soit notre passé, quelle que soit la manière dont nous avons from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Autre erreur qui se rencontre : Homonymes reine, rêne, renne 1.64. Féminin singulier de quel que soit.
+    </p>
+    <h3>Quel que soit notre passé, quelle que soit la manière dont nous avons</h3>
+    <p>Retenez donc que devant un verbe ou un pronom personnel comme « il (s) » ou « elle (s) », en fonction du sujet de votre phrase, vous devez écrire quel que, quelle que ou quels que : Le mot «quelque» cause bien des maux dans nos conversations écrites. Qu&#039;il est réussi cet instantané! L’un ou l’autre des candidats gagnera le concours (= soit l’un, soit l’autre).</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="QUEL QUE SOIT LE PASSÉ QUE VOUS AVEZ OU L&#039;AGE YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/Zz_0YPbhoMA/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quelle est la couleur de ta voiture ? Homonymes sa ça çà 1.65. En effet, il faut toujours écrire « quel que soit » 🙂. Et si le cyclone descend jusqu’à la terre, se forment des tornades, quelle que soit la façon dont leur naissance a lieu selon le mouvement du vent ; Le mot «quelque» cause bien des maux.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quel que soit le thème... Jouons ! Christian Arnoult" data-src="https://i2.wp.com/www.thebookedition.com/615189/quel-que-soit-le-theme-jouons-.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thebookedition.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quelle que soit votre décision, nous la respecterons (quelle que s’accorde avec décision, au féminin singulier). L&#039;adjectif quel suivi de la conjonction que dans une construction concessive (quelle que soit votre décision, nous l&#039;accepterons) est à distinguer de l&#039;adverbe quelque (quelque 200 personnes étaient présentes) et du déterminant indéfini (quelques fruits ). Quelle que soit la fonction occupée, la position.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Adindaaa Quelque Soit Quel Que Soit" data-src="https://i2.wp.com/cdn.shopify.com/s/files/1/0598/2925/products/AGl37Xv.jpg?v=1557615537" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: adin-daww.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quels que soient la fonction occupée, la position ou le rôle…. Il doit être écrit : En effet, il faut toujours écrire « quel que soit » 🙂. Déjà, il ne faut pas écrire quelque soit avec quelque soudé. D’ailleurs, si le mot remplacé est un nom masculin, ça donne quel qu’il soit.ces deux observations doivent vous aider à identifier.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Adindaaa Quelque Soit Quel Que Soit" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/qz2811wr_xDzHqg20owzCwXUfs7Qu4i7w6nHSu5cJG4LPq7zy3ca6pekParq4YpOe6KaIf-huhgUB8c5OSWhEU9Y2UY3NEIdFUDV57B_6sbX32LYGGWO-SwgIO4vuxyDGx5BvseMKtZDy27E1ekwfoBO50cS6JplOwaqRf4MoG7McdrsmBT4OYd-ix-XZI8SUOKRZGpIVS78m6YW=s0-d" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: adin-daww.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Les erreurs à ne pas faire. Cela implique que des formules comme quelle que soit son opinion, quelle que soit sa volonté, quelle que soit la vérité, peuvent être reformulées en quelle qu’elle soit. Quelle que soit la situation, quels que soient tes choix, quelles que soient les difficultés. Le terme problématique est, dans notre phrase, suivi d’un verbe («.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quel que soit notre passé, quelle que soit la manière dont nous avons" data-src="https://i.pinimg.com/originals/9b/59/b0/9b59b00808358b14b84151db48a78c99.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quels que soient la fonction occupée, la position ou le rôle…. Quelle est la date de sortie de la saison 7 de sea of thieves ? L’un ou l’autre des candidats gagnera le concours (= soit l’un, soit l’autre). Quelle que soit \kɛl kə swa\. Les erreurs à ne pas faire.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="1. Quel, quels, quelle, quelles 2. Quelque" data-src="https://i2.wp.com/s1.studylibfr.com/store/data/007536550_1-b78cad138439809b0963d76d683e495c.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: studylibfr.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quel que sous toutes ses variantes, à savoir quelle que, quels que, quelles que s’emploient dans des locutions et expressions faites avec le verbe « être » au mode subjonctif et s’écrivent bien évidemment en deux mots. ( au masculin on a : Ici toutefois, il me semble que le sujet de soit/soient est nature. Pour bien différencier quel (s).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quelque ou quel que ?French" data-src="https://i2.wp.com/www.anglaisfacile.com/cgi2/myexam/images/14705.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tolearnfrench.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quels que soient la fonction occupée, la position ou le rôle…. Les erreurs à ne pas faire. Déjà, il ne faut pas écrire quelque soit avec quelque soudé. Victor, quels que puissent être tes sentiments, je t’aimerai toujours ( quels que s’accorde avec sentiments, au masculin pluriel). Pour savoir s’il faut écrire quelque, en un mot, ou quel que, en.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quelque ou quel que" data-src="https://i2.wp.com/www.anglaisfacile.com/cgi2/myexam/images/14131.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.francaisfacile.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">C’est le signe à deux mots. Quelle que soit la situation, quels que soient tes choix, quelles que soient les difficultés. Retenez donc que devant un verbe ou un pronom personnel comme « il (s) » ou « elle (s) », en fonction du sujet de votre phrase, vous devez écrire quel que, quelle que ou quels que : —.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Chanfantines Quel que soit le temps... YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/TB0YyXV0Ua4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quelle que soit votre décision, nous la respecterons (quelle que s’accorde avec décision, au féminin singulier). Quelle que soit la décision qui sera prise, j’agirai en conséquence. L’accord au singulier est plus. Dans quelle qu’elle soit, il y a le mot elle.ce mot remplace un nom féminin. Qui que tu aies croisé, j&#039;espère que tu as été poli avec.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Adindaaa Quelque Soit Quel Que Soit" data-src="https://i2.wp.com/fr-static.z-dn.net/files/dd5/8d9d3e4c8cd3b58c35b7447fbd5925e6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: adin-daww.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dans le cas de quel que… ou, la bdl indique : Dans les autres cas, quelque (s) en un mot signifie un petit nombre. Quel qu&#039;il/ quels qu&#039;ils/quelle qu&#039;elle/quelles qu&#039;elles &#039;soit&#039; est le verbe être au subjonctif et s&#039;accorde en fonction de son attribut. Quel queest une locution qui s&#039;accorde en fonction de son attribut et se construit avec le.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-bias-in-an-experiment-apex.html" class="be-post-title">
+				 <h6>what is bias in an experiment apex </h6>
+                </a>
+                <a href="what-is-bias-in-an-experiment-apex.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20bias%20in%20an%20experiment%20apex&amp;w=50&amp;h=50&amp;c=7" alt="what is bias in an experiment apex">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-lola-a-nickname-for-charlotte.html" class="be-post-title">
+				 <h6>is lola a nickname for charlotte </h6>
+                </a>
+                <a href="is-lola-a-nickname-for-charlotte.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20lola%20a%20nickname%20for%20charlotte&amp;w=50&amp;h=50&amp;c=7" alt="is lola a nickname for charlotte">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="humira-meaning-in-arabic.html" class="be-post-title">
+				 <h6>humira meaning in arabic </h6>
+                </a>
+                <a href="humira-meaning-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=humira%20meaning%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="humira meaning in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-the-indian-name-arsh.html" class="be-post-title">
+				 <h6>meaning of the indian name arsh </h6>
+                </a>
+                <a href="meaning-of-the-indian-name-arsh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20the%20indian%20name%20arsh&amp;w=50&amp;h=50&amp;c=7" alt="meaning of the indian name arsh">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-carpet-area-in-gujarat.html" class="be-post-title">
+				 <h6>meaning of carpet area in gujarat </h6>
+                </a>
+                <a href="meaning-of-carpet-area-in-gujarat.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20carpet%20area%20in%20gujarat&amp;w=50&amp;h=50&amp;c=7" alt="meaning of carpet area in gujarat">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-malayalam-meaning-of-aliases.html" class="be-post-title">
+				 <h6>what is the malayalam meaning of aliases </h6>
+                </a>
+                <a href="what-is-the-malayalam-meaning-of-aliases.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20malayalam%20meaning%20of%20aliases&amp;w=50&amp;h=50&amp;c=7" alt="what is the malayalam meaning of aliases">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kab-se-bimar-ho-in-english-translation.html" class="be-post-title">
+				 <h6>kab se bimar ho in english translation </h6>
+                </a>
+                <a href="kab-se-bimar-ho-in-english-translation.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kab%20se%20bimar%20ho%20in%20english%20translation&amp;w=50&amp;h=50&amp;c=7" alt="kab se bimar ho in english translation">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-difference-between-malay-and-malayalam.html" class="be-post-title">
+				 <h6>what is the difference between malay and malayalam </h6>
+                </a>
+                <a href="what-is-the-difference-between-malay-and-malayalam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20difference%20between%20malay%20and%20malayalam&amp;w=50&amp;h=50&amp;c=7" alt="what is the difference between malay and malayalam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="quelle-morphologie-suis-je.html" class="be-post-title">
+				 <h6>quelle morphologie suis je </h6>
+                </a>
+                <a href="quelle-morphologie-suis-je.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=quelle%20morphologie%20suis%20je&amp;w=50&amp;h=50&amp;c=7" alt="quelle morphologie suis je">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-wey-mean-in-text.html" class="be-post-title">
+				 <h6>what does wey mean in text </h6>
+                </a>
+                <a href="what-does-wey-mean-in-text.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20wey%20mean%20in%20text&amp;w=50&amp;h=50&amp;c=7" alt="what does wey mean in text">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

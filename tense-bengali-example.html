@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Tense Bengali Example at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Tense Bengali Example",
+  "datePublished": "2022-05-01T11:21:50Z",
+  "image": "https://tse1.mm.bing.net/th?q=tense%20bengali%20example",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=tense%20bengali%20example&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=tense%20bengali%20example" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=tense%20bengali%20example" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Tense Bengali Example at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Tense Bengali Example</h2>
+    <p><strong>Tense Bengali Example</strong>. This site is specially designed for bengali medium students and teachers so that they can learn english grammar as well as. Ami korchhi, se korchhe, tumi korchho, tini/apni korchhen.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=tense%20bengali%20example" alt="present continuous tense with example in bangla YouTube" />
+        <br>
+        <figcaption>present continuous tense with example in bangla YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Contextual translation of tense into bengali. Likewise, dus hopelijk is de website spoedig terug online. These endings can help you a lot, because with them you can conjugate most of verbs into the present tense, you only need the stem of the verb, for example the stem of (khela:
+    </p>
+    <h3>present continuous tense with example in bangla YouTube</h3>
+    <p>The low stem for this example is “kɔr” and the high stem is “kôr”. In many languages, verbs are inflected. I thought it was a poem a b o u t e v e r y t h i n g. The same have arrested the killer.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Present Perfect Tense in Bengali YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/IB8w5QHRpnM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In many languages, verbs are inflected. অতীত কালে কিছু সময়ের জন্য কোন কাজ চলছিল বোঝালে past continuous tense ব্যবহৃত হয়।. Tense is the concept of time which may be present, past or future. The past tense is a grammatical tense whose function is to place an action or situation in the past. Even india’s national anthem is composed in bengali.bengal,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Learn Present Tense easily with Examples in Bengali/English Complete" data-src="https://i2.wp.com/i.ytimg.com/vi/aZIhdsPRpVs/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">অতীত কালে কিছু সময়ের জন্য কোন কাজ চলছিল বোঝালে past continuous tense ব্যবহৃত হয়।. The same have arrested the killer. If you continue browsing the site, you agree to the use of cookies on this website. This site is specially designed for bengali medium students and teachers so that they can learn english grammar as well as. ️ আজ আমরা.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="15 [pdf] TENSES GRAMMAR BANGLA PRINTABLE HD DOCX DOWNLOAD ZIP * 12Tenses" data-src="https://i.pinimg.com/originals/e1/f1/49/e1f14920e70a2c88bee7d137cee88375.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 12tenses1.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">️ আজ আমরা আলোচনা করতে চলেছি tense কাকে বলে,tense কত প্রকার ও কি কি যাতে করে তোমাদের. The present tense (abbreviated pres or prs) is a grammatical tense whose principal function is to locate a situation or event in the present time. The same have arrested the killer. In many languages, verbs are inflected. This site is specially designed for.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="present continuous tense with example in bangla YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/8COXbQxEMAM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">There are three types of tenses. নাম, কাল, kriar kal, কালের বিবরণ, ক্রিয়ার কাল, আমি গিয়েছিলাম, সঠিক কাল হল% 1 ।. Ngự long tu tiên truyện 2. This site is specially designed for bengali medium students and teachers so that they can learn english grammar as well as. Bengali is the most widely spoken language in india after hindi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tense with examples in Bengali (With PDF) Present Perfect Tense" data-src="https://i2.wp.com/i.ytimg.com/vi/Lf_px-Nn7Wo/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Chhi, chhe, chho, chhen, example: Get free tips to learn tenses, grammar rules, and different tenses. These combine with mood and aspect to form more complex conjugations: The past tense is a grammatical tense whose function is to place an action or situation in the past. Bengali is the most widely spoken language in india after hindi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="English Grammar Tense identify bangla tutorial part 01 YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/yYBLjZO2fnk/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The low stem for this example is “kɔr” and the high stem is “kôr”. Nobody was walking the the streets. In english grammar tense is used to refer to time of an action or event. Examples of verbs in the past tense include the english. Learn tenses in english grammar with our table of english tenses in bengali translation.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="500 Bangla To English Examples of Tense (Mobile Version) PDF" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/320607443/original/f323cd9dc6/1630730289?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">তাছাড়া যেকোনো পরীক্ষা এবং spoken english শেখার জন্য tense শেখাটা খুবই. Bengali is the most widely spoken language in india after hindi. Present tense (বর্তমান কাল) past tense (অতীত কাল) future tense (ভবিষ্যৎ কাল. Chhi, chhe, chho, chhen, example: Past continuous tense is used to express the action which was continued for some time in the past.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Learn Basic Bengali 1st Person Tense (Verb Base phrases In English)" data-src="https://i2.wp.com/1.bp.blogspot.com/-aBonpAAaStE/Xwf751sIHGI/AAAAAAAAGbk/lSTatJrfY4o6YXU7Dx-2iEXEJZ53548GQCLcBGAsYHQ/s884/Learn%2BBasic%2BBengali%2B1st%2BPerson%2BTense%2Bof%2BVerb%2BBase%2BSentences%2BFrom%2BEnglish%2B-%2B13.PNG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: learnbengalifast.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">সুতরাং দেরী না করে tense formula in bengali pdfটি ডাউনলোড করে নিন এবং আজ থেকেই পারদর্শী হওয়ার কর্মকান্ড শুরু করে দিন | This site is specially designed for bengali medium students and teachers so that they can learn english grammar as well as. It tells when the work is done. Present tense (বর্তমান কাল) past tense (অতীত কাল) future tense.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="500 examples of tense in bengali 2019" data-src="https://i2.wp.com/cdn.slidesharecdn.com/ss_thumbnails/500examplesoftense-190304155951-thumbnail-4.jpg?cb=1551715266" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It tells when the work is done. Examples of verbs in the past tense include the english. Tense, in english grammar, refers to the time of an action or event. Chhi, chhe, chho, chhen, example: 500 words bengali to english translation according to the tense slideshare uses cookies to improve functionality and performance, and to provide you with relevant advertising.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Present Continuous Tense in Bangla Rules, Formula, structure with" data-src="https://i2.wp.com/i.ytimg.com/vi/pI_nI-JMJYs/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Your buy has been saved. Nobody was walking the the streets. English tense in bengali example তবে time এবং tense নিয়ে বিভ্রান্ত হওয়া উচিত নয় । tense নির্দেশ করে একটা These endings can help you a lot, because with them you can conjugate most of verbs into the present tense, you only need the stem of the verb, for example.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-morning-vibes-in-hindi.html" class="be-post-title">
+				 <h6>what is the meaning of morning vibes in hindi </h6>
+                </a>
+                <a href="what-is-the-meaning-of-morning-vibes-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20morning%20vibes%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of morning vibes in hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tum-kaise-ho-tamil-mein.html" class="be-post-title">
+				 <h6>tum kaise ho tamil mein </h6>
+                </a>
+                <a href="tum-kaise-ho-tamil-mein.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tum%20kaise%20ho%20tamil%20mein&amp;w=50&amp;h=50&amp;c=7" alt="tum kaise ho tamil mein">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-a-mile-in-4-minutes-good.html" class="be-post-title">
+				 <h6>is a mile in 4 minutes good </h6>
+                </a>
+                <a href="is-a-mile-in-4-minutes-good.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20a%20mile%20in%204%20minutes%20good&amp;w=50&amp;h=50&amp;c=7" alt="is a mile in 4 minutes good">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kannada-alphabets-with-words-and-pictures.html" class="be-post-title">
+				 <h6>kannada alphabets with words and pictures </h6>
+                </a>
+                <a href="kannada-alphabets-with-words-and-pictures.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kannada%20alphabets%20with%20words%20and%20pictures&amp;w=50&amp;h=50&amp;c=7" alt="kannada alphabets with words and pictures">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="this-is-evident-from.html" class="be-post-title">
+				 <h6>this is evident from </h6>
+                </a>
+                <a href="this-is-evident-from.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=this%20is%20evident%20from&amp;w=50&amp;h=50&amp;c=7" alt="this is evident from">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-nuestra-mean-in-spanish.html" class="be-post-title">
+				 <h6>what does nuestra mean in spanish </h6>
+                </a>
+                <a href="what-does-nuestra-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20nuestra%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what does nuestra mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-contiene-el-entorno-de-desarrollo-integrado.html" class="be-post-title">
+				 <h6>que contiene el entorno de desarrollo integrado </h6>
+                </a>
+                <a href="que-contiene-el-entorno-de-desarrollo-integrado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20contiene%20el%20entorno%20de%20desarrollo%20integrado&amp;w=50&amp;h=50&amp;c=7" alt="que contiene el entorno de desarrollo integrado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="english-word-in-marathi.html" class="be-post-title">
+				 <h6>english word in marathi </h6>
+                </a>
+                <a href="english-word-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=english%20word%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="english word in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kitty-cat-meaning-slang.html" class="be-post-title">
+				 <h6>kitty cat meaning slang </h6>
+                </a>
+                <a href="kitty-cat-meaning-slang.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kitty%20cat%20meaning%20slang&amp;w=50&amp;h=50&amp;c=7" alt="kitty cat meaning slang">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-the-name-arianna-mean-in-spanish.html" class="be-post-title">
+				 <h6>what does the name arianna mean in spanish </h6>
+                </a>
+                <a href="what-does-the-name-arianna-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20the%20name%20arianna%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what does the name arianna mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Korele Ne Demektir at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Korele Ne Demektir",
+  "datePublished": "2022-07-07T14:54:23Z",
+  "image": "https://tse1.mm.bing.net/th?q=korele%20ne%20demektir",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=korele%20ne%20demektir&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=korele%20ne%20demektir" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=korele%20ne%20demektir" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Korele Ne Demektir at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Korele Ne Demektir</h2>
+    <p><strong>Korele Ne Demektir</strong>. Biraz açacak olursak, i̇slam dininin temel prensiplerine inanmayan, hz. Klinik korelasyon ve takip önerilir.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=korele%20ne%20demektir" alt="Borsanın Forex Piyasalarına Etkileri" />
+        <br>
+        <figcaption>Borsanın Forex Piyasalarına Etkileri from www.genelpiyasa.com</figcaption>
+    </figure>
+        <p>
+        İnsan özgü olduğu ileri sürülen bu yeti, derece derece, edinilmiş bir imgeyi yeniden canlandırmaktan yaratıcılığa kadar yükselir. Batı müziğinde iki ana akor vardır. Biraz açacak olursak, i̇slam dininin temel prensiplerine inanmayan, hz.
+    </p>
+    <h3>Borsanın Forex Piyasalarına Etkileri</h3>
+    <p>Kültürün anlamı, özellikleri, unsurları, etimolojisi. Örneğin sosyal bilimcilerin eğitim düzeyinin gelirle olumsuz bir ilişki içinde olduğu gözlenmiştir dediği yerde fen bilimciler kısaca eğitim gelirle negatif koreledir diyorlar. Ancak toplumumuzda fenomen kavramı olağanüstü olay veya durumları belirtmek için kullanılır. Eğer “c”nin yanında küçük “m” harfi varsa yani “cm” şeklinde yazılmışsa, bu “do minor” anlamına gelir.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Borsanın Forex Piyasalarına Etkileri" data-src="https://i2.wp.com/storage.googleapis.com/gp-pstorage/images/image-20201028171619-1_f4b7ff20-f2af-4fab-9003-8078262a9684.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.genelpiyasa.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Maknae ne demek, anlamı nedir? Gönülsüz yenen aş, ya karın ağrıtır yada baş. Hukuk terimi olarak karine ise, bir yakınlığa bağlı olarak bir durumu, varsayımı işaret eden ipucu, bulgu, emare anlamına gelir. İmgelem, edinilmiş imgeleri birleştirip kaynaştırma ve bu birleşiklerden yeni imgeler tasarlama yetisidir. Örneğin sosyal bilimcilerin eğitim düzeyinin gelirle olumsuz bir ilişki içinde olduğu gözlenmiştir dediği yerde fen bilimciler.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Riskten Korunma Oluşacak Yatırım Risklerine Karşı Kendinizi Nasıl" data-src="https://i2.wp.com/tradingegitimi.com/wp-content/uploads/2020/08/EURUSD-ve-USDCHF-chart-1024x396.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tradingegitimi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Körebe, çocuklardan birinin ebe olarak gözleri bağlı durumdayken diğer çocukları kovalayarak birini yakalamaya çalışması ve yakalanın ebe olması biçiminde tekrar tekrar oynanan en az üç kişilik bir çocuk oyunudur. Klinik korelasyon ve takip önerilir. Biraz açacak olursak, i̇slam dininin temel prensiplerine inanmayan, hz. Küfür, genel manada imanın zıddı olup kâfir allah’ı ve peygamberi inkâr eden kimsedir. Detaylari bi dahaki dersin.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Klinik Korelasyon Nedir? Klinik Korelasyon Önerilir Ne Demektir? Dr.BUN" data-src="https://i2.wp.com/blog.doktorbun.com/wp-content/uploads/2020/01/klinik-korelasyon-nedir-klinik-korelasyon-onerilir.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blog.doktorbun.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Korelasyon kelimesi günlük hayatta sıklıkla kullanılan kelimelerden bir. Olay ya da felsefe biliminde kullanıldığı şekli ile görüngü ( somut, algılanabilir, deneyimlenebilir olay veya nesne) demektir. Bir miktara ait iki ölçüm. Kore kore açıklaması kore anlamı kore hakkında kore kelime anlamı kore kelimesi ne demektir kore kelimesi nedir kore kelimesi nereden geliyor kore kime denir kore kısaca. Küfür, genel manada imanın.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Borsanın Forex Piyasalarına Etkileri" data-src="https://i2.wp.com/storage.googleapis.com/gp-pstorage/images/image-borsa-forex-etki-nikkei-usdjpy-genel-piyasa_76681e46-e73a-4160-b445-783182affc85.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.genelpiyasa.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Klinik ile korele değerlendirilmesi tavsiye edilir. (yunanca) (i̇sim,tıp) başlıca belirtisi kısa, çabuk, değişken yapıda irade dışı hareketler olan bir hastalık. Batı müziğinde iki ana akor vardır. (korel anlamı, korel ingilizcesi, ingilizcede korel, korel nnd) (körpe anlamı, körpe ingilizcesi, ingilizcede körpe, körpe nnd)</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dindarlık, Milli Gelir ve Korelasyon (Dindarlık Bizi Fakirleştirir mi" data-src="https://i2.wp.com/www.raiturk.com/wp-content/uploads/2018/09/dindarlık-ve-milli-gelir.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.raiturk.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Maknae ne demek öğrenmek ister misiniz? Kültürün anlamı, özellikleri, unsurları, etimolojisi. Orası pek körfez bir yer. Tdk’ya göre i̇skele sözlük anlamı nedir? Radyoloji uzmanı tarafından yazılan klinik korelasyon önerilir ibaresi, bazı raporlarda şu haliyle de yer alabilir:.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Global Paradoks" data-src="https://i2.wp.com/img.reitix.com/foto/fb5357.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reitix.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Göremeyen için hiçbir şey anlam taşımaz. Tek başına bir harf gördüğümüzde örneğin “c”, bu “do majör” akoru demektir. (yunanca) (i̇sim,tıp) başlıca belirtisi kısa, çabuk, değişken yapıda irade dışı hareketler olan bir hastalık. Türk dil kurumu (tdk) sözlüğüne göre fenomen; Bu kelimeyle ilgili sanalsözlük&#039;te 4 sayfa içerik bulunmaktadır.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dindarlık, Milli Gelir ve Korelasyon (Dindarlık Bizi Fakirleştirir mi" data-src="https://i2.wp.com/www.raiturk.com/wp-content/uploads/2018/09/dondurma-satışları-ve-boğulma-vakaları.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.raiturk.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Korel nedir ve korel ne demek sorularına hızlı cevap veren sözlük sayfası. İnsan özgü olduğu ileri sürülen bu yeti, derece derece, edinilmiş bir imgeyi yeniden canlandırmaktan yaratıcılığa kadar yükselir. Kültür, insanoğlunun maddi ve manevi. Körfez kelimesinin ingilizcesi [körfez] n. Klinik ile korele değerlendirilmesi tavsiye edilir.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Korel’e anlamlı hediye Son Dakika Magazin Haberleri" data-src="https://i2.wp.com/iasbh.tmgrup.com.tr/381183/650/344/0/42/555/333?u=https://i2.wp.com/i.sabah.com.tr/sbh/2017/09/10/korele-anlamli-hediye-1505068160934.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.sabah.com.tr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bu doğrultuda basit yani ikili korelasyon sistemi; Vibrio kolera adlı bakterilerin insanların ince bağırsaklarında parazitlenmeleriyle gelişen bir bulaşıcı hastalıktır. Radyoloji uzmanı tarafından yazılan klinik korelasyon önerilir ibaresi, bazı raporlarda şu haliyle de yer alabilir:. Maknae, korece&#039;de bir toplulukta ya da belirli bir grup içinde yaş olarak en küçük kişiye verilen isimdir. İlk görev yerim olan erzurum&#039;un narman ilçesinde narman i̇lçe.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ICRYPEX Blog Küresel Piyasadaki Parasal Genişlemenin Bitcoine" data-src="https://i2.wp.com/www.icrypex.com/public/blogfiles/4767b7966363c37a05fa037d43f0e864.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.icrypex.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Batı müziğinde iki ana akor vardır. Kültür, insanoğlunun maddi ve manevi. Örneğin sosyal bilimcilerin eğitim düzeyinin gelirle olumsuz bir ilişki içinde olduğu gözlenmiştir dediği yerde fen bilimciler kısaca eğitim gelirle negatif koreledir diyorlar. Hukukta karineler, varlığı bilinmeyen bir olgu hakkında sonuç çıkarılmasını sağlayan belirtilerdir. Vibrio kolera adlı bakterilerin insanların ince bağırsaklarında parazitlenmeleriyle gelişen bir bulaşıcı hastalıktır.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Riskten Korunma Oluşacak Yatırım Risklerine Karşı Kendinizi Nasıl" data-src="https://i2.wp.com/tradingegitimi.com/wp-content/uploads/2020/08/EURUSD-ve-USDCHF-chart-768x297.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tradingegitimi.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kültür, kavramının pek çok anlamı vardır. Orası pek körfez bir yer. Maknae, korece&#039;de bir toplulukta ya da belirli bir grup içinde yaş olarak en küçük kişiye verilen isimdir. Kültür, insanoğlunun maddi ve manevi. Kültürün anlamı, özellikleri, unsurları, etimolojisi.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-off-in-urdu.html" class="be-post-title">
+				 <h6>meaning of off in urdu </h6>
+                </a>
+                <a href="meaning-of-off-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20off%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="meaning of off in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-supposed-in-english.html" class="be-post-title">
+				 <h6>what is the meaning of supposed in english </h6>
+                </a>
+                <a href="what-is-the-meaning-of-supposed-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20supposed%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of supposed in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kya-kar-raha-hai-ka-reply.html" class="be-post-title">
+				 <h6>kya kar raha hai ka reply </h6>
+                </a>
+                <a href="kya-kar-raha-hai-ka-reply.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kya%20kar%20raha%20hai%20ka%20reply&amp;w=50&amp;h=50&amp;c=7" alt="kya kar raha hai ka reply">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aapko-kya-matlab-in-english.html" class="be-post-title">
+				 <h6>aapko kya matlab in english </h6>
+                </a>
+                <a href="aapko-kya-matlab-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aapko%20kya%20matlab%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="aapko kya matlab in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="urdu-meaning-of-ubaid-in-islam.html" class="be-post-title">
+				 <h6>urdu meaning of ubaid in islam </h6>
+                </a>
+                <a href="urdu-meaning-of-ubaid-in-islam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=urdu%20meaning%20of%20ubaid%20in%20islam&amp;w=50&amp;h=50&amp;c=7" alt="urdu meaning of ubaid in islam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-jah-mean-urban-dictionary.html" class="be-post-title">
+				 <h6>what does jah mean urban dictionary </h6>
+                </a>
+                <a href="what-does-jah-mean-urban-dictionary.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20jah%20mean%20urban%20dictionary&amp;w=50&amp;h=50&amp;c=7" alt="what does jah mean urban dictionary">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="şah-beyit-ne-demektir.html" class="be-post-title">
+				 <h6>şah beyit ne demektir </h6>
+                </a>
+                <a href="şah-beyit-ne-demektir.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=%C5%9Fah%20beyit%20ne%20demektir&amp;w=50&amp;h=50&amp;c=7" alt="şah beyit ne demektir">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-anata-mean.html" class="be-post-title">
+				 <h6>what does anata mean </h6>
+                </a>
+                <a href="what-does-anata-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20anata%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does anata mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="expression-espagnol-insulte.html" class="be-post-title">
+				 <h6>expression espagnol insulte </h6>
+                </a>
+                <a href="expression-espagnol-insulte.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=expression%20espagnol%20insulte&amp;w=50&amp;h=50&amp;c=7" alt="expression espagnol insulte">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="hamza-name-meaning-in-urdu-and-lucky-number-and-stone.html" class="be-post-title">
+				 <h6>hamza name meaning in urdu and lucky number and stone </h6>
+                </a>
+                <a href="hamza-name-meaning-in-urdu-and-lucky-number-and-stone.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=hamza%20name%20meaning%20in%20urdu%20and%20lucky%20number%20and%20stone&amp;w=50&amp;h=50&amp;c=7" alt="hamza name meaning in urdu and lucky number and stone">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

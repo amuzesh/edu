@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kya Aap Kaise Ho at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Kya Aap Kaise Ho",
+  "datePublished": "2022-06-09T00:41:56Z",
+  "image": "https://tse1.mm.bing.net/th?q=kya%20aap%20kaise%20ho",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kya%20aap%20kaise%20ho&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kya%20aap%20kaise%20ho" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kya%20aap%20kaise%20ho" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kya Aap Kaise Ho at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kya Aap Kaise Ho</h2>
+    <p><strong>Kya Aap Kaise Ho</strong>. Feel the 90&#039;s vala pyaar with #ajaydevgn &amp; #juhichawla&#039;s romantic jhankar number #kya_tum_mujhse_pyar_karte_ho from theri starrer superhit film #naajayaz sun. Contextual translation of kya aap kaise ho into english.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kya%20aap%20kaise%20ho" alt="freelancer kya hai paise kaise kamaye" />
+        <br>
+        <figcaption>freelancer kya hai paise kaise kamaye from www.ruhankumar.com</figcaption>
+    </figure>
+        <p>
+        Is process ke completion me kuch time lag sakta hai, process completion time aapke internet ki. Tum ne kiya na yaad kabhi bhul kar hamein. Are you ok, kya aap ho, kha busy ho, you are student, kya aap aaye ho.
+    </p>
+    <h3>freelancer kya hai paise kaise kamaye</h3>
+    <p>Chahe aap blog, blogger.com wix ya wordpress se banaye ho. Contextual translation of kya aap kaise ho into english. Kya aap apna interest ka kaam karne ke liye apna extra time de sakte hai, jese agar aap usko apne main. A slight pricking and a sweet burning sensation:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kolkata ff Kya Hai ? Aap isse kaise khel Sakte Ho Sab Kuch Jano Details" data-src="https://i2.wp.com/lucknowfirst.com/wp-content/uploads/2021/04/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lucknowfirst.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jab puri duniya mein english itni zyaada use hoti ho, toh uske kuch common phrases ko bolne ke naye tarike faydemand hote hai. July 13, 2016 at 9:27 am. Ho jata hai kaise pyar: Lekin blog ko professional look dene ke liye, blogger me custom domain add karna hi padega. And in your thoughts everything else i did forsake.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="freelancer kya hai paise kaise kamaye" data-src="https://i2.wp.com/2.bp.blogspot.com/-FnrHizjJur4/XAv9zR9nkbI/AAAAAAAAAwM/tOWTp_gg0YQhinoh98anu9tB2x475RwnwCLcBGAs/w1200-h630-p-k-no-nu/Logopit_1544288281948.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ruhankumar.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Aap kaise ho gujarati me kya bolenge? Bahut kuch ko english me kese likhe; Are you ok, kya aap ho, kha busy ho, you are student, kya aap aaye ho. You did not ever think of me even by mistake. Hu or me uske building k neche ja k usko roj dekhta hu or usko propose karna chata hu lekin.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile number portability kya hai or aap Apne number ko port kaise" data-src="https://i2.wp.com/4.bp.blogspot.com/-qAQ_oqwz00M/Wpeysk030bI/AAAAAAAAAzs/x5KBeGoeXUEIn7QfJFi6cFZoEo5zZwU5QCLcBGAs/w1200-h630-p-k-no-nu/PicsArt_03-01-01.25.50.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: technicalmohapatra.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Na jane koi, na jane koi: Bhaiya ka koi friend lia hai translate in english; A slight pricking and a sweet burning sensation: Doste ke leye kuch bhe karo english translate; September 29, 2019 at 12:02 pm.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kya chal raha hai kaise ho aap Posts Facebook" data-src="https://i2.wp.com/lookaside.fbsbx.com/lookaside/crawler/media/?media_id=126113179191348" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.facebook.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Meri gf mere gussa ho gyi hai, kaise use manaye koi tarika hai apke pas. The one learning a language! आप कैसे हो गुजराती में क्या बोलेंगे? Kaise ho, ap kaise hai, do you study, you keep fast, are you upset?. Kya aap apna interest ka kaam karne ke liye apna extra time de sakte hai, jese agar aap usko.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quora kya hai use kaise kare account kaise banaye" data-src="https://i2.wp.com/2.bp.blogspot.com/-aYudb7bMVDs/XFb4fr0_T5I/AAAAAAAABCY/QpuF7i6HN3Efo_1wM2yn_UbiYE41mPgWgCLcBGAs/w1200-h630-p-k-no-nu/Logopit_1549201477857.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ruhankumar.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tum ne kiya na yaad kabhi bhul kar hamein. Bhaiya ka koi friend lia hai translate in english; Sir meine apni gf ke sath sex kiya tha but 1 mahina ho gaya period nhi aa raha hai lekin aaj vometting hui hai use agr kuch khati hai ya pani bhi pi rahi hai tb bhi use vometting ho rahi hai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="how are you means 1/aap kaise ho? 2/ kya haal hai aap ka? which one is" data-src="https://i2.wp.com/hinative.com/en-US/questions/4067511/ogp_image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hinative.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">No one knows as to why you feel that: Kiya ladkyon ko ehtelam hota hai agar ladki ko ehtelam ho jaye tu wo kia kare ho jata h to phir vh sidha kaise hota hamla aurat ka bacha paida kaisay hota hai hamla aurat ka bacha sunny puchhne laga ki maa yeah chudayi kaise ki jati hai boy 3: Thoda.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="VPN kya hota hai or kaise use kare computer or phone me in hindi jankari" data-src="https://i2.wp.com/1.bp.blogspot.com/-sLrD0Iiowyw/XCz3BT8APtI/AAAAAAAAA4E/NuLhEeMaUqQ68KGRqVkN6i_enZ_22GQYQCLcBGAs/s1600/Logopit_1546448897496.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ruhankumar.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Jhb aap k pass time ho muje call krna translate english Aap ye apne hi risk pe kare man: Bhaiya ka koi friend lia hai translate in english; Kaise kahoon main o yaara, ye pyar kaise hota hai konsi baat kab kahan kaise kahi jati haiye salika. Agar apko blog ke bare me jiyada jankari nahi hai toh ye padhe:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kya chal raha hai kaise ho aap Posts Facebook" data-src="https://i2.wp.com/lookaside.fbsbx.com/lookaside/crawler/media/?media_id=107515754384424" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.facebook.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Agar apko blog ke bare me jiyada jankari nahi hai toh ye padhe: July 13, 2016 at 9:27 am. आप कैसे हो संस्कृत में क्या कहते हैं? Aise mein english learn karne ka bahut fayda hai. Meri gf mere gussa ho gyi hai, kaise use manaye koi tarika hai apke pas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Conference call kya hai ? conference call kaise karen" data-src="https://i2.wp.com/1.bp.blogspot.com/--aH-eL8R-j8/XoggIYAjZSI/AAAAAAAAATw/j70RSmVCXUYFKeNbPqKoe1Dn2Eo-f7KtwCLcBGAsYHQ/s1600/Conference%2Bcall%2Bkya%2Bhai%2B%2Bconference%2Bcall%2Bkaise%2Bkaren.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.techycrater.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">July 13, 2016 at 9:27 am. Sir meine apni gf ke sath sex kiya tha but 1 mahina ho gaya period nhi aa raha hai lekin aaj vometting hui hai use agr kuch khati hai ya pani bhi pi rahi hai tb bhi use vometting ho rahi hai mein bachcha nhi chahta ho sir mujhe bahut dar lag raha hai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kya aap phele se cricketer ho?? Cricketer kaise bane YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/CS8wjrnbzbM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mera maaji mujh se bichad kar kya jaane kis haal mein hai meri tarah wo bhi tanha ho aisa bhi ho sakta hai. July 13, 2016 at 9:27 am. Contextual translation of kya aap kaise ho into english. Sir, my wife is missing dosto aap flipkart kya hai flipkart affiliate program se paise kaise kamya jata hai ke bare me.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="connexus-phone-number-hereford.html" class="be-post-title">
+				 <h6>connexus phone number hereford </h6>
+                </a>
+                <a href="connexus-phone-number-hereford.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=connexus%20phone%20number%20hereford&amp;w=50&amp;h=50&amp;c=7" alt="connexus phone number hereford">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-hindi-name-karan.html" class="be-post-title">
+				 <h6>meaning hindi name karan </h6>
+                </a>
+                <a href="meaning-hindi-name-karan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20hindi%20name%20karan&amp;w=50&amp;h=50&amp;c=7" alt="meaning hindi name karan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-clean-in-arabic.html" class="be-post-title">
+				 <h6>what is clean in arabic </h6>
+                </a>
+                <a href="what-is-clean-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20clean%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="what is clean in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-advil.html" class="be-post-title">
+				 <h6>what is the meaning of advil </h6>
+                </a>
+                <a href="what-is-the-meaning-of-advil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20advil&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of advil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-roman-in-urdu.html" class="be-post-title">
+				 <h6>meaning of roman in urdu </h6>
+                </a>
+                <a href="meaning-of-roman-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20roman%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="meaning of roman in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="karela-vegetable-in-spanish.html" class="be-post-title">
+				 <h6>karela vegetable in spanish </h6>
+                </a>
+                <a href="karela-vegetable-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=karela%20vegetable%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="karela vegetable in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-spell-sara-in-arabic.html" class="be-post-title">
+				 <h6>how to spell sara in arabic </h6>
+                </a>
+                <a href="how-to-spell-sara-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20spell%20sara%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="how to spell sara in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-charming-in-english.html" class="be-post-title">
+				 <h6>meaning of charming in english </h6>
+                </a>
+                <a href="meaning-of-charming-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20charming%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="meaning of charming in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="english-dictionary-kannada-words.html" class="be-post-title">
+				 <h6>english dictionary kannada words </h6>
+                </a>
+                <a href="english-dictionary-kannada-words.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=english%20dictionary%20kannada%20words&amp;w=50&amp;h=50&amp;c=7" alt="english dictionary kannada words">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-write-nisha-in-arabic.html" class="be-post-title">
+				 <h6>how to write nisha in arabic </h6>
+                </a>
+                <a href="how-to-write-nisha-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20write%20nisha%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="how to write nisha in arabic">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

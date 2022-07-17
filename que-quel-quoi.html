@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Quel Quoi at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Que Quel Quoi",
+  "datePublished": "2022-06-22T19:10:52Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20quel%20quoi",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20quel%20quoi&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20quel%20quoi" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20quel%20quoi" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Quel Quoi at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Quel Quoi</h2>
+    <p><strong>Que Quel Quoi</strong>. Quoi que peut être remplacé par « quelle que soit la chose que » ce qui n’est pas le cas de quoique quoiqu’il exige, qu’il l’exige avec le sourire. Quand on ne fait pas l’inversion, on dit « quoi ».</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20quel%20quoi" alt="Comment faire un choix lorsque l&#039;on ne sait pas quoi faire" />
+        <br>
+        <figcaption>Comment faire un choix lorsque l&#039;on ne sait pas quoi faire from www.osezbriller.com</figcaption>
+    </figure>
+        <p>
+        Pour bien différencier quel (s) que et quelle (s) que, il faut identifier le nombre du noyau du. Quoique est une conjonction de subordination qui marque l’opposition ou la concession. « quoi que » correspond à une question introduite par « que ».
+    </p>
+    <h3>Comment faire un choix lorsque l&#039;on ne sait pas quoi faire</h3>
+    <p>Leçons d&#039;orthographe remarques orthographiques sur quelques homonymes vous êtes ici orthographe quelque(s), quel(s) que, quelle(s) que quel(s), quelle(s), qu&#039;elle(s) quelque(s),. Quand on ne fait pas l’inversion, on dit « quoi ». Dans les autres cas, quelque (s) en un mot signifie. The final section of this lesson on how to use quel in french is about seeing the questions in action.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Poser des questions avec QUE QUOI QUEL TOUT EN FRANÇAIS" data-src="https://i2.wp.com/toutenfrancais.tv/wp-content/uploads/2020/06/Miniatures-Reviste-ta-grammaire-NEW-que-quoi-quel-01-e1610968234249.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: toutenfrancais.tv</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quelle que soit la chose qu’il exige… quoique votre. Quelle que soit votre décision, nous la respecterons (quelle que s’accorde avec décision, au féminin singulier). The final section of this lesson on how to use quel in french is about seeing the questions in action. « quoi que » correspond à une question introduite par « que ». Quand il.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Asking What in French? Que, Quoi, Quel(s), Quelle(s) &amp; Comment Basic" data-src="https://i.pinimg.com/originals/f3/35/e8/f335e89b0481528aabfb699f82a8cb34.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">On l&#039;écrit toujours en deux mots et il a toujours. 1°/ quel que s&#039;écrit en deux mots lorsqu&#039;il est suivi d&#039;un verbe au subjonctif ; Si la phrase a du sens, alors il faut écrire «. Whatever your decision may be, we will respect it (quelle que agrees with. Pour bien différencier quel (s) que et quelle (s) que, il.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="A quoi sert RJ45 ? Quel intérêt ? [Résolu] 9 messages" data-src="https://i2.wp.com/www.forumconstruire.com/img/topic_jour.php?topic_id=320947" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.forumconstruire.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Qu&#039;elle est réussie cette photo! The interrogative adjective quel means which or what. Il s&#039;agit d&#039;un objet ou d&#039;un concept non. Quoique et quoi que ​quoique. 总结： 区分“quelque que”与“quel que”有两种方法：一看 搭配 ，“quel que”后面一般紧跟系动词“être”（或pouvoir être、devoir être）的虚拟式形式，而“quelque”后面一般紧跟形.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Les homophones quelquequelquequoiquequoique" data-src="https://i2.wp.com/www.foad-spirit.net/im_foad/nouveau/lecondictee/dictee2/homophones-quel-que-quelque-quoique-quoi-que-mousquetaire.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.foad-spirit.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">L’utilisation de qué et cuál en espagnol est source de confusion car ces deux mots ont la même traduction en français : Quoique et quoi que ​quoique. On peut remplacer « quoi que » par « quelle que soit la chose que/qui ». Quoi qu&#039;il arrive, je serai toujours là. Leçons d&#039;orthographe remarques orthographiques sur quelques homonymes vous êtes ici.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="French interrogative expressions Asking questions French" data-src="https://i.pinimg.com/originals/9b/c1/f4/9bc1f419b2358dd306873d66583ed663.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">1°/ quel que s&#039;écrit en deux mots lorsqu&#039;il est suivi d&#039;un verbe au subjonctif ; = what a handsome man! The interrogative adjective quel means which or what. Le sens est rigoureusement le même, c’est l’usage et la construction qui font la différence. Quel s&#039;accorde alors avec le sujet du verbe :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mini quizz que quoi quel TOUT EN FRANÇAIS" data-src="https://i2.wp.com/toutenfrancais.tv/wp-content/uploads/2020/07/Copie-de-MINI-QUIZZ-6-QUE-QUOI-QUEL-e1595433834528.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: toutenfrancais.tv</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quoi que peut être remplacé par « quelle que soit la chose que » ce qui n’est pas le cas de quoique quoiqu’il exige, qu’il l’exige avec le sourire. Quoi qu&#039;il arrive, je serai toujours là. On peut remplacer « quoi que » par « quelle que soit la chose que/qui ». Quoi 是代词，是arrive 的宾语。 形式是 quoi+que + sujet+verbe(虚拟式） 相当于：.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Comment faire un choix lorsque l&#039;on ne sait pas quoi faire" data-src="https://i2.wp.com/www.osezbriller.com/wp-content/uploads/2016/02/Sans-titre-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.osezbriller.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quelle que soit la chose qu’il exige… quoique votre. On écrit « quoi que » en deux mots : Quoi 是代词，是arrive 的宾语。 形式是 quoi+que + sujet+verbe(虚拟式） 相当于： 0 0 quelle que. The final section of this lesson on how to use quel in french is about seeing the questions in action. 形式是quel（le）（s）+ que + être（虚拟式） + sujet 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Poser des questions avec QUE QUOI QUEL TOUT EN FRANÇAIS" data-src="https://i2.wp.com/toutenfrancais.tv/wp-content/uploads/2020/06/Miniature-que-qoui-quel-01-e1591791684656.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: toutenfrancais.tv</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">On l&#039;écrit toujours en deux mots et il a toujours. Quoi que s’écrit séparément lorsqu’il signifie quelle que soit la chose qui/que ou peu importe que, ce qui. On peut remplacer « quoi que » par « quelle que soit la chose que/qui ». « quoi que » est un pronom signifiant « quelle que soit la chose qui, quelle.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="&quot;qu’estce que ,quoi&quot; 和 &quot;quel&quot; 和有什么不一样？ HiNative" data-src="https://i2.wp.com/ogp.hinative.com/ogp/question?dlid=28&amp;l=zh-CN&amp;lid=82&amp;txt=qu’est-ce+que+%2Cquoi+和+quel&amp;ctk=difference&amp;ltk=french_france&amp;qt=DifferenceQuestion" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: zh.hinative.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quoique et quoi que ​quoique. Leçons d&#039;orthographe remarques orthographiques sur quelques homonymes vous êtes ici orthographe quelque(s), quel(s) que, quelle(s) que quel(s), quelle(s), qu&#039;elle(s) quelque(s),. 形式是quel（le）（s）+ que + être（虚拟式） + sujet 2. Quoi qu&#039;il arrive, je serai toujours là. Quel que, quelle que, quels que ou quelles que s&#039;écrit en deux mots devant un verbe, le plus souvent le verbe.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Quelque ou quel que" data-src="https://i2.wp.com/www.anglaisfacile.com/cgi2/myexam/images/14705.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.francaisfacile.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Whatever your decision may be, we will respect it (quelle que agrees with. Concernant la locution « quoi que » les sages nous précisent qu&#039;il est possible de la reconnaître à l&#039;écrit en la remplaçant par « quelle que soit la chose que » ou « peu importe ce. Here is my little contribution, which i hope, you do find.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="do-you-add-a-space-after-an-ellipsis.html" class="be-post-title">
+				 <h6>do you add a space after an ellipsis </h6>
+                </a>
+                <a href="do-you-add-a-space-after-an-ellipsis.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=do%20you%20add%20a%20space%20after%20an%20ellipsis&amp;w=50&amp;h=50&amp;c=7" alt="do you add a space after an ellipsis">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-purpose-of-using-transitions-in-essay-writing.html" class="be-post-title">
+				 <h6>what is the purpose of using transitions in essay writing </h6>
+                </a>
+                <a href="what-is-the-purpose-of-using-transitions-in-essay-writing.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20purpose%20of%20using%20transitions%20in%20essay%20writing&amp;w=50&amp;h=50&amp;c=7" alt="what is the purpose of using transitions in essay writing">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tum-kaise-ho-meaning-in-urdu.html" class="be-post-title">
+				 <h6>tum kaise ho meaning in urdu </h6>
+                </a>
+                <a href="tum-kaise-ho-meaning-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tum%20kaise%20ho%20meaning%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="tum kaise ho meaning in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-hou-zi-in-english.html" class="be-post-title">
+				 <h6>what is hou zi in english </h6>
+                </a>
+                <a href="what-is-hou-zi-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20hou%20zi%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is hou zi in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-name-nishant.html" class="be-post-title">
+				 <h6>meaning of name nishant </h6>
+                </a>
+                <a href="meaning-of-name-nishant.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20name%20nishant&amp;w=50&amp;h=50&amp;c=7" alt="meaning of name nishant">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="vanity-toilet-meaning.html" class="be-post-title">
+				 <h6>vanity toilet meaning </h6>
+                </a>
+                <a href="vanity-toilet-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=vanity%20toilet%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="vanity toilet meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="shoaib-ka-urdu-meaning.html" class="be-post-title">
+				 <h6>shoaib ka urdu meaning </h6>
+                </a>
+                <a href="shoaib-ka-urdu-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=shoaib%20ka%20urdu%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="shoaib ka urdu meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-arabic-word-alaya.html" class="be-post-title">
+				 <h6>meaning of arabic word alaya </h6>
+                </a>
+                <a href="meaning-of-arabic-word-alaya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20arabic%20word%20alaya&amp;w=50&amp;h=50&amp;c=7" alt="meaning of arabic word alaya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-mad-in-arabic.html" class="be-post-title">
+				 <h6>what is the meaning of mad in arabic </h6>
+                </a>
+                <a href="what-is-the-meaning-of-mad-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20mad%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of mad in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kya-kar-rahe-ho-kya-reply.html" class="be-post-title">
+				 <h6>kya kar rahe ho kya reply </h6>
+                </a>
+                <a href="kya-kar-rahe-ho-kya-reply.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kya%20kar%20rahe%20ho%20kya%20reply&amp;w=50&amp;h=50&amp;c=7" alt="kya kar rahe ho kya reply">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

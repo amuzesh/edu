@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kab Tak Recipe at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Kab Tak Recipe",
+  "datePublished": "2022-06-05T17:00:15Z",
+  "image": "https://tse1.mm.bing.net/th?q=kab%20tak%20recipe",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kab%20tak%20recipe&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kab%20tak%20recipe" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kab%20tak%20recipe" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kab Tak Recipe at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kab Tak Recipe</h2>
+    <p><strong>Kab Tak Recipe</strong>. Instructions preheat oven to 400ºf (200ºc) or grill. Add all the marinade ingredients and rub well.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kab%20tak%20recipe" alt="Mungfali Ki Chatni Kaise Banta Hai blogrotu1" />
+        <br>
+        <figcaption>Mungfali Ki Chatni Kaise Banta Hai blogrotu1 from blogrotu1.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Peel the green papaya and hollow out the inside. Kozhukattai or kolukattai is a festive south indian sweet of steamed dumplings made with rice flour dough and stuffed with a filling of coconut and jaggery. How to make kathi kebab roll step 1 marinate the mutton pieecs take boneless mutton pieces in a bowl.
+    </p>
+    <h3>Mungfali Ki Chatni Kaise Banta Hai blogrotu1</h3>
+    <p>Add warm water, one tablespoon at a time, until the sauce is smooth and creamy. Step 2 cook the mutton chunks now heat the butter in a deep bottomed pan. Contextual translation of kab tak milega? into english. Add the yeast and sugar to the well, then pour over ½ cup + 2 tablespoons (150 ml) lukewarm water.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pudina Rice Mint Rice Simple Easy Rice recipe Yummy leftover Rice" data-src="https://i2.wp.com/i.ytimg.com/vi/skR7LDcnsPk/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Put sliced eggplant in a bowl and add cold water. English, by when, how long dose, kab tak milega, to refund money. If using wooden skewers, soak in water. Kozhukattai recipe with step by step pics. Place on a tray if going in the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aawle Ka Achar Kaise Banate Hain Rima1" data-src="https://i2.wp.com/i.ytimg.com/vi/pnvVW_NYUc4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogrima1.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cook until meat is browned and onions are translucent. Let sit for 10 minutes. If you prefer well done, leave on a little longer. Kozhukattai recipe with step by step pics. Step 3 once cooked, remove from.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gujrati Recipes Gujarati Food Recipes Gujarati Cooking Recipe" data-src="https://i2.wp.com/kfoods.com/images1/newrecipeicon/panchkuti-shak_5354.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kfoods.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Slice the eggplant and bell peppers into julienne strips and dice the onion and garlic finely. Clean with water and then cut into long strips with a papaya slicer or vegetable slicer. Chahe jane ka ye arman rahy ga kab tak kab ise mere muhabt ka yaqeen aye ga dil mera aur pareshan rahy ga kab tak. Like modaks, kozhukattai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mungfali Ki Chatni Kaise Banta Hai blogrotu1" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/TaqihaZQIzx3h6a3a8e1o7AiE4OTRhMbwDmKv7L0C1tcjNJxHGKSSasULacL4z_dBKYB-b0jLmC3Tfq1QGCyGmufh1ARLvS1=w1200-h630-pd" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogrotu1.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">English, by when, how long dose, kab tak milega, to refund money. Kozhukattai or kolukattai is a festive south indian sweet of steamed dumplings made with rice flour dough and stuffed with a filling of coconut and jaggery. Akhir kab tak epi 29 latest video on 29th october 2021 full in hd quality on hum tv drama. Ushna shah as.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kab Tak aise bardash hoga 😡 !! New recipe Palak ki sabzi " data-src="https://i2.wp.com/i.ytimg.com/vi/6KM81qUPBlA/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">How to make kathi kebab roll step 1 marinate the mutton pieecs take boneless mutton pieces in a bowl. Akhir kab tak epi 29 latest video on 29th october 2021 full in hd quality on hum tv drama. Preheat an outdoor grill for high heat. Add the dashida and black pepper. Halve cherry tomatoes or cut normal tomatoes into small.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ye Zulam Kab Tak Trix Pointer" data-src="https://i2.wp.com/1.bp.blogspot.com/-iOpgdiEGpJQ/UksEikJHe7I/AAAAAAAAAQ4/8PQTCJ0sPn0/s1600/004.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: trixpointer.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you prefer medium rare, remove sooner. In a large bowl, mix together the ground beef, onion, parsley, cayenne, allspice, salt and pepper until evenly blended. Akhir kab tak epi 29 latest video on 29th october 2021 full in hd quality on hum tv drama. In a dutch oven or a skillet add ground turmeric and tomato paste to 2.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aakhir Kab Tak Hum Tv Drama, Cast, Timings, And Schedule" data-src="https://i2.wp.com/pakistani.pk/uploads/reviews/photos/original/61/c7/e4/Aakhir-Kab-Tak-1-91-1621012208.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pakistani.pk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Step 2 cook the mutton chunks now heat the butter in a deep bottomed pan. Akhir kab tak epi 29 latest video on 29th october 2021 full in hd quality on hum tv drama. Kozhukattai or kolukattai is a festive south indian sweet of steamed dumplings made with rice flour dough and stuffed with a filling of coconut and jaggery..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aakhir kab tak aisa chalta rahega ll yummy egg biryani recipe YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/waq8KzgN38Y/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you prefer medium rare, remove sooner. Kozhukattai or kolukattai is a festive south indian sweet of steamed dumplings made with rice flour dough and stuffed with a filling of coconut and jaggery. While beef is cooking, whisk together tahini sauce in a small bowl. Let sit for 10 minutes. Umeed hai aapko recipe pasand ayegi!for behi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Gujrati Recipes Gujarati Food Recipes Gujarati Cooking Recipe" data-src="https://i2.wp.com/kfoods.com/images1/newrecipeicon/capsicum-with-moong-dal_5406.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kfoods.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Add all the marinade ingredients and rub well. Advertisement · 1 like · oct 08. Put sliced eggplant in a bowl and add cold water. Kab tak, by when, sir book, how long dose, kab tak aayegi. Combine the chicken pieces with the sauce (reserving one tablespoon if you’re going to make fried rice at the end) and marinate while.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aawle Ka Achar Kaise Banate Hain Rima1" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/WTKfwgfGGQPwYS1lV2-H9Hc84brY6Eqku07uxnSBfKHvf_11C7Q_btpOOiKEdoaSGgVkAogedhOWCjBcUfME-YJ1t4ZPKxlm=w1200-h630-pd" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogrima1.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Put the ground beef in a large bowl for mixing. Step 3 once cooked, remove from. Soak wooden skewers for at least twenty minutes so they don&#039;t catch fire in the oven. Divide into 6 portions, and press around one end of the skewers to form a log shape approximately 1 inch thick and. Add chopped onion, parsley and remaining.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-zaid-name-mean.html" class="be-post-title">
+				 <h6>what does zaid name mean </h6>
+                </a>
+                <a href="what-does-zaid-name-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20zaid%20name%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does zaid name mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="best-malayalam-family-group-names.html" class="be-post-title">
+				 <h6>best malayalam family group names </h6>
+                </a>
+                <a href="best-malayalam-family-group-names.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=best%20malayalam%20family%20group%20names&amp;w=50&amp;h=50&amp;c=7" alt="best malayalam family group names">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-nickname-mean-in-spanish.html" class="be-post-title">
+				 <h6>what does nickname mean in spanish </h6>
+                </a>
+                <a href="what-does-nickname-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20nickname%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what does nickname mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-wie-gehts.html" class="be-post-title">
+				 <h6>what is wie gehts </h6>
+                </a>
+                <a href="what-is-wie-gehts.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20wie%20gehts&amp;w=50&amp;h=50&amp;c=7" alt="what is wie gehts">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nishanth-name-meaning-in-kannada.html" class="be-post-title">
+				 <h6>nishanth name meaning in kannada </h6>
+                </a>
+                <a href="nishanth-name-meaning-in-kannada.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nishanth%20name%20meaning%20in%20kannada&amp;w=50&amp;h=50&amp;c=7" alt="nishanth name meaning in kannada">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-california-connections-academy-free.html" class="be-post-title">
+				 <h6>is california connections academy free </h6>
+                </a>
+                <a href="is-california-connections-academy-free.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20california%20connections%20academy%20free&amp;w=50&amp;h=50&amp;c=7" alt="is california connections academy free">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aap-kaise-ho-iska-answer.html" class="be-post-title">
+				 <h6>aap kaise ho iska answer </h6>
+                </a>
+                <a href="aap-kaise-ho-iska-answer.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aap%20kaise%20ho%20iska%20answer&amp;w=50&amp;h=50&amp;c=7" alt="aap kaise ho iska answer">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-involved-in-nepali.html" class="be-post-title">
+				 <h6>meaning of involved in nepali </h6>
+                </a>
+                <a href="meaning-of-involved-in-nepali.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20involved%20in%20nepali&amp;w=50&amp;h=50&amp;c=7" alt="meaning of involved in nepali">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-kala-mean-in-spanish.html" class="be-post-title">
+				 <h6>what does kala mean in spanish </h6>
+                </a>
+                <a href="what-does-kala-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20kala%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what does kala mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bitter-melon-history.html" class="be-post-title">
+				 <h6>bitter melon history </h6>
+                </a>
+                <a href="bitter-melon-history.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bitter%20melon%20history&amp;w=50&amp;h=50&amp;c=7" alt="bitter melon history">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

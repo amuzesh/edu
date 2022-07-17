@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Entornos De Desarrollo Integrados (Ide) Ejemplos at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Entornos De Desarrollo Integrados (Ide) Ejemplos",
+  "datePublished": "2022-05-08T12:03:26Z",
+  "image": "https://tse1.mm.bing.net/th?q=entornos%20de%20desarrollo%20integrados%20%28ide%29%20ejemplos",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=entornos%20de%20desarrollo%20integrados%20%28ide%29%20ejemplos&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=entornos%20de%20desarrollo%20integrados%20%28ide%29%20ejemplos" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=entornos%20de%20desarrollo%20integrados%20%28ide%29%20ejemplos" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Entornos De Desarrollo Integrados (Ide) Ejemplos at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Entornos De Desarrollo Integrados (Ide) Ejemplos</h2>
+    <p><strong>Entornos De Desarrollo Integrados (Ide) Ejemplos</strong>. An ide typically consists of: Por supuesto no es una ide como tal pero es está bien comentarlo sobre todo para las personas que empiezan a jugar con el código y familiarizándose con los ejemplos de código fuente que aporta esri en la web de.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=entornos%20de%20desarrollo%20integrados%20%28ide%29%20ejemplos" alt="entornos de desarrollo para moviles Entorno de desarrollo integrado" />
+        <br>
+        <figcaption>entornos de desarrollo para moviles Entorno de desarrollo integrado from www.scribd.com</figcaption>
+    </figure>
+        <p>
+        Para hacer este proceso más fácil para ti o tu equipo de desarrollo, hemos recopilado varios entornos de desarrollo integrado para javascript, que proveen un agradable entorno para trabajar, testear, editar y depurar aplicaciones web. Así mismo, intellij destaca por su potente análisis de código estático y por sus diferentes herramientas y frameworks soportados. Los editores de código nos facilitan la tarea de trabajar con el código fuente de nuestras aplicaciones web.
+    </p>
+    <h3>entornos de desarrollo para moviles Entorno de desarrollo integrado</h3>
+    <p>En entorno de desarrollo integrado (ide por sus siglas en inglés) básico debe incluir, un editor de código que resalte la sintaxis con indicadores visuales que nos. Así mismo, intellij destaca por su potente análisis de código estático y por sus diferentes herramientas y frameworks soportados. En entorno de desarrollo integrado (ide por sus siglas en inglés) básico debe incluir, un editor de código que resalte la sintaxis con indicadores visuales que nos. Un entorno de desarrollo integrado, llamado también ide (sigla en inglés de integrated development environment), es un programa informático compuesto por un conjunto de herramientas de programación.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Entorno de desarrollo integrado timeline Timetoast timelines" data-src="https://i2.wp.com/s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5497663/09ce85988db54e21b0997dbca69fbfdfBVqwTSNj-RDKLK-256.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.timetoast.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hoy en lovtechnology vamos a tratar el tema qué es entorno de desarrollo integrado (ide) y cómo los programadores de aplicaciones web lo utilizan. Permite al desarrollador probar su código e interactuar con nuevos objetos. Los ide o entornos de desarrollo integrados, permiten la ejecución “paso a paso” de los programas para realizar tareas de depuración. Qué necesita un buen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Programación orientada a componentes" data-src="https://i2.wp.com/www.monografias.com/trabajos104/programacion-orientada-componentes/img10.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.monografias.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un ide ofrece integración desde los pasos más básicos del desarrollo de. Fue desarrollado con el objetivo de desempeñarse como una ide ligera y rápida que depende sólo de un par de dependencias. En esta unidad aprenderemos a: Puede dedicarse en exclusiva a un lenguaje de programación o bien, poder utilizarse para varios. Es otro ejemplo de ide que funciona.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="entornos de desarrollo para moviles Entorno de desarrollo integrado" data-src="https://i2.wp.com/imgv2-1-f.scribdassets.com/img/document/268398304/original/da45096f1c/1590324493?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.scribd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un entorno de desarrollo integrado (ide) se utiliza además de para escribir, para depurar y probar programas. Abrimos eclipse y pulsamos sobre la opción help seleccionando la opción del desplegable “ install new software ”. En entorno de desarrollo integrado (ide por sus siglas en inglés) básico debe incluir, un editor de código que resalte la sintaxis con indicadores visuales.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="🥇 【 Mas sobre el IDE (Entorno de Desarrollo Integrado) Visual Basic" data-src="https://i2.wp.com/www.aulafacil.com/uploads/cursos/6674/27154_134.es.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.aulafacil.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un entorno de desarrollo integrado (ide) es un software qué nos permite el diseño de aplicaciones en dónde podemos encontrar herramientas comunes en una sola interfaz.estos suelen tener las. Puede dedicarse en exclusiva a un sólo lenguaje de programación o bien, poder utilizarse para varios.&lt;br. Puede dedicarse en exclusiva a un lenguaje de programación o bien, poder utilizarse para varios..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Entorno de desarrollo integrado" data-src="https://i2.wp.com/image.slidesharecdn.com/entornodedesarrollointegrado-171013213235/95/entorno-de-desarrollo-integrado-2-638.jpg?cb=1507930504" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bluej características bluej fue desarrollado para apoyar la enseñanza y el aprendizaje de la programación orientada a objetos, y como resultado, su diseño difiere de otros entornos de desarrollo. Añadiremos un nombre descriptivo y en location indicaremos la siguiente url: Es mejor para programadores que trabajan a título individual o tienen una configuración de desarrollo de software a pequeña escala..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Administración de Base de Datos / Lenguajes de Interfaz agosto 2016" data-src="https://i2.wp.com/1.bp.blogspot.com/-a8RemT9Orb0/V79lLPv6MMI/AAAAAAAAACg/PF-SZiFzkXQXGbtOCDKYK2jPYmA5YvjcACLcB/s1600/entorno-de-desarrollo-integrado-de-visual-basic-net-7-638.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: guillermomirelesg.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un ide es un entorno de programación que ha sido empaquetado como un programa de aplicación, es decir, consiste. Puede dedicarse en exclusiva a un solo lenguaje de programación o bien puede utilizarse para varios. Bluej es uno de los ide más populares para programadores java. Qué necesita un buen ide. Semestre qué es un ide?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Los principales entornos de desarrollo (IDEs)" data-src="https://i2.wp.com/www.cursosgis.com/wp-content/uploads/2017/06/javascript_ide_2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.cursosgis.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Geany es un editor de código que posee características básicas de un entorno de desarrollo integrado (ide). Así que le invitamos que se quede. Un entorno de desarrollo integrado, también conocido por sus siglas ide, puede considerarse como un entorno digital utilizado para desarrollar software, juegos o cualquier cosa relacionada con la codificación. Vim es una versión mejorada del editor.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="22 Entornos de Desarrollo Integrado más Populares 2020" data-src="https://i2.wp.com/www.diarlu.com/wp-content/uploads/2019/04/Entornos-Desarrollo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.diarlu.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En esta unidad aprenderemos a: Un ide normalmente contiene un editor de código, un compilador o intérprete y un depurador, a los que se accede a través de una única interfaz gráfica de usuario (gui). Los ide brindan muchas funcionalidades esenciales. Puede contener editores de código fuente, herramientas de automatización de compilación, depuradores interactivos, sistemas de control de fuente y.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Diferencias Entre IDE&#039;s Y Editores De Texto, A La Hora De Escribir" data-src="https://i2.wp.com/2.bp.blogspot.com/-1ZaNkx1doIc/WGa3-2X04CI/AAAAAAAAocU/qq88p0DcB98oHP6a5vbjSfX18IsIzqK9ACLcB/s1600/2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: crazycuestionct.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un entorno de desarrollo integrado [1] [2] o entorno de desarrollo interactivo, en inglés integrated development environment (ide), es una aplicación informática que proporciona servicios integrales para facilitarle al desarrollador o programador el desarrollo de software. Un ide es un entorno de programación que ha sido empaquetado como un programa de aplicación, es decir, consiste. Un entorno de desarrollo integrado.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un IDE? entorno de desarrollo integrado Tecnología Android" data-src="https://i2.wp.com/tecnologiandroid.com/wp-content/uploads/2021/04/IDE-para-diferentes-casos-de-uso-630x420.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tecnologiandroid.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En el mundo de la informática, y en especial en el de la programación se habla mucho sobre los entornos de desarrollo integrado (ide por sus siglas en inglés). Vim es una versión mejorada del editor de código vi, para los principales sistemas operativos, siendo particularmente popular entre los usuarios de linux. Un entorno de desarrollo integrado, llamado también ide.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-and-history-of-name-humaira.html" class="be-post-title">
+				 <h6>meaning and history of name humaira </h6>
+                </a>
+                <a href="meaning-and-history-of-name-humaira.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20and%20history%20of%20name%20humaira&amp;w=50&amp;h=50&amp;c=7" alt="meaning and history of name humaira">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-human-being-in-marathi.html" class="be-post-title">
+				 <h6>meaning of human being in marathi </h6>
+                </a>
+                <a href="meaning-of-human-being-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20human%20being%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="meaning of human being in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="internship-meaning.html" class="be-post-title">
+				 <h6>internship meaning </h6>
+                </a>
+                <a href="internship-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=internship%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="internship meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bengali-movie-rating.html" class="be-post-title">
+				 <h6>bengali movie rating </h6>
+                </a>
+                <a href="bengali-movie-rating.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bengali%20movie%20rating&amp;w=50&amp;h=50&amp;c=7" alt="bengali movie rating">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aap-kaise-hai-meaning-in-tamil.html" class="be-post-title">
+				 <h6>aap kaise hai meaning in tamil </h6>
+                </a>
+                <a href="aap-kaise-hai-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aap%20kaise%20hai%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="aap kaise hai meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="5-fun-facts-about-kenya.html" class="be-post-title">
+				 <h6>5 fun facts about kenya </h6>
+                </a>
+                <a href="5-fun-facts-about-kenya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=5%20fun%20facts%20about%20kenya&amp;w=50&amp;h=50&amp;c=7" alt="5 fun facts about kenya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="no-one-can-meaning-in-malayalam.html" class="be-post-title">
+				 <h6>no one can meaning in malayalam </h6>
+                </a>
+                <a href="no-one-can-meaning-in-malayalam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=no%20one%20can%20meaning%20in%20malayalam&amp;w=50&amp;h=50&amp;c=7" alt="no one can meaning in malayalam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="müfred-beyit-ne-demek.html" class="be-post-title">
+				 <h6>müfred beyit ne demek </h6>
+                </a>
+                <a href="müfred-beyit-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=m%C3%BCfred%20beyit%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="müfred beyit ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-arabic-word-ala.html" class="be-post-title">
+				 <h6>meaning of arabic word ala </h6>
+                </a>
+                <a href="meaning-of-arabic-word-ala.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20arabic%20word%20ala&amp;w=50&amp;h=50&amp;c=7" alt="meaning of arabic word ala">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="female-dog-meaning-word.html" class="be-post-title">
+				 <h6>female dog meaning word </h6>
+                </a>
+                <a href="female-dog-meaning-word.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=female%20dog%20meaning%20word&amp;w=50&amp;h=50&amp;c=7" alt="female dog meaning word">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

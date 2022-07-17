@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Es Un Entorno Virtual at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Que Es Un Entorno Virtual",
+  "datePublished": "2022-04-15T23:20:30Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Es Un Entorno Virtual at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Es Un Entorno Virtual</h2>
+    <p><strong>Que Es Un Entorno Virtual</strong>. En este sentido, lo más común es la enseñanza que se da entre profesores y alumnos, pero también son un medio para. Este tipo de escenarios es propicio para que las personas interactúen sin tener presencia física (como se haría en un seminario presencial por ejemplo).</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual" alt="Entorno virtual de aprendizaje" />
+        <br>
+        <figcaption>Entorno virtual de aprendizaje from www.slideshare.net</figcaption>
+    </figure>
+        <p>
+        Son aquellos ambientes de aprendizaje que se diseñan o implementan en las organizaciones y en las instituciones educativas, apoyados con las tic. Cuentan con recursos que facilitan el seguimiento y la evaluación de estudiantes. Un entorno virtual de aprendizaje (eva) es un espacio educativo que no cuenta con una sede física, son que se aloja en la web.
+    </p>
+    <h3>Entorno virtual de aprendizaje</h3>
+    <p>El entorno virtual es un concepto que evolucionó del término realidad virtual, que fue introducido por los pioneros myron krueger y jaron lanier. Este tipo de escenarios es propicio para que las personas interactúen sin tener presencia física (como se haría en un seminario presencial por ejemplo). Una vez instalada, podréis lanzar el siguiente comando para crear el entorno virtual: Ya sea leer documentos, hacer ejercicios, trabajar en equipo, preguntas a los profesores…todo esto de forma digital.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un Entorno Virtual? Aulas virtuales" data-src="https://i2.wp.com/static.s123-cdn-static.com/uploads/2187206/2000_5cef18248f680.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 5cdaf87ed8b0c.site123.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El entorno virtual es un concepto que evolucionó del término realidad virtual, que fue introducido por los pioneros myron krueger y jaron lanier. Este tipo de escenarios es propicio para que las personas interactúen sin tener presencia física (como se haría en un seminario presencial por ejemplo). Modelos pedagógicos definicion de un entorno virtual entorno virtual caracteristicas generales ejemplos de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un Entorno Virtual de Aprendizaje? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/_nbpm-1SnVo/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hemos de tener en cuenta que la parte más importante del eva es la que hace referencia al aula. Un entorno virtual de aprendizaje (eva) es un espacio con accesos restringidos, concebido y diseñado para que las personas que accedan a él desarrollen procesos de incorporación de habilidades y saberes, mediante sistemas telemáticos. Un entorno virtual de aprendizaje es un.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Entorno virtual de aprendizaje" data-src="https://i2.wp.com/image.slidesharecdn.com/entornovirtualdeaprendizaje-160304144248/95/entorno-virtual-de-aprendizaje-2-638.jpg?cb=1457102612" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En este sentido, lo más común es la enseñanza que se da entre profesores y alumnos, pero también son un medio para. Asimismo, es posible añadir recursos a medida que la actividad crezca. La idea fundamental que originó la realidad virtual fue, de hecho, introducida por ivan sutherland, en un artículo de 1965, the ultimate display, ​ en el que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qué es un entorno virtual de aprendizaje" data-src="https://i2.wp.com/image.slidesharecdn.com/quesunentornovirtualdeaprendizaje-171002001033/95/qu-es-un-entorno-virtual-de-aprendizaje-26-638.jpg?cb=1506903045" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En ambos casos, creará una carpeta en el directorio raíz de vuestro proyecto llamada env. Qué es y para qué sirve. El acceso a estas plataformas se da dentro de un entorno seguro. La ventaja de un entorno virtual es que permite utilizar con mayor eficacia los recursos fisicos, evitando sobrecostos en su capacidad operativa. Una vez que estemos ubicados.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qué es un Entorno Virtual de Aprendizaje (EVA) Desarrollo de entornos" data-src="https://i0.wp.com/www.aula1.com/wp-content/uploads/queesun-entornovirtualdeaprendizaje.png?resize=600%2C375" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogeducativodemariaangelasangavilca.wordpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una vez instalada, podréis lanzar el siguiente comando para crear el entorno virtual: Modelos pedagógicos definicion de un entorno virtual entorno virtual caracteristicas generales ejemplos de plataformas libres y comerciales es un entorno o sitio de aprendizaje que tiene como función de. Una vez que has activado el entorno virtual, este proporciona la facilidad de congelar el estado actual de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un Entorno Virtual de Aprendizaje?" data-src="https://i2.wp.com/image.slidesharecdn.com/eva-141025130104-conversion-gate02/95/qu-es-un-entorno-virtual-de-aprendizaje-7-638.jpg?cb=1414242171" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Esta carpeta contiene los directorios para instalar módulos y ejecutables de python. Los estudiantes reciben sus devoluciones. Un entorno virtual de aprendizaje (eva), también conocido como ambiente virtual de aprendizaje (ava), 1 o virtual learning environment (vle) en inglés, 2 es una plataforma web utilizada para administrar, distribuir, realizar las tareas de seguimiento y evaluación de todas aquellas actividades involucradas.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Entorno Virtual de Aprendizaje by Bit4learn" data-src="https://i2.wp.com/bit4learn.com/es/wp-content/uploads/2019/06/Diseño-sin-título.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bit4learn.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Qué es y para qué sirve. El éxito en el diseño e implementación de estos entornos en instituciones educativas exige una actitud abierta al cambio de papel de los integrantes de la comunidad; Son aquellos ambientes de aprendizaje que se diseñan o implementan en las organizaciones y en las instituciones educativas, apoyados con las tic. Y es que, como su.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Entorno virtual del aprendizaje (eva)" data-src="https://i2.wp.com/image.slidesharecdn.com/entornovirtualdelaprendizajeeva-161023231351/95/entorno-virtual-del-aprendizaje-eva-6-638.jpg?cb=1477264442" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">El acceso a estas plataformas se da dentro de un entorno seguro. La ventaja de un entorno virtual es que permite utilizar con mayor eficacia los recursos fisicos, evitando sobrecostos en su capacidad operativa. Es un espacio de enseñanza, aprendizaje y de comunicación. Un entorno virtual es un directorio que contiene una instalación de python de una versión en particular,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Entorno virtual de aprendizaje Tecnologia de Educacion Virtual RP" data-src="https://i2.wp.com/sites.google.com/site/tecnologiadeeducacionvirtualrp/_/rsrc/1465828768097/entorno-virtual-de-aprendizaje-4/entorno-virtual-aprendizaje-ventajas-y-desventajas-2-638.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sites.google.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">La idea es trabajar con una metodología que se asimile a las clases presenciales pero donde cada alumno pueda. Para crear un entorno virtual utiliza: Es un espacio de enseñanza, aprendizaje y de comunicación. En este sentido, lo más común es la enseñanza que se da entre profesores y alumnos, pero también son un medio para. Un entorno virtual es.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un Entorno Virtual? Aulas virtuales" data-src="https://i2.wp.com/cdn-cms.f-static.net/uploads/2187206/2000_5cef183e8be27.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 5cdaf87ed8b0c.site123.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En él se aloja un conjunto de herramientas diseñadas para facilitar un aprendizaje y una interacción didáctica similares a los que ocurrirían en el espacio físico de la institución educativa. Un entorno virtual proporciona un método más sencillo para dar seguimiento a los paquetes instalados en el proyecto. Trabajar en un entorno activo y colaborativo, simulando de esta forma a.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-to-newton-metres-measure.html" class="be-post-title">
+				 <h6>what to newton metres measure </h6>
+                </a>
+                <a href="what-to-newton-metres-measure.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20to%20newton%20metres%20measure&amp;w=50&amp;h=50&amp;c=7" alt="what to newton metres measure">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="vanity-url-what-is-it.html" class="be-post-title">
+				 <h6>vanity url what is it </h6>
+                </a>
+                <a href="vanity-url-what-is-it.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=vanity%20url%20what%20is%20it&amp;w=50&amp;h=50&amp;c=7" alt="vanity url what is it">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="summer-squash-meaning-in-tamil.html" class="be-post-title">
+				 <h6>summer squash meaning in tamil </h6>
+                </a>
+                <a href="summer-squash-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=summer%20squash%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="summer squash meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-pseudonym-meaning.html" class="be-post-title">
+				 <h6>what does pseudonym meaning </h6>
+                </a>
+                <a href="what-does-pseudonym-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20pseudonym%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="what does pseudonym meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aap-kaise-ho-translate-in-tamil.html" class="be-post-title">
+				 <h6>aap kaise ho translate in tamil </h6>
+                </a>
+                <a href="aap-kaise-ho-translate-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aap%20kaise%20ho%20translate%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="aap kaise ho translate in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-kannada-word-inchara.html" class="be-post-title">
+				 <h6>what is the meaning of kannada word inchara </h6>
+                </a>
+                <a href="what-is-the-meaning-of-kannada-word-inchara.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20kannada%20word%20inchara&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of kannada word inchara">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="common-nicknames-for-charlotte.html" class="be-post-title">
+				 <h6>common nicknames for charlotte </h6>
+                </a>
+                <a href="common-nicknames-for-charlotte.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=common%20nicknames%20for%20charlotte&amp;w=50&amp;h=50&amp;c=7" alt="common nicknames for charlotte">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-name-aiman-in-islam.html" class="be-post-title">
+				 <h6>meaning of name aiman in islam </h6>
+                </a>
+                <a href="meaning-of-name-aiman-in-islam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20name%20aiman%20in%20islam&amp;w=50&amp;h=50&amp;c=7" alt="meaning of name aiman in islam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-does-homework-affect-students-positively.html" class="be-post-title">
+				 <h6>how does homework affect students positively </h6>
+                </a>
+                <a href="how-does-homework-affect-students-positively.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20does%20homework%20affect%20students%20positively&amp;w=50&amp;h=50&amp;c=7" alt="how does homework affect students positively">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-newton-hearing-at-magistrates-court.html" class="be-post-title">
+				 <h6>what is a newton hearing at magistrates court </h6>
+                </a>
+                <a href="what-is-a-newton-hearing-at-magistrates-court.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20newton%20hearing%20at%20magistrates%20court&amp;w=50&amp;h=50&amp;c=7" alt="what is a newton hearing at magistrates court">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

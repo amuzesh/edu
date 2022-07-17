@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Purnima Kab Se Kab Tak Rahega at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Purnima Kab Se Kab Tak Rahega",
+  "datePublished": "2022-07-04T13:04:31Z",
+  "image": "https://tse1.mm.bing.net/th?q=purnima%20kab%20se%20kab%20tak%20rahega",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=purnima%20kab%20se%20kab%20tak%20rahega&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=purnima%20kab%20se%20kab%20tak%20rahega" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=purnima%20kab%20se%20kab%20tak%20rahega" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Purnima Kab Se Kab Tak Rahega at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Purnima Kab Se Kab Tak Rahega</h2>
+    <p><strong>Purnima Kab Se Kab Tak Rahega</strong>. Paush month 2021 in hindi; Kartik purnima 2020 date &amp; time, vrat, puja vidhi, samagri, chandra grahan 2020:</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=purnima%20kab%20se%20kab%20tak%20rahega" alt="Millind Gaba Meri Baari Song Lyrics videoNew Hindi Song 2019" />
+        <br>
+        <figcaption>Millind Gaba Meri Baari Song Lyrics videoNew Hindi Song 2019 from lyricsmb.com</figcaption>
+    </figure>
+        <p>
+        Contextual translation of kab se kab tak wfh rahega into english. Paush purnima 2021 kab hai; By when, how can i, office to buy, how long dose, kab tak mi gi.
+    </p>
+    <h3>Millind Gaba Meri Baari Song Lyrics videoNew Hindi Song 2019</h3>
+    <p>5 ⭐ classificação mais baixa: कार्तिक पूर्णिमा इस बार 30 नवंबर को है। इस बार कार्तिक मास की पूर्णिमा पर चंद्र ग्रहण भी लगने वाला है, लेकिन यह भारत में उतना. Muhurat, a most auspicious time to start a new activity see shubh muhurat, aaj ka muhurat, hindu calendar in hindi, hindu panchang. November 24, 2015 at 11:40 pm.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="चंद्र ग्रहण कब लगेगा 2021 Time / solar and lunar eclipse in 2021 in" data-src="https://i2.wp.com/www.jagranimages.com/images/newimg/10052021/10_05_2021-muzaffarpur_chandra_grahan_21631311_14500906.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: oiakajanahab.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Puchna office kab jana hai. Mausam kab tak kharab rahega: हिंदू कैलेंडर पूर्णिमा (purnima) के अनुसार वह तिथि होती है जिसमें चंद्रमा पूर्ण आकार मे दिखाई देता है वह तिथि पूर्णिमा कहलाती है। आईये जानते हैं साल 2022. हिंदू धर्म में कार्तिक मास की पूर्णिमा का विशेष महत्व होता. Monsoon arrives in india approximately 6 days late monsoon coming date.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Surya Grahan Kab Lagega budh purnima shubh muhurat puja vidhi chandra" data-src="https://i2.wp.com/i.ytimg.com/vi/UbsjqKbNlpc/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: layeredhairs.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Please time to batao kitne time se kab tak. ट्रेन कब तक बंद रहेगा यह कब तक चालू होगा? 18k views | mathura, mathura | jun 21, 2020. होलाष्टक 2022 में कब से कब तक (holashtak 2022 start date kab se kab tak hai) फाल्गुन मास की पूर्णिमा के दिन होलिका दहन किया जायेगा होली पर्व का आगमन होलाष्टक के.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Surya Grahan Kab Lagega budh purnima shubh muhurat puja vidhi chandra" data-src="https://i2.wp.com/spiderimg.amarujala.com/assets/images/2020/06/20/750x506/solar-eclipse_1592651773.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: layeredhairs.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kab se kab tak rahega sury giran or kaha kaha dikhega sury giran #mathura. Apart from being the day when the moon shimmers in the sky in its full glory, the shravana purnima is also significant because, on this day, people celebrate raksha bandhan, popularly known as rakhi. School kab khulega | school kab tak band rahega | college kab.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Millind Gaba Meri Baari Song Lyrics videoNew Hindi Song 2019" data-src="https://i2.wp.com/lyricsmb.com/wp-content/uploads/2019/12/1576926176_maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lyricsmb.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Know about इंटरनेट सेवाएं in hindi on ndtv.in, explore इंटरनेट सेवाएं with articles, photos, video, न्यूज़, ताज़ा ख़बर in hindi with ndtv india Know about mausam kab tak kharab rahega in hindi on. Tara kab se doob rha hai in july 2019 aur kab tak dooba rahega. Monsoon arrives in india approximately 6 days late monsoon coming date in june.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="चंद्र ग्रहण कब लगेगा 2021 Time / solar and lunar eclipse in 2021 in" data-src="https://i2.wp.com/i.ytimg.com/vi/n_fMqd5Kop0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: oiakajanahab.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">गर्मी कब से कब तक होती है? Corresponde aos resultados da pesquisa: Muhurat, a most auspicious time to start a new activity see shubh muhurat, aaj ka muhurat, hindu calendar in hindi, hindu panchang. 18k views | mathura, mathura | jun 21, 2020. ट्रेन कब तक बंद रहेगा यह कब तक चालू होगा?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Paush Purnima Vrat Kab Hai? Paush Purnima 2020 Date, Time, Purnima" data-src="https://i2.wp.com/static.toiimg.com/photo/msid-73170838/73170838.jpg?1913296" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">2017 or 2018 me surya or chandra grahan kab or kitne baje se kitne baje time tak rahega. In panchang day starts and ends with sunrise. By when, how can i, office to buy, how long dose, kab tak mi gi. Artigos sobre mausam kab tak kharab rahega hindi news, mausam. Know about इंटरनेट सेवाएं in hindi on ndtv.in, explore.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Surya Grahan Kab Lagega budh purnima shubh muhurat puja vidhi chandra" data-src="https://i2.wp.com/gumlet.assettype.com/Prabhatkhabar/2021-03/e7b1d9e0-e562-4a0c-b5b3-c22edca6eaf5/Aaj_Ka_Mesh_Rashifal__Aries_Horoscope.jpg?rect=0%2C28%2C1280%2C672&amp;w=1200&amp;auto=format%2Ccompress&amp;ogImage=true" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: layeredhairs.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">ट्रेन कब तक बंद रहेगा यह कब तक चालू होगा? Mausam kab tak kharab rahega: 30 नवंबर को कार्तिक मास की पूर्णिमा है और इस तिथि पर देव दीपावली का पर्व मनाया जाता है. Next purnima vrat date in 2022: Corresponde aos resultados da pesquisa:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Surya Grahan Kab Lagega budh purnima shubh muhurat puja vidhi chandra" data-src="https://i2.wp.com/gumlet.assettype.com/Prabhatkhabar/2021-03/77c24d45-2e3c-49d9-9c95-9338b12e448e/Aaj_Ka_Singh_Rashifal__Leo_Horoscope.jpg?rect=0%2C48%2C1280%2C672&amp;w=1200&amp;auto=format%2Ccompress&amp;ogImage=true" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: layeredhairs.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Chandr grahan kb pdega please btao. 1 ⭐ ( 44918 votos ) classificação mais alta: 18k views | mathura, mathura | jun 21, 2020. Mausam kab tak kharab rahega: Puchna office kab jana hai aj.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Surya Grahan Kab Lagega budh purnima shubh muhurat puja vidhi chandra" data-src="https://i2.wp.com/i.ytimg.com/vi/ylgjnC93oh4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: layeredhairs.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">November 24, 2015 at 11:40 pm. Full details in hindi | analysis by aashif sabrihello friends aap sabhi ka 1 bar firse swagat hai aapke apne youtube cha. Sharad purnima 2020 date time and significance in hindi इस बार शरद पूर्णिमा अक्तूबर माह में 30 तारीख को पड़ रही है। शरद पूर्णिमा से ही शरद ऋतु का आगमन होता है।.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Surya Grahan Kab Lagega budh purnima shubh muhurat puja vidhi chandra" data-src="https://i2.wp.com/i.ytimg.com/vi/CX70Y2tyX8w/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: layeredhairs.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">कार्तिक पूर्णिमा की शुरुआत 29 नवंबर को दोपहर 12 बजकर 47 मिनट से ही हो जाएगी जो अगले दिन यानी 30 नवंबर को दोपहर 2 बजकर 59 मिनट तक. हिंदू धर्म में कार्तिक मास की पूर्णिमा का विशेष महत्व होता. Chandr grahan kb pdega please btao. Train kab tak band rahega yah kab tak chaalu hoga? September 28, 2015 at.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="la-perle-restaurant-reviews.html" class="be-post-title">
+				 <h6>la perle restaurant reviews </h6>
+                </a>
+                <a href="la-perle-restaurant-reviews.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=la%20perle%20restaurant%20reviews&amp;w=50&amp;h=50&amp;c=7" alt="la perle restaurant reviews">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="complementary-angles-and-supplementary-angles-worksheet.html" class="be-post-title">
+				 <h6>complementary angles and supplementary angles worksheet </h6>
+                </a>
+                <a href="complementary-angles-and-supplementary-angles-worksheet.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=complementary%20angles%20and%20supplementary%20angles%20worksheet&amp;w=50&amp;h=50&amp;c=7" alt="complementary angles and supplementary angles worksheet">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="5-sentences-about-family-in-english.html" class="be-post-title">
+				 <h6>5 sentences about family in english </h6>
+                </a>
+                <a href="5-sentences-about-family-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=5%20sentences%20about%20family%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="5 sentences about family in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aapko-kya-chahiye-hai-meaning-in-english.html" class="be-post-title">
+				 <h6>aapko kya chahiye hai meaning in english </h6>
+                </a>
+                <a href="aapko-kya-chahiye-hai-meaning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aapko%20kya%20chahiye%20hai%20meaning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="aapko kya chahiye hai meaning in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="korelasyon-nedir-psikoloji.html" class="be-post-title">
+				 <h6>korelasyon nedir psikoloji </h6>
+                </a>
+                <a href="korelasyon-nedir-psikoloji.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=korelasyon%20nedir%20psikoloji&amp;w=50&amp;h=50&amp;c=7" alt="korelasyon nedir psikoloji">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bitter-gourd-gujarati-recipe.html" class="be-post-title">
+				 <h6>bitter gourd gujarati recipe </h6>
+                </a>
+                <a href="bitter-gourd-gujarati-recipe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bitter%20gourd%20gujarati%20recipe&amp;w=50&amp;h=50&amp;c=7" alt="bitter gourd gujarati recipe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kannada-words-in-english-translation.html" class="be-post-title">
+				 <h6>kannada words in english translation </h6>
+                </a>
+                <a href="kannada-words-in-english-translation.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kannada%20words%20in%20english%20translation&amp;w=50&amp;h=50&amp;c=7" alt="kannada words in english translation">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komodo-termasuk-tipe-fauna-indonesia-bagian.html" class="be-post-title">
+				 <h6>komodo termasuk tipe fauna indonesia bagian </h6>
+                </a>
+                <a href="komodo-termasuk-tipe-fauna-indonesia-bagian.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komodo%20termasuk%20tipe%20fauna%20indonesia%20bagian&amp;w=50&amp;h=50&amp;c=7" alt="komodo termasuk tipe fauna indonesia bagian">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-the-name-shivani-mean.html" class="be-post-title">
+				 <h6>what does the name shivani mean </h6>
+                </a>
+                <a href="what-does-the-name-shivani-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20the%20name%20shivani%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does the name shivani mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="imparare-italiano-meaning.html" class="be-post-title">
+				 <h6>imparare italiano meaning </h6>
+                </a>
+                <a href="imparare-italiano-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=imparare%20italiano%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="imparare italiano meaning">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

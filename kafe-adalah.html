@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kafe Adalah at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Kafe Adalah",
+  "datePublished": "2022-04-06T22:30:43Z",
+  "image": "https://tse1.mm.bing.net/th?q=kafe%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kafe%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kafe%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kafe%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kafe Adalah at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kafe Adalah</h2>
+    <p><strong>Kafe Adalah</strong>. Di beberapa negara, kafe dapat. Konsep yang diusung kafe adalah lebih elegan dan lebih bergengsi.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kafe%20adalah" alt="Doyaniku Kafe Betawi" />
+        <br>
+        <figcaption>Doyaniku Kafe Betawi from doyaniku.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Dengan desain interior yang sederhana dan merakyat, warung kopi mudah dikenali oleh masyarakat. Di beberapa negara, kafe dapat. Misalnya yang dicari adalah air, minyak, larut, maka hasil pencarian yang akan ditampilkan adalah.
+    </p>
+    <h3>Doyaniku Kafe Betawi</h3>
+    <p>Namanya adalah manuscript writing cafe yang terletak di koenji, tokyo. Dine in merupakan istilah yang cukup. Ka·fe /kafé/ n 1 tempat minum kopi yg pengunjungnya dihibur dng musik; Warung kopi cenderung mengambil konsep yang merakyat.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lima Rooftop Kafe di Jakarta, Sensasi Menyantap Makanan di Ketinggian" data-src="https://i2.wp.com/petualang.travelingyuk.com/uploads/2018/03/5-Rooftop-Kafe-di-Jakarta-Sensasi-Menyatap-Makanan-di-Ketinggian-cover.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: travelingyuk.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pengertian kafe adalah suatu tipe restoran yang biasanya menyediakan tempat duduk di dalam dan di luar ruangan. Tak hanya menikmati sajian kuliner, pengunjung bisa menikmati langit kota jakarta barat. Dalam kamus besar bahasa indonesia pengertian kafe adalah: Kafe dari ( bahasa prancis: Café) secara harfiah adalah tempat ( minuman) kopi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cafe Betawi Balikpapan Cafe Betawi adalah salah satu tenan… Flickr" data-src="https://i2.wp.com/live.staticflickr.com/4063/4332464836_5df5a4ce46_b.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.flickr.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Warung kopi cenderung mengambil konsep yang merakyat. Pembahasan utama di artikel ini adalah mengenai perbedaan cafe dan resto yang kamu harus tahu, agar kamu tidak salah dalam memilih tempat nongkrong yang sesuai dengan pribadi kamu dan teman tongkrongan kamu. Namanya adalah manuscript writing cafe yang terletak di koenji, tokyo. Guna mendapatkan menu spesial cafe, pemilik cafe biasanya mempekerjakan satu, atau.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Empat Kafe Instagramable Padang, Nongkrong Asyik di Kota Tercinta" data-src="https://i2.wp.com/storage.travelingyuk.com/unggah/2019/09/pavilon_BQS.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: travelingyuk.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kalau cafe tidak mengubah menu makan, bistro selalu mengubah menunya baik untuk siang dan malam, dan selalu menginformasikan menu yang ada pada hari tersebut dan pada musim tertentu.biasanya bistro dimiliki oleh seorang chef, sehingga suasana yang. Arti kata, ejaan, dan contoh penggunaan kata kafe menurut kamus besar bahasa indonesia (kbbi). Terdapat 3 arti kata &#039;kafe&#039; di kbbi. Pengertian kafe adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="5 Kafe Cantik, &#039;Instagrammable&#039; Sekitar Kuala Lumpur Yang Korang Boleh Cuba" data-src="https://i2.wp.com/media.ohbulan.com/2020/11/IMG-20191003-WA0045.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ohbulan.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dine in merupakan istilah yang cukup. Sinonim kata kafe adalah pub, bar, kedai, kedai minum, bangsal. Pembahasan utama di artikel ini adalah mengenai perbedaan cafe dan resto yang kamu harus tahu, agar kamu tidak salah dalam memilih tempat nongkrong yang sesuai dengan pribadi kamu dan teman tongkrongan kamu. Hal ini berbeda dibanding kafe atau coffee shop. Namun ternyata, kelima tempat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jika 11 Trik Ini Kamu Terapkan, Punya Kafe dengan Bujet Paspasan Bukan" data-src="https://i2.wp.com/cdn-image.hipwee.com/wp-content/uploads/2015/05/kafe-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hipwee.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pilihan makananya terbatas dan tidak menjual minuman berakhohol. Cafe memiliki pilhan makanan yang sangat terbatas dan tidak menjual minuman yang beralkohol tinggi, tetapi tersedia minuman. Terdapat 28 sinonim kata &#039;kafe&#039; di tesaurus bahasa indonesia. Banyak kata sekaligus, sistem hanya akan mencari kata yang terdiri dari 4 huruf atau lebih. Di beberapa negara, kafe dapat.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Suka roti putih datar dan kayu manis? Berikut adalah 8 kafe Edinburgh" data-src="https://i2.wp.com/langled.com/wp-content/uploads/2021/04/Suka-roti-putih-datar-dan-kayu-manis-Berikut-adalah-8-1024x684.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: langled.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kafe merupakan tempat yang cocok untuk bersantai, melepas kepenatan, serta bertemu dengan kerabat. Arti kata kafe adalah tempat minum kopi yang pengunjungnya dihibur dengan musik. Cafe memiliki pilhan makanan yang sangat terbatas dan tidak menjual minuman yang beralkohol tinggi, tetapi tersedia minuman. Horeca (hotel, restoran, dan cafe) adalah sektor industri yang bergerak dalam bidang makanan dan minuman. Ka·fe /kafé/ n.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fotogenik, KafeKafe untuk Ngopi ini Ada di Semarang Lho!" data-src="https://i2.wp.com/media.travelingyuk.com/wp-content/uploads/2017/02/kofinary.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: travelingyuk.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tugas seorang chef juga bukan hanya memasak saja, dia juga harus menjaga kualitas bahan baku agar selalu segar. Kafe termasuk tipe restoran namun lebih mengutamakan suasana rileks, hiburan dan kenyamanan pengunjung sehingga menyediakan tempat duduk yang nyaman dan alunan musik. Dengan desain interior yang sederhana dan merakyat, warung kopi mudah dikenali oleh masyarakat. Dalam kamus besar bahasa indonesia pengertian kafe.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kafe Fikcles Adalah Kafe Terbaik di TTDI, KL" data-src="https://i2.wp.com/3.bp.blogspot.com/-Eg3f3o1g-LQ/VjjhaDgt2UI/AAAAAAAASyY/j_hzBj-WlKU/s1600/fikcles.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: novaleeza.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Istilah kafe (café) berasal dari kata coffee yang berarti kopi. Guna mendapatkan menu spesial cafe, pemilik cafe biasanya mempekerjakan satu, atau bahkan lebih, chef berpengalaman. Soal apa saja tugas dan tanggung jawab kasir cafe yang utama adalah sebagai berikut ini. Cafe atau cape adalah suatu restoran kecil yang berada di luar hotel. Artikel ini disusun untuk memahami dan mengenal lebih.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7 Kafe Moden Paling &#039;Most Wanted&#039; Di Seremban Yang Wajib Waghih Poie" data-src="https://i2.wp.com/images.says.com/uploads/story/cover_image/24432/thumb_3cf8.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: says.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kafe atau kafetaria identik dengan kopi dan makanan ringan pendamping seperti roti, pie, es krim, kentang goreng, atau pasta. Arti kata, ejaan, dan contoh penggunaan kata kafe menurut kamus besar bahasa indonesia (kbbi). Inilah rangkuman definisi kafe berdasarkan kamus bahasa indonesia dan berbagai referensi lainnya. Menu di kafe juga cenderung sama setiap harinya dan jarang berganti. Terdapat 3 arti kata.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Doyaniku Kafe Betawi" data-src="https://i2.wp.com/2.bp.blogspot.com/-xoS0RCpToiM/UCO6USmzE5I/AAAAAAAAAJw/NV7CCKtAZMs/w1200-h630-p-k-no-nu/Untitled-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: doyaniku.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam kamus besar bahasa indonesia pengertian kafe adalah: Banyak kata sekaligus, sistem hanya akan mencari kata yang terdiri dari 4 huruf atau lebih. Inilah rangkuman definisi kafe berdasarkan kamus bahasa indonesia dan berbagai referensi lainnya. Soal apa saja tugas dan tanggung jawab kasir cafe yang utama adalah sebagai berikut ini. Dine in merupakan istilah yang cukup.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-newton-trial.html" class="be-post-title">
+				 <h6>what is a newton trial </h6>
+                </a>
+                <a href="what-is-a-newton-trial.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20newton%20trial&amp;w=50&amp;h=50&amp;c=7" alt="what is a newton trial">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komodo-adalah-contoh-hewan-bertipe.html" class="be-post-title">
+				 <h6>komodo adalah contoh hewan bertipe </h6>
+                </a>
+                <a href="komodo-adalah-contoh-hewan-bertipe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komodo%20adalah%20contoh%20hewan%20bertipe&amp;w=50&amp;h=50&amp;c=7" alt="komodo adalah contoh hewan bertipe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="expression-quel-homme-en-espagnol.html" class="be-post-title">
+				 <h6>expression quel homme en espagnol </h6>
+                </a>
+                <a href="expression-quel-homme-en-espagnol.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=expression%20quel%20homme%20en%20espagnol&amp;w=50&amp;h=50&amp;c=7" alt="expression quel homme en espagnol">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-hota-in-spanish.html" class="be-post-title">
+				 <h6>what is hota in spanish </h6>
+                </a>
+                <a href="what-is-hota-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20hota%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what is hota in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komodo-dragon-termasuk-hewan-apa.html" class="be-post-title">
+				 <h6>komodo dragon termasuk hewan apa </h6>
+                </a>
+                <a href="komodo-dragon-termasuk-hewan-apa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komodo%20dragon%20termasuk%20hewan%20apa&amp;w=50&amp;h=50&amp;c=7" alt="komodo dragon termasuk hewan apa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-full-meaning-of-fate.html" class="be-post-title">
+				 <h6>what is the full meaning of fate </h6>
+                </a>
+                <a href="what-is-the-full-meaning-of-fate.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20full%20meaning%20of%20fate&amp;w=50&amp;h=50&amp;c=7" alt="what is the full meaning of fate">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-salma-an-arabic-name.html" class="be-post-title">
+				 <h6>is salma an arabic name </h6>
+                </a>
+                <a href="is-salma-an-arabic-name.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20salma%20an%20arabic%20name&amp;w=50&amp;h=50&amp;c=7" alt="is salma an arabic name">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komodo-dragon-facts-wiki.html" class="be-post-title">
+				 <h6>komodo dragon facts wiki </h6>
+                </a>
+                <a href="komodo-dragon-facts-wiki.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komodo%20dragon%20facts%20wiki&amp;w=50&amp;h=50&amp;c=7" alt="komodo dragon facts wiki">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kannada-quotes-in-english-words.html" class="be-post-title">
+				 <h6>kannada quotes in english words </h6>
+                </a>
+                <a href="kannada-quotes-in-english-words.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kannada%20quotes%20in%20english%20words&amp;w=50&amp;h=50&amp;c=7" alt="kannada quotes in english words">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kab-aaya-tha-meaning-in-english.html" class="be-post-title">
+				 <h6>kab aaya tha meaning in english </h6>
+                </a>
+                <a href="kab-aaya-tha-meaning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kab%20aaya%20tha%20meaning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="kab aaya tha meaning in english">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

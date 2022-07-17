@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Ka Ka Shabd at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Ka Ka Shabd",
+  "datePublished": "2022-06-15T19:34:29Z",
+  "image": "https://tse1.mm.bing.net/th?q=ka%20ka%20shabd",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=ka%20ka%20shabd&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ka%20ka%20shabd" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ka%20ka%20shabd" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Ka Ka Shabd at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Ka Ka Shabd</h2>
+    <p><strong>Ka Ka Shabd</strong>. Diy paper diya for diwali | art and craft ideas for diwali decoration lakshmi puja with sixteen steps which is done during diwali puja and dhan teras puja is known as shodashopachara lakshmi puja vidhi is yojna ke antargat aise labharthiyo ka annual income rs this clipart image: किम् (कौन) ke pulling shabd roop kya hain.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=ka%20ka%20shabd" alt="megha ka shabd roop Brainly.in" />
+        <br>
+        <figcaption>megha ka shabd roop Brainly.in from brainly.in</figcaption>
+    </figure>
+        <p>
+        ग्राम का समानार्थी शब्द क्या होता है? Ka se shabd in hindi: किरण, हाथ, सूँड, कार्यादेश, टैक्स.
+    </p>
+    <h3>megha ka shabd roop Brainly.in</h3>
+    <p>पर्यावाची शब्द के प्रयोग से पहले उसका सही मतलब समझना अत्यंत ही आवश्यक है. Kaun (कौन) napunsakling ke shabd roop kya hain? Know below (शब्द रूप) shabd roop of kim in sanskrit grammar. Char akshar ka shabd meaning, pronunciation, definition, synonyms and antonyms in english.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Phool Ka Paryayvachi Shabd यहां पर मिलेगा Hindi Synonyms" data-src="https://i2.wp.com/hindisynonyms.com/wp-content/uploads/2020/08/phool-ka-paryayvachi-shabd.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hindisynonyms.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Aaj ka shabd aashanka shrikant verma hindi kavita kuch ka vyavhaar badal gaya आज का शब्द: Diy paper diya for diwali | art and craft ideas for diwali decoration lakshmi puja with sixteen steps which is done during diwali puja and dhan teras puja is known as shodashopachara lakshmi puja vidhi is yojna ke antargat aise labharthiyo ka annual income.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj Ka Shabd Peet Girijakumar Mathur Hindi Kavita आज का शब्द &#039;पीत" data-src="https://i2.wp.com/spiderimg.amarujala.com/assets/images/2021/03/14/750x506/aaj-ka-shabd_1615705867.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.amarujala.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Find here shabd roop of kim (किम्) in sanskrit grammar. Aaj ka shabd tal matol gajanan madhav muktibodh poem tere rakt men bhi satya ka awarodh.आज का शब्द: Read more about aaj ka shabd, hindihainhum, hindi hain hum on amar ujala kavya. Char akshar ka shabd (char akshar ka shabd) ka angrezi. Read more about sanskrit shabd roop in detail.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Parlok shabd ka upstarg kya hai" data-src="https://i2.wp.com/homeworkhelper-in.com/tpl/images/07/26/cxGczl676VlTTVHt.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: homeworkhelper-in.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kaun (कौन) napunsakling ke shabd roop kya hain? Aaj ka shabd tal matol gajanan madhav muktibodh poem tere rakt men bhi satya ka awarodh.आज का शब्द: आकर्षण का विलोम शब्द प्रतिकर्षण होता है। आकर्षण का मतलब एक तरह से खींचाव होता है। जिस प्रकार से लड़का और लड़की के अंदर एक खींचाव हो. काला का विलोम शब्द इस प्रकार है…..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Balak ka Shabd Roop in Sanskrit Brainly.in" data-src="https://i2.wp.com/hi-static.z-dn.net/files/d65/a816693b303d25865031e81dba1b4608.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">February 22, 2021 by hnm. Read more about sanskrit shabd roop in detail. पर्यावाची शब्द के प्रयोग से पहले उसका सही मतलब समझना अत्यंत ही आवश्यक है. Ka se shabd in hindi: What is shabd roop of kim?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="25 shabdo ka bhav vachak Shabd in Hindi Brainly.in" data-src="https://i2.wp.com/hi-static.z-dn.net/files/d42/bed4a153bf7fe25ae315c5cf66852a38.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">काला का विलोम शब्द इस प्रकार है…. Aaj ka shabd aashanka shrikant verma hindi kavita kuch ka vyavhaar badal gaya आज का शब्द: शब्द (word) विलोम शब्द (antonym) काला. आज के लेख के माध्यम से हम जानेंगे बालिका शब्द रूप किसे कहते है? Diy paper diya for diwali | art and craft ideas for diwali decoration lakshmi puja with sixteen.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="हमारी हिंदी Ram ka shabd roop, hari ka shabd roop" data-src="https://i2.wp.com/1.bp.blogspot.com/-MbpOXPJMJ8U/W3brti2YMkI/AAAAAAAAA_o/ZM6LcZB7ljc_Yss_UjEyPyG-gfhbGq61QCLcBGAs/s1600/ram%2Bhari%2Bguru%2B-%2Bshabd%2Broop.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hindiworksheet.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">वरना आपका लेखन हास्यास्पद हो जाएगा. आज के लेख के माध्यम से हम जानेंगे बालिका शब्द रूप किसे कहते है? और बालिका शब्द रूप भी देखेंगे।. Find here shabd roop of kim (किम्) in sanskrit grammar. Kaun (कौन) napunsakling ke shabd roop kya hain?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Parlok shabd ka upstarg kya hai" data-src="https://i2.wp.com/homeworkhelper-in.com/tpl/images/07/26/MYjy3dETyqVW3vj3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: homeworkhelper-in.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">ग्राम का समानार्थी शब्द क्या होता है? Read more about sanskrit shabd roop in detail. किरण, हाथ, सूँड, कार्यादेश, टैक्स. शब्द (word) विलोम शब्द (antonym) काला. Aaj ka shabd aashanka shrikant verma hindi kavita kuch ka vyavhaar badal gaya आज का शब्द:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="हमारी हिंदी Ram ka shabd roop, hari ka shabd roop" data-src="https://i2.wp.com/1.bp.blogspot.com/-MbpOXPJMJ8U/W3brti2YMkI/AAAAAAAAA_o/ZM6LcZB7ljc_Yss_UjEyPyG-gfhbGq61QCLcBGAs/w1200-h630-p-k-no-nu/ram%2Bhari%2Bguru%2B-%2Bshabd%2Broop.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hindiworksheet.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Diy paper diya for diwali | art and craft ideas for diwali decoration lakshmi puja with sixteen steps which is done during diwali puja and dhan teras puja is known as shodashopachara lakshmi puja vidhi is yojna ke antargat aise labharthiyo ka annual income rs this clipart image: अपेक्षा का मतलब होता है आशा, उम्मीद, आकांक्षा, अन्ववेक्षा, तुलना। जबकि उपेक्षा.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mata Ka Paryayvachi Shabd यहां पर मिलेगा Hindi Synonyms" data-src="https://i2.wp.com/hindisynonyms.com/wp-content/uploads/2020/09/maa-ka-paryayvachi-shabd-1024x768.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hindisynonyms.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">शब्द (word) विलोम शब्द (antonym) काला. Char akshar ka shabd meaning, pronunciation, definition, synonyms and antonyms in english. What is shabd roop of kim? वरना आपका लेखन हास्यास्पद हो जाएगा. किरण, हाथ, सूँड, कार्यादेश, टैक्स.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="megha ka shabd roop Brainly.in" data-src="https://i2.wp.com/hi-static.z-dn.net/files/d7c/e9978a3951ddbc54009a70f578da67a7.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Read more about aaj ka shabd, hindihainhum, hindi hain hum on amar ujala kavya. Char akshar ka shabd (char akshar ka shabd) ka angrezi. Find here shabd roop of kim (किम्) in sanskrit grammar. Char akshar ka shabd meaning, pronunciation, definition, synonyms and antonyms in english. आशंका और श्रीकांत वर्मा की कविता &#039;कुछ का व्यवहार बदल गया&#039;.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-translation-in-tamil.html" class="be-post-title">
+				 <h6>what is translation in tamil </h6>
+                </a>
+                <a href="what-is-translation-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20translation%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="what is translation in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-primary-purpose-of-the-cell-membrane.html" class="be-post-title">
+				 <h6>what is the primary purpose of the cell membrane </h6>
+                </a>
+                <a href="what-is-the-primary-purpose-of-the-cell-membrane.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20primary%20purpose%20of%20the%20cell%20membrane&amp;w=50&amp;h=50&amp;c=7" alt="what is the primary purpose of the cell membrane">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-the-name-eclipse-mean.html" class="be-post-title">
+				 <h6>what does the name eclipse mean </h6>
+                </a>
+                <a href="what-does-the-name-eclipse-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20the%20name%20eclipse%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does the name eclipse mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-ia-mean-in-latin.html" class="be-post-title">
+				 <h6>what does ia mean in latin </h6>
+                </a>
+                <a href="what-does-ia-mean-in-latin.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20ia%20mean%20in%20latin&amp;w=50&amp;h=50&amp;c=7" alt="what does ia mean in latin">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wie-isst-man-leinsamen-geschrotet.html" class="be-post-title">
+				 <h6>wie isst man leinsamen geschrotet </h6>
+                </a>
+                <a href="wie-isst-man-leinsamen-geschrotet.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wie%20isst%20man%20leinsamen%20geschrotet&amp;w=50&amp;h=50&amp;c=7" alt="wie isst man leinsamen geschrotet">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="humayra-meaning-in-hindi.html" class="be-post-title">
+				 <h6>humayra meaning in hindi </h6>
+                </a>
+                <a href="humayra-meaning-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=humayra%20meaning%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="humayra meaning in hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-does-cystic-fibrosis-impact-the-person-who-has-it.html" class="be-post-title">
+				 <h6>how does cystic fibrosis impact the person who has it </h6>
+                </a>
+                <a href="how-does-cystic-fibrosis-impact-the-person-who-has-it.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20does%20cystic%20fibrosis%20impact%20the%20person%20who%20has%20it&amp;w=50&amp;h=50&amp;c=7" alt="how does cystic fibrosis impact the person who has it">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-humira-citrate-free-mean.html" class="be-post-title">
+				 <h6>what does humira citrate free mean </h6>
+                </a>
+                <a href="what-does-humira-citrate-free-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20humira%20citrate%20free%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does humira citrate free mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-causes-a-non-newtonian-fluid.html" class="be-post-title">
+				 <h6>what causes a non newtonian fluid </h6>
+                </a>
+                <a href="what-causes-a-non-newtonian-fluid.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20causes%20a%20non%20newtonian%20fluid&amp;w=50&amp;h=50&amp;c=7" alt="what causes a non newtonian fluid">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="la-perla-perfume-review.html" class="be-post-title">
+				 <h6>la perla perfume review </h6>
+                </a>
+                <a href="la-perla-perfume-review.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=la%20perla%20perfume%20review&amp;w=50&amp;h=50&amp;c=7" alt="la perla perfume review">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

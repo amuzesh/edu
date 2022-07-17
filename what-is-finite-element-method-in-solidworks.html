@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        What Is Finite Element Method In Solidworks at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "What Is Finite Element Method In Solidworks",
+  "datePublished": "2022-06-17T22:38:32Z",
+  "image": "https://tse1.mm.bing.net/th?q=what%20is%20finite%20element%20method%20in%20solidworks",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=what%20is%20finite%20element%20method%20in%20solidworks&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20finite%20element%20method%20in%20solidworks" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=what%20is%20finite%20element%20method%20in%20solidworks" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            What Is Finite Element Method In Solidworks at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">What Is Finite Element Method In Solidworks</h2>
+    <p><strong>What Is Finite Element Method In Solidworks</strong>. The concepts behind fea were developed in the early 1940’s, but the method. Simulation provides designers and engineers the tools they need.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=what%20is%20finite%20element%20method%20in%20solidworks" alt="Best CAD Software With Finite Element Analysis Tools" />
+        <br>
+        <figcaption>Best CAD Software With Finite Element Analysis Tools from fractory.com</figcaption>
+    </figure>
+        <p>
+        Then extrude it by 10mm. Everything else but depends on engineers skills and experience. Instant upgrades &amp; 50% off solidworks training!.
+    </p>
+    <h3>Best CAD Software With Finite Element Analysis Tools</h3>
+    <p>Create the finite element mesh. When you mesh a model, the software generates a mixture of solid, shell, spring, and contact elements based on the created geometry. Saeed moaveni finite element analysis theory and application with ansys. The solution to the numerical model equations are, in turn, an approximation of the real solution to the pdes.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SOLIDWORKS Simulations Static Contact Finite Element Analysis YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/6auRXzSpd_0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">From the command manager, click on. When you mesh a model, the software generates a mixture of solid, shell, spring, and contact elements based on the created geometry. Instant upgrades &amp; 50% off solidworks training!. Solidworks simulation is a finite element analysis (fea) program built into the familiar solidworks cad interface. It simplifies engineers work by calculating and it turns.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lynda SOLIDWORKS Simulation for Finite Element Analysis [MEGA]" data-src="https://i2.wp.com/megaddl.co/wp-content/uploads/2018/07/SOLIDWORKS-Simulation-for-Finite-Element-Analysis-1-1024x576.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: megaddl.co</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Fea calculating software is just a tool. Simulation standard is used for structural, motion and fatigue analysis of parts and assemblies. The solution to the numerical model equations are, in turn, an approximation of the real solution to the pdes. Finite element method solidworks tutorial solidworks simulation uses fea (finite element analysis) methods to identify the behavior of parts or.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Basic Concept of Finite Element Analysis You Need to Know Zeal CAD" data-src="https://i2.wp.com/www.zcads.com.au/wp-content/uploads/2017/11/Finite-Element-Analysis-Zeal-CAD.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.zcads.com.au</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Is solidworks good for fea? Typical problem areas of interest include the traditional fields of structural analysis, heat transfer, fluid flow, mass transport, and electromagnetic potential. Professors ask me why i like solidworks simulation so much. Analysis based on finite based analysis Everything else but depends on engineers skills and experience.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Best CAD Software With Finite Element Analysis Tools" data-src="https://i2.wp.com/i.ytimg.com/vi/lG_oSSo9vak/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fractory.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Behind the scenes, the software employs a numerical technique called finite element analysis, or fea. Meshing is a crucial step in design analysis. It works in such a. A finite element analysis (fea) is just one approach that makes it. Finite element method solidworks tutorial solidworks simulation uses fea (finite element analysis) methods to identify the behavior of parts or.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FEA (Finite Element Analysis) in Solidworks YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/TUjObJLN-NU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In the mesh dialog box, input the size or number of elements and. Solidworks is mainly 3d cad software, and the analysis function is an auxiliary tool, which helps to obtain simple analysis results quickly in the design process. The solution to the numerical model equations are, in turn, an approximation of the real solution to the pdes. Finite element.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Introduction to SOLIDWORKS Simulation Finite Element Analysis" data-src="https://i2.wp.com/blogs.solidworks.com/tech/wp-content/uploads/sites/4/Image-5-4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogs.solidworks.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In the mesh dialog box, input the size or number of elements and. The finite element analysis method is used in almost all engineering disciplines. The finite element method (fem) is used to compute such. Analysis based on finite based analysis Solidworks simulation is a way to test prototypes virtually as cad models to anticipate how they’ll work in the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Finite Element Analysis Tutorials in SolidWorks through NSF Grant" data-src="https://i2.wp.com/blogs.solidworks.com/teacher/wp-content/uploads/sites/3/6a00d83451706569e2017615d8ab55970c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogs.solidworks.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Finite element method solidworks tutorial solidworks simulation uses fea (finite element analysis) methods to identify the behavior of parts or assemblies/parts when a load is applied. From the command manager, click on. Is solidworks good for fea? The finite element analysis method is used in almost all engineering disciplines. In other words, the accuracy of simulation results is not dependent.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Finite Element Analysis &amp; Modeling YouTube" data-src="https://i2.wp.com/yt3.ggpht.com/a-/AAuE7mDHF4UrdQXJKL70Wu95flyZkyMivIiFyy0rpg=s900-mo-c-c0xffffffff-rj-k-no" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Finite element method solidworks tutorial solidworks simulation uses fea (finite element analysis) methods to identify the behavior of parts or assemblies/parts when a load is applied. The finite element analysis using solidworks is open to all, with no formal entry requirements all you need is a passion for learning, a good understanding of the english language, numeracy. Solidworks simulation is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Example of Finite Element Method Solidworks 2012 YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/n8eaAiiru9I/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">When you mesh a model, the software generates a mixture of solid, shell, spring, and contact elements based on the created geometry. From the command manager, click on. Solidworks simulation is fully integrated and bidirectional, with an easy user interface, just like solidworks. The finite element method (fem) is a popular method for numerically solving differential equations arising in engineering.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="[100 OFF] SOLIDWORKS Introduction to Finite Element Analysis (FEA" data-src="https://i2.wp.com/www.tutorialbar.com/wp-content/uploads/3820352_7e4d-2048x1152.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tutorialbar.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Create the finite element mesh. It is known to be the alternative to the experimental test method being set in many standards. The solution to the numerical model equations are, in turn, an approximation of the real solution to the pdes. The concepts behind fea were developed in the early 1940’s, but the method. The program automatically creates the.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-aisha-in-arabic.html" class="be-post-title">
+				 <h6>meaning of aisha in arabic </h6>
+                </a>
+                <a href="meaning-of-aisha-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20aisha%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="meaning of aisha in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nishanthini-name-meaning-in-tamil.html" class="be-post-title">
+				 <h6>nishanthini name meaning in tamil </h6>
+                </a>
+                <a href="nishanthini-name-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nishanthini%20name%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="nishanthini name meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-translation-in-urdu.html" class="be-post-title">
+				 <h6>what is the meaning of translation in urdu </h6>
+                </a>
+                <a href="what-is-the-meaning-of-translation-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20translation%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of translation in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-real-mean-in-english.html" class="be-post-title">
+				 <h6>what does real mean in english </h6>
+                </a>
+                <a href="what-does-real-mean-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20real%20mean%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what does real mean in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-nisha-mean-in-korean.html" class="be-post-title">
+				 <h6>what does nisha mean in korean </h6>
+                </a>
+                <a href="what-does-nisha-mean-in-korean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20nisha%20mean%20in%20korean&amp;w=50&amp;h=50&amp;c=7" alt="what does nisha mean in korean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="pippib-primer-adalah.html" class="be-post-title">
+				 <h6>pippib primer adalah </h6>
+                </a>
+                <a href="pippib-primer-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=pippib%20primer%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="pippib primer adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tamilnadu-latest-news-in-tamil-language-today.html" class="be-post-title">
+				 <h6>tamilnadu latest news in tamil language today </h6>
+                </a>
+                <a href="tamilnadu-latest-news-in-tamil-language-today.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tamilnadu%20latest%20news%20in%20tamil%20language%20today&amp;w=50&amp;h=50&amp;c=7" alt="tamilnadu latest news in tamil language today">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="user-defined-meaning-in-whatsapp-in-tamil.html" class="be-post-title">
+				 <h6>user defined meaning in whatsapp in tamil </h6>
+                </a>
+                <a href="user-defined-meaning-in-whatsapp-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=user%20defined%20meaning%20in%20whatsapp%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="user defined meaning in whatsapp in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="rechauffement-climatique-en-espagnol.html" class="be-post-title">
+				 <h6>rechauffement climatique en espagnol </h6>
+                </a>
+                <a href="rechauffement-climatique-en-espagnol.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=rechauffement%20climatique%20en%20espagnol&amp;w=50&amp;h=50&amp;c=7" alt="rechauffement climatique en espagnol">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-fem-mean-in-nigeria.html" class="be-post-title">
+				 <h6>what does fem mean in nigeria </h6>
+                </a>
+                <a href="what-does-fem-mean-in-nigeria.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20fem%20mean%20in%20nigeria&amp;w=50&amp;h=50&amp;c=7" alt="what does fem mean in nigeria">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

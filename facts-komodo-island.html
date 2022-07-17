@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Facts Komodo Island at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Facts Komodo Island",
+  "datePublished": "2022-07-14T09:27:12Z",
+  "image": "https://tse1.mm.bing.net/th?q=facts%20komodo%20island",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=facts%20komodo%20island&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=facts%20komodo%20island" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=facts%20komodo%20island" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Facts Komodo Island at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Facts Komodo Island</h2>
+    <p><strong>Facts Komodo Island</strong>. A volcanic island inhabited by 5,700 giant lizards, flanked by sumbawa and flores. The staff is hospitable and the place is a great stop.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=facts%20komodo%20island" alt="Support and Vote Komodo Island Again" />
+        <br>
+        <figcaption>Support and Vote Komodo Island Again from yus-fa.blogspot.com</figcaption>
+    </figure>
+        <p>
+        5 facts about the komodo islands. Komodo dragon facts for kids. 11 facts about the komodo dragon, indonesia&#039;s national animal komodos “hunt” using their tongues.
+    </p>
+    <h3>Support and Vote Komodo Island Again</h3>
+    <p>In 1980 the komodo national park was created, it is made up of 3 main islands, komodo,. These islands have a rugged terrain—covered with forests, hills, grassland. Komodo is part of the lesser sunda. The komodo dragons are also found on rinca island.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Island Indonesia" data-src="https://i2.wp.com/reversehomesickness.com/wp-content/uploads/2014/01/indonesia-komodo-Island.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: reversehomesickness.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The staff is hospitable and the place is a great stop. Komodo dragon facts for kids. The temperature on the island ranges from 17°c to 34°c. These islands have a rugged terrain—covered with forests, hills, grassland. It has a surface area of 150 square miles (390 km2) and a population of around 2,000.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Habitat of Komodo Dragon Facts about Komodo Island in Indonesia" data-src="https://i2.wp.com/reversehomesickness.com/wp-content/uploads/2014/01/Komodo-dragon-habitat.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: reversehomesickness.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Of the remaining 603 km2 are small islands. 2) komodo island is home to the world’s largest lizard the komodo monitor (or komodo dragon.) the largest komodo dragon. Komodo island has a surface area of 390 square kilometres (150 square miles) and a human population of over 2,000. The locals on komodo island had given komodo dragons the name “ora”.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo National Park 5 Fast Facts You Need to Know" data-src="https://i2.wp.com/heavy.com/wp-content/uploads/2017/03/gettyimages-107722503-e1488747024421.jpg?quality=65&amp;strip=all" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: heavy.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Their lifespan can reach up to 30 years in the wild. Facts about komodo national park. Measuring as much as 8.5 feet (2.5 meters) long and weighing as much as 200 pounds (90 kilograms), it&#039;s no surprise they can take. Enjoy the sparkling waters and the starry night sky. Komodo national park was also selected as one of the new.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Support and Vote Komodo Island Again" data-src="https://i2.wp.com/2.bp.blogspot.com/-OlIdkgzjVdU/TpqHOKU9hmI/AAAAAAAACD8/mqihas9Z0z0/s1600/pulau-komodo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: yus-fa.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Four of the five are found within komodo national park. Komodo dragons are grave robbers. It has a surface area of 150 square miles (390 km2) and a population of around 2,000. The dragons have local names. The first and also the most obvious one in the reasons why is komodo island famous is because of the fact that komodo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Island Is Now Closed Because People Keep Smuggling Its Dragons" data-src="https://i2.wp.com/sm.mashable.com/t/mashable_in/photo/default/blob_2cdj.1200.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: in.mashable.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Their taste buds are so immaculately evolved that komodo dragons can taste the air. A komodo dragon often fights with another dragon. Komodo island is part of a chain of islands known as the lesser sunda chain. Komodo is part of the lesser sunda. The fun facts related to komodo island, indonesia the pink beach is very rare.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Dragon Laying Eggs in cave on the dry river side of Komodo" data-src="https://i2.wp.com/1.bp.blogspot.com/-aXmZRamDUyc/XeyDCjL7axI/AAAAAAAAADA/nAKwhUcsg-gWa6ul5tCLZTsNYYIuoKtsACLcBGAsYHQ/s1600/komodo-dragon-hugs.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: komododragonlizard.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A visit here can greatly increase you knowledge about these creatures by learning about. A komodo dragon often fights with another dragon. When totaled, the area of komodo island national park reached 1917 km2. 2) komodo island is home to the world’s largest lizard the komodo monitor (or komodo dragon.) the largest komodo dragon. The only village, komodo, on a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Interesting facts about Komodo Island Just Fun Facts" data-src="https://i2.wp.com/justfunfacts.com/wp-content/uploads/2016/01/komodo-dragon-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: justfunfacts.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pulau komodo) is one of the 17,508 islands that comprise the republic of indonesia. The island, which has an area of approximately 200 square miles (520 square km), lies on the sape strait between flores and sumbawa islands. Komodo island has a surface area of 390 square kilometres (150 square miles) and a human population of over 2,000. The temperature.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Island trip blog — The island of the largest lizard in the world" data-src="https://i2.wp.com/livingnomads.com/wp-content/uploads/2017/08/02/komodo-dragon.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: livingnomads.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Living on a series of five southeastern indonesian islands, komodo dragons have to quite often swim from island to island in the search for food. A visit here can greatly increase you knowledge about these creatures by learning about. The first and also the most obvious one in the reasons why is komodo island famous is because of the fact.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Island trip blog — The island of the largest lizard in the world" data-src="https://i2.wp.com/livingnomads.com/wp-content/uploads/2017/08/02/dragon-komodo-island-trip-1068x579.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: livingnomads.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The only village, komodo, on a bay on the east coast, consists of a. The resort is all about amazing beaches, great ambience, and tasty food. This stunning galaxy is easy to see with your naked eyes from the island. There are more than 5000 gigantic lizards in komodo national park Miles) island has approximately 2000 population.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Habitat of Komodo Dragon Facts about Komodo Island in Indonesia" data-src="https://i2.wp.com/reversehomesickness.com/wp-content/uploads/2014/01/seven-wonders-komodo-island.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: reversehomesickness.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Their taste buds are so immaculately evolved that komodo dragons can taste the air. Catch sight of the milky way. Komodo national park was also selected as one of the new 7 wonders of nature. The islands have dynamic marine environments. The komodo dragon can reach speeds of up to 13 miles per hour.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-full-meaning-of-gorgeous.html" class="be-post-title">
+				 <h6>what is the full meaning of gorgeous </h6>
+                </a>
+                <a href="what-is-the-full-meaning-of-gorgeous.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20full%20meaning%20of%20gorgeous&amp;w=50&amp;h=50&amp;c=7" alt="what is the full meaning of gorgeous">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-desastre-natural-para-niños.html" class="be-post-title">
+				 <h6>que es un desastre natural para niños </h6>
+                </a>
+                <a href="que-es-un-desastre-natural-para-niños.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20desastre%20natural%20para%20ni%C3%B1os&amp;w=50&amp;h=50&amp;c=7" alt="que es un desastre natural para niños">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kya-karta-hai-in-english.html" class="be-post-title">
+				 <h6>kya karta hai in english </h6>
+                </a>
+                <a href="kya-karta-hai-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kya%20karta%20hai%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="kya karta hai in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-for-nishanth-in-tamil.html" class="be-post-title">
+				 <h6>meaning for nishanth in tamil </h6>
+                </a>
+                <a href="meaning-for-nishanth-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20for%20nishanth%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="meaning for nishanth in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-the-name-nicholas-mean-in-spanish.html" class="be-post-title">
+				 <h6>what does the name nicholas mean in spanish </h6>
+                </a>
+                <a href="what-does-the-name-nicholas-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20the%20name%20nicholas%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what does the name nicholas mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-first-name-in-tamil.html" class="be-post-title">
+				 <h6>what is the meaning of first name in tamil </h6>
+                </a>
+                <a href="what-is-the-meaning-of-first-name-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20first%20name%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of first name in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wiewaswie-belgië.html" class="be-post-title">
+				 <h6>wiewaswie belgië </h6>
+                </a>
+                <a href="wiewaswie-belgië.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wiewaswie%20belgi%C3%AB&amp;w=50&amp;h=50&amp;c=7" alt="wiewaswie belgië">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="test-kaisa-hua-in-english.html" class="be-post-title">
+				 <h6>test kaisa hua in english </h6>
+                </a>
+                <a href="test-kaisa-hua-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=test%20kaisa%20hua%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="test kaisa hua in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-salma-mean-in-islam.html" class="be-post-title">
+				 <h6>what does salma mean in islam </h6>
+                </a>
+                <a href="what-does-salma-mean-in-islam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20salma%20mean%20in%20islam&amp;w=50&amp;h=50&amp;c=7" alt="what does salma mean in islam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="arabic-word-for-all.html" class="be-post-title">
+				 <h6>arabic word for all </h6>
+                </a>
+                <a href="arabic-word-for-all.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=arabic%20word%20for%20all&amp;w=50&amp;h=50&amp;c=7" alt="arabic word for all">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

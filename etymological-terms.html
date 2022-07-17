@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Etymological Terms at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Etymological Terms",
+  "datePublished": "2022-07-15T18:33:06Z",
+  "image": "https://tse1.mm.bing.net/th?q=etymological%20terms",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=etymological%20terms&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=etymological%20terms" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=etymological%20terms" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Etymological Terms at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Etymological Terms</h2>
+    <p><strong>Etymological Terms</strong>. Most of our ‘fancy’ words are. Something etymological relates to the way a word originated.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=etymological%20terms" alt="Etymology of the word for &quot;Four&quot; across IndoEuropean Languages at5" />
+        <br>
+        <figcaption>Etymology of the word for &quot;Four&quot; across IndoEuropean Languages at5 from www.reddit.com</figcaption>
+    </figure>
+        <p>
+        Use etymology as a tool to understand your language. List of band name etymologies; Metymology is a comprehensive medical etymology dictionary, compiling centuries of medical history into a handy searchbar.
+    </p>
+    <h3>Etymology of the word for &quot;Four&quot; across IndoEuropean Languages at5</h3>
+    <p>Another way to understand the meaning of etymology is to think of it. Learn your parts of speech. Etymology   is the study of the history of the form of words  and, by extension, the origin and evolution of their semantic meaning across time. Dod dictionary of military and associated terms;</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pin by Sound Literacy on Etymology Root words, English words, Prefixes" data-src="https://i.pinimg.com/736x/0f/7d/56/0f7d5653eacdc95dd43d0fada6d022a5.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hope you learn a thing or two by browsing our etymologies! Dod dictionary of military and associated terms; Both of these spellings seem to have varied. The information is for the most part mined from wiktionary. Etymological (comparative more etymological, superlative most etymological) (not comparable) of or relating to etymology.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Etymology PowerPoint Presentation, free download ID6933220" data-src="https://i2.wp.com/image3.slideserve.com/6933220/why-include-etymology-l.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The word flaccid first appeared in print in the year 1620 and meant what it still means today: The etymological wordnet project provides information about how words in different languages are etymologically related. Dod dictionary of military and associated terms; List of computer term etymologies; ‘the decline of etymology as a linguistic discipline’.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="PPT Etymology of the English Wordstock PowerPoint Presentation ID" data-src="https://i2.wp.com/image.slideserve.com/1204490/etymology-of-the-english-word-stock-n.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideserve.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Etymology is the study of the origin of words and how the meaning of words has changed over the course of history. Dictionaries of military jargon and words from the sea: Etymological research of english words often leads back to old english, greek, or latin roots. If you didn&#039;t know, it has the head of a. Metymology is a comprehensive.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etymology of Some English Words YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/1PvvE-HtM0Y/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The etymology of a word refers to its origin and historical development: This is an alphabetical list of pages that wikiwords has on the etymologies (word histories) of particular words. Category the joy of english. The etymological wordnet project provides information about how words in different languages are etymologically related. Something etymological relates to the way a word originated.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vocabulary etymology" data-src="https://i2.wp.com/image.slidesharecdn.com/vocabularyetymology-140314060356-phpapp02/95/vocabulary-etymology-27-638.jpg?cb=1394777178" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is divided by letter. The etymology of a word refers to its origin and historical development: Here are 15 basic english words that have remained etymological mysteries. Etymology   is the study of the history of the form of words  and, by extension, the origin and evolution of their semantic meaning across time. Both of these spellings seem to have.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Word Root Of The Day etymology Membean" data-src="https://i2.wp.com/cdn0.membean.com/audio/wrotd/etymology.jpg?qdep3" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: membean.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Something etymological relates to the way a word originated. Based on the oxford dictionary of english etymology, the principal authority on the origin and development of english words, the concise oxford dictionary of etymology contains a wealth. List of chemical element name etymologies;. At its most basic level, etymology is the study of a word&#039;s history. English has the word.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="TERMS WITH DIFFERING ETYMOLOGY Download Table" data-src="https://i2.wp.com/www.researchgate.net/profile/Maria_Maldonado_Garcia/publication/263522873/figure/tbl4/AS:614326826176512@1523478337215/TERMS-WITH-DIFFERING-ETYMOLOGY.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.researchgate.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Etymological (comparative more etymological, superlative most etymological) (not comparable) of or relating to etymology. Here are 15 basic english words that have remained etymological mysteries. Etymology is the study of the origin of words. The information is for the most part mined from wiktionary. Dictionaries of military jargon and words from the sea:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Etymology of the word for &quot;Four&quot; across IndoEuropean Languages at5" data-src="https://i2.wp.com/external-preview.redd.it/Lt9Y0dtj6pEG72hIxL0G6nomAbDZ-2Fpsum0gH2zQG4.png?auto=webp&amp;s=c19db97fc3aacdea6e49d8de7f4e73d69c0b4d57" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Etymology definition, the derivation of a word. This is an alphabetical list of pages that wikiwords has on the etymologies (word histories) of particular words. List of chemical element name etymologies;. The word flaccid first appeared in print in the year 1620 and meant what it still means today: Learn your parts of speech.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="etymology Heathbrook Primary School" data-src="https://i2.wp.com/www.heathbrook.org/wp-content/uploads/2020/04/etymology.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.heathbrook.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Metymology is a comprehensive medical etymology dictionary, compiling centuries of medical history into a handy searchbar. List of computer term etymologies; Another way to understand the meaning of etymology is to think of it. This is a list of etymological lists general. Find 11 ways to say etymological, along with antonyms, related words, and example sentences at thesaurus.com, the world&#039;s.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="etymology Origin and meaning of etymology by Online Etymology" data-src="https://i.pinimg.com/736x/27/a2/9f/27a29fbfe04f980cb5a377d435f992c9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hope you learn a thing or two by browsing our etymologies! Another way to understand the meaning of etymology is to think of it. Most of our ‘fancy’ words are. The etymological wordnet project provides information about how words in different languages are etymologically related. If you didn&#039;t know, it has the head of a.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="grahan-kab-se-kab-tak-rahega.html" class="be-post-title">
+				 <h6>grahan kab se kab tak rahega </h6>
+                </a>
+                <a href="grahan-kab-se-kab-tak-rahega.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=grahan%20kab%20se%20kab%20tak%20rahega&amp;w=50&amp;h=50&amp;c=7" alt="grahan kab se kab tak rahega">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="names-meaning-roar.html" class="be-post-title">
+				 <h6>names meaning roar </h6>
+                </a>
+                <a href="names-meaning-roar.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=names%20meaning%20roar&amp;w=50&amp;h=50&amp;c=7" alt="names meaning roar">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="umaira-k-meaning-in-urdu.html" class="be-post-title">
+				 <h6>umaira k meaning in urdu </h6>
+                </a>
+                <a href="umaira-k-meaning-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=umaira%20k%20meaning%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="umaira k meaning in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-nishank-name.html" class="be-post-title">
+				 <h6>meaning of nishank name </h6>
+                </a>
+                <a href="meaning-of-nishank-name.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20nishank%20name&amp;w=50&amp;h=50&amp;c=7" alt="meaning of nishank name">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bias-meaning-in-bengali.html" class="be-post-title">
+				 <h6>bias meaning in bengali </h6>
+                </a>
+                <a href="bias-meaning-in-bengali.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bias%20meaning%20in%20bengali&amp;w=50&amp;h=50&amp;c=7" alt="bias meaning in bengali">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-watashi-wa-kinishinai-meaning.html" class="be-post-title">
+				 <h6>what does watashi wa kinishinai meaning </h6>
+                </a>
+                <a href="what-does-watashi-wa-kinishinai-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20watashi%20wa%20kinishinai%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="what does watashi wa kinishinai meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-visible-in-marathi.html" class="be-post-title">
+				 <h6>meaning of visible in marathi </h6>
+                </a>
+                <a href="meaning-of-visible-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20visible%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="meaning of visible in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nishan-sahib-meaning-in-hindi.html" class="be-post-title">
+				 <h6>nishan sahib meaning in hindi </h6>
+                </a>
+                <a href="nishan-sahib-meaning-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nishan%20sahib%20meaning%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="nishan sahib meaning in hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-savage-in-marathi-or-hindi.html" class="be-post-title">
+				 <h6>meaning of savage in marathi or hindi </h6>
+                </a>
+                <a href="meaning-of-savage-in-marathi-or-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20savage%20in%20marathi%20or%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="meaning of savage in marathi or hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-are-you-doing-malayalam-meaning.html" class="be-post-title">
+				 <h6>what are you doing malayalam meaning </h6>
+                </a>
+                <a href="what-are-you-doing-malayalam-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20are%20you%20doing%20malayalam%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="what are you doing malayalam meaning">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

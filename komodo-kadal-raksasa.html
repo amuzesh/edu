@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Komodo Kadal Raksasa at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Komodo Kadal Raksasa",
+  "datePublished": "2022-05-28T01:23:27Z",
+  "image": "https://tse1.mm.bing.net/th?q=komodo%20kadal%20raksasa",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=komodo%20kadal%20raksasa&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=komodo%20kadal%20raksasa" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=komodo%20kadal%20raksasa" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Komodo Kadal Raksasa at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Komodo Kadal Raksasa</h2>
+    <p><strong>Komodo Kadal Raksasa</strong>. Taman nasional komodo di kabupaten manggarai barat, nusa tenggara timur, merupakan taman yang berisi ribuan kadal purba raksasa. Kebanyakan orang menyebut kadal raksasa ini dengan nama komodo.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=komodo%20kadal%20raksasa" alt="Komodo, Kadal Raksasa Paling Berbahaya di Dunia" />
+        <br>
+        <figcaption>Komodo, Kadal Raksasa Paling Berbahaya di Dunia from regional.kompas.com</figcaption>
+    </figure>
+        <p>
+        Komodo atau lengkapnya biawak komodo. Komodo betina biasanya meletakkan telurnya. Komodoensis is a large species of lizard found in the indonesian islands of komodo, rinca, flores, gili motang and gili dasami.
+    </p>
+    <h3>Komodo, Kadal Raksasa Paling Berbahaya di Dunia</h3>
+    <p>7 anggota lovelyz tinggalkan woollim entertainment. Mengunjungi kadal raksasa di pulau rinca? Panjangnya bisa tumbuh sampai ukuran. Namun, selama beberapa dekade terakhir, interpretasi evolusi ukuran tubuh komodo ini telah berubah, terutama karena temuan fosil kadal monitor besar dan raksasa di seluruh.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo, Kadal Raksasa Paling Berbahaya di Dunia. Ini Fakta Mengejutkan" data-src="https://i2.wp.com/cdn-2.tstatic.net/batam/foto/bank/images/komodo_20170504_161808.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: batam.tribunnews.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komodo betina biasanya meletakkan telurnya. Si kadal raksasa yang mendunia karena keunikannya. Penduduk asli pulau tersebut menyebut komodo dengan nama ora yang memiliki arti buaya darat. Komodo atau yang biasa disebut biawak komodo (varanus komodoensis). Putri naga kemudian menjelaskan bahwa kadal raksasa tersebut merupakan saudari perempuan dari si gerong dan harus dilindungi layaknya saudara.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mengintip Gaharnya Kadal Raksasa di Tengah Keindahan Pulau Komodo" data-src="https://i2.wp.com/media.travelingyuk.com/wp-content/uploads/2016/10/Pulau-Komodo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: travelingyuk.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wisatawan bernama loh lee aik (68) itu. Video tentang kehidupan komodo kadal raksasa yang berada di kepulauan polres indonesia,misteri air liur komodo yang mengandung racun untuk melumpuhkan mangsa. Seekor komodo yang sedang menjulurkan lidahnya. 7 anggota lovelyz tinggalkan woollim entertainment. Kadal raksasa ini diyakini hidup sejak 4 juta.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="[VIDEO] Komodo, si Kadal Raksasa Bobo" data-src="https://i2.wp.com/asset-a.grid.id/crop/0x0:0x0/700x465/photo/bobofoto/original/17712_komodo-si-kadal-raksasa.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bobo.grid.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kadal raksasa ini diyakini hidup sejak 4 juta. Komodo bersifat monogamus dan membentuk pasangan, suatu sifat yang langka untuk kadal. Komodo merupakan kadal besar yang memiliki gerak lincah. Putri naga kemudian menjelaskan bahwa kadal raksasa tersebut merupakan saudari perempuan dari si gerong dan harus dilindungi layaknya saudara. Penduduk asli pulau tersebut menyebut komodo dengan nama ora yang memiliki arti buaya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Punya Duit 14 Juta? Main Saja ke Pulau Komodo Melihat Kadal Raksasa" data-src="https://i2.wp.com/s.kaskus.id/images/2019/10/21/10533788_201910210906190595.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kaskus.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komodo atau yang biasa disebut biawak komodo (varanus komodoensis). Komodo merupakan spesies kadal terbesar di bumi. Taman nasional komodo di kabupaten manggarai barat, nusa tenggara timur, merupakan taman yang berisi ribuan kadal purba raksasa. Si kadal raksasa yang mendunia karena keunikannya. Kebanyakan orang menyebut kadal raksasa ini dengan nama komodo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo, Kadal Raksasa Kebanggaan Indonesia YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/tAwMq0x-QQc/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komodoensis is a large species of lizard found in the indonesian islands of komodo, rinca, flores, gili motang and gili dasami. 7 anggota lovelyz tinggalkan woollim entertainment. Komodo merupakan kadal besar yang memiliki gerak lincah. Kadal raksasa ini diyakini hidup sejak 4 juta. Julukan kadal raksasa diberikan karena beratnya mencapai 70 kg dengan panjang tubuh hingga 3 meter.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mengenal Komodo, Kadal Raksasa Prasejarah" data-src="https://i2.wp.com/1.bp.blogspot.com/-kS5ck3PXyys/XUN4dEDzqEI/AAAAAAAAAKQ/80Zaz0WuGmoXANCVnhIIx3cpO4ZbHNXwwCLcBGAs/w1200-h630-p-k-no-nu/Mengenal%2BKomodo.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.anekahewan.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pulau yang ada di taman nasional komodo dihuni sekitar 5.700 kadal raksasa, dengan nama latin varanus komodoensis, yang tidak ada di tempat lain di dunia. Julukan kadal raksasa diberikan karena beratnya mencapai 70 kg dengan panjang tubuh hingga 3 meter. Komodo adalah salah satu hewan langka reptil purba yang dilindungi dan hanya ada di pulau komodo, indonesia. Serangan kadal raksasa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="6 Fakta Unik Tentang Komodo, Kadal Raksasa Asal Indonesia" data-src="https://i2.wp.com/cdn.idntimes.com/content-images/post/20190611/vpd83lp0kvv01-b192290be6736ec00ce5730a1851aaf3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.idntimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komodo bersifat monogamus dan membentuk pasangan, suatu sifat yang langka untuk kadal. Memahami sejarah bahwa binatang komodo adalah salah satu. Terlepas dari keberadaannya yang cukup langka,. Komodo “kadal raksasa” menuju kepunahan; Si kadal raksasa yang mendunia karena keunikannya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Dragon, Kadal Raksasa Dari Pulau Komodo Nusa Tenggara Timur" data-src="https://i2.wp.com/i.ytimg.com/vi/VzQf-zugoqA/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(adamriley / projectnoah.org) komodo atau biawak komodo (varanus. Putri naga kemudian menjelaskan bahwa kadal raksasa tersebut merupakan saudari perempuan dari si gerong dan harus dilindungi layaknya saudara. Komodo dapat hidup selama 50 tahun lamanya. Komodo bersifat monogamus dan membentuk pasangan, suatu sifat yang langka untuk kadal. Komodo adalah salah satu spesies kadal terbesar.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo, Kadal Raksasa Paling Berbahaya di Dunia" data-src="https://i2.wp.com/asset.kompas.com/crop/0x0:780x390/780x390/filters:watermark(data/photo/2018/01/24/3095122789.png,0,-0,1)/data/photo/2016/08/09/1302236komodo-21780x390.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: regional.kompas.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penduduk asli pulau tersebut menyebut komodo dengan nama ora yang memiliki arti buaya darat. Julukan kadal raksasa diberikan karena beratnya mencapai 70 kg dengan panjang tubuh hingga 3 meter. Komodoensis is a large species of lizard found in the indonesian islands of komodo, rinca, flores, gili motang and gili dasami. Serangan kadal raksasa kepada manusia ini sebenarnya terbilang langka, karena.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Taman Nasional Komodo Sensasi Melihat Langsung Sang Kadal Raksasa" data-src="https://i2.wp.com/traverse.id/wp-content/uploads/2019/08/Taman-Nasional-Komodo-Menelusuri-Lebih-Dalam-Kadal-Raksasa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: traverse.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hewan purba menyerupai kadal raksasa atau komodo menjadi ikon utama pemegang situs warisan dunia. Komodo dengan nama latin varanus komodoensis merupakan spesies kadal terbesar yang masih hidup hingga saat ini. Penduduk asli pulau tersebut menyebut komodo dengan nama ora yang memiliki arti buaya darat. Terlepas dari keberadaannya yang cukup langka,. Kadal raksasa ini hanya terdapat di pulau komodo, rinca, flores,.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="when-should-parentheses-be-used.html" class="be-post-title">
+				 <h6>when should parentheses be used </h6>
+                </a>
+                <a href="when-should-parentheses-be-used.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=when%20should%20parentheses%20be%20used&amp;w=50&amp;h=50&amp;c=7" alt="when should parentheses be used">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="sponge-gourd-meaning-in-telugu.html" class="be-post-title">
+				 <h6>sponge gourd meaning in telugu </h6>
+                </a>
+                <a href="sponge-gourd-meaning-in-telugu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=sponge%20gourd%20meaning%20in%20telugu&amp;w=50&amp;h=50&amp;c=7" alt="sponge gourd meaning in telugu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-say-binge-watch-in-korean.html" class="be-post-title">
+				 <h6>how to say binge watch in korean </h6>
+                </a>
+                <a href="how-to-say-binge-watch-in-korean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20say%20binge%20watch%20in%20korean&amp;w=50&amp;h=50&amp;c=7" alt="how to say binge watch in korean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="asahi-name-meaning.html" class="be-post-title">
+				 <h6>asahi name meaning </h6>
+                </a>
+                <a href="asahi-name-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=asahi%20name%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="asahi name meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bitter-gourd-dream-meaning-in-tamil.html" class="be-post-title">
+				 <h6>bitter gourd dream meaning in tamil </h6>
+                </a>
+                <a href="bitter-gourd-dream-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bitter%20gourd%20dream%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="bitter gourd dream meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="connections-academy-reviews-texas.html" class="be-post-title">
+				 <h6>connections academy reviews texas </h6>
+                </a>
+                <a href="connections-academy-reviews-texas.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=connections%20academy%20reviews%20texas&amp;w=50&amp;h=50&amp;c=7" alt="connections academy reviews texas">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="chemistry-notes-kerala-syllabus.html" class="be-post-title">
+				 <h6>chemistry notes kerala syllabus </h6>
+                </a>
+                <a href="chemistry-notes-kerala-syllabus.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=chemistry%20notes%20kerala%20syllabus&amp;w=50&amp;h=50&amp;c=7" alt="chemistry notes kerala syllabus">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="sponge-gourd-meaning-in-urdu.html" class="be-post-title">
+				 <h6>sponge gourd meaning in urdu </h6>
+                </a>
+                <a href="sponge-gourd-meaning-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=sponge%20gourd%20meaning%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="sponge gourd meaning in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="washing-powder-meaning-in-arabic.html" class="be-post-title">
+				 <h6>washing powder meaning in arabic </h6>
+                </a>
+                <a href="washing-powder-meaning-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=washing%20powder%20meaning%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="washing powder meaning in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="origin-of-the-word-palooza.html" class="be-post-title">
+				 <h6>origin of the word palooza </h6>
+                </a>
+                <a href="origin-of-the-word-palooza.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=origin%20of%20the%20word%20palooza&amp;w=50&amp;h=50&amp;c=7" alt="origin of the word palooza">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

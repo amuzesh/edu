@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Halia Adalah Obat at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Halia Adalah Obat",
+  "datePublished": "2022-04-21T23:26:47Z",
+  "image": "https://tse1.mm.bing.net/th?q=halia%20adalah%20obat",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=halia%20adalah%20obat&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=halia%20adalah%20obat" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=halia%20adalah%20obat" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Halia Adalah Obat at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Halia Adalah Obat</h2>
+    <p><strong>Halia Adalah Obat</strong>. Halia mengandungi banyak perangsang yang menyokong kesihatan otot dan membantu penghadaman. Antioksidan adalah sebatian yang mencegah tekanan dan kerosakan dna.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=halia%20adalah%20obat" alt="Manfaat Halia Bagi Kesehatan Penisian" />
+        <br>
+        <figcaption>Manfaat Halia Bagi Kesehatan Penisian from penisian.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Halia atau nama saintifiknya zingiber officinale adalah tumbuhan herba yang paling mudah ditemui. Terutamanya berguna adalah akar halia, yang mengandungi kompleks vitamin dan nutrien. Melakukan perkara ini tidak perlu.
+    </p>
+    <h3>Manfaat Halia Bagi Kesehatan Penisian</h3>
+    <p>Halia mengandungi kromium, magnesium dan zink yang boleh membantu untuk memperbaiki aliran darah, serta membantu mengelakkan kesejukan, demam dan peluh berlebihan. Ginger meningkatkan penyerapan dan merangsang nutrien penting dalam badan. Keradangan ialah satu proses semulajadi badan untuk melawan sebarang benda yang membahayakannya seperti kecederaan, jangkitan atau bahan toksik. Viagra adalah obat yang bermanfaat untuk mengatasi disfungsi ereksi atau impotensi pada pria dewasa.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jual bibit asli kunyit hitam halia hitam jahe hitam Kota Cimahi" data-src="https://i2.wp.com/ecs7.tokopedia.net/img/cache/700/product-1/2020/4/14/5262392/5262392_2a9916cc-0c9d-4ff9-a14e-e7d188f8dde1_1512_1512.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tokopedia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tanaman herbal indonesia banyak khasiat dan kegunaan bagi kesehatan manusia. Viagra memiliki bahan aktif sildenafil sitrat. Antioksidan adalah sebatian yang mencegah tekanan dan kerosakan dna. Obat ini bekerja dengan cara membantu ginjal untuk. Masayarakat cina telah menggunakan halia lebih daripada 2 ribu tahun.halia merangsang rembesan enzim salvia pencernaan makanan.ia melegakan ketidakselesaan perut dan usus,sakit ketika haid,loya dan mual angin ketika.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Manfaat Halia Bagi Kesehatan Penisian" data-src="https://i2.wp.com/1.bp.blogspot.com/-dDsUdMqQr9g/V-i8GIV8qbI/AAAAAAAAAyc/-XDbzjerAU4dRiKWO-dPadxVhR5PZhWxwCLcB/s1600/halia.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: penisian.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dalam minyak pati akar halia adalah bahan zingiberen yang tidak menentu, yang mempunyai kesan antibakteria yang jelas, yang dapat mengatasi jangkitan sejuk. Sebenarnya halia mengandungi gingerol, bahan yang sangat penting dalam perubatan lama, termasuk perubatan melayu zaman silam. Obat ini juga dikenal dengan nama pil biru atau obat kuat. Terutamanya berguna adalah akar halia, yang mengandungi kompleks vitamin dan nutrien..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Khasiat Serai Dan Halia Kandungan serai di dalamnya dipercaya bisa" data-src="https://i2.wp.com/lh5.googleusercontent.com/proxy/4kFLeNfmVNUtyNY4iJcvekyfKPNr6CNuf0OrWcwzjZzpc4dfXtnvA6-DGFxh8HazZ28AnX5R8Qbkfc31J0hFyIaBZ7OTl_Qh_wTd3EukqHbvbl6k0RJZLzNh3jcKhg=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kasdirty.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Oleh itu, anda boleh memilih produk yang mengandungi gula perang yang mampu meneutralkan rasa halia serta membawa aroma yang harum untuk minuman anda. Malah pengambilan yang berterusan dikatakan dapat membantu menurunkan kandungan gula serta menstabilkan tekanan darah. Kebanyakan masakan melayu tradisional menggunakan halia sebagai rempah untuk mewangikan masakan , juga untuk menghilangkan bau sesetengah daging seperti daging kambing dan spesies.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Khasiat Air Rebusan Serai Dan Halia SweetieSaQi Air rebusan halia" data-src="https://i2.wp.com/cdn.pesonapengantin.my/2019/10/untitled-design-7-07_57_382285-747x420.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rafkach.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bila anda mengalami sakit kepala, cobalah memakai resep dengan bahan zingiber officinale. Halia mengandungi kromium, magnesium dan zink yang boleh membantu untuk memperbaiki aliran darah serta membantu mengelakkan kesejukan, demam dan peluh berlebihan. Banyak resipi teh dengan halia untuk selesema menunjukkan bahawa akar yang dikupas harus digosok pada parutan, dan minuman yang terhasil harus ditapis. Salah satunya tanaman obat halia.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Khasiat Minum Air Halia / Kalau &#039;period pain&#039; apa kata anda minum air" data-src="https://i2.wp.com/upload.beautifulnara.com/wp-content/uploads/20191210154833/cover-31.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pandsiqh.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Selama ini ini kita gunakan halia untuk buat sup dan masakan lain tanpa mengetahui nutrisi yang ada dalam halia. Viagra memiliki bahan aktif sildenafil sitrat. Ia bertanggungjawab untuk kepelbagaian khasiat perubatan halia. Halia mengandungi kromium, magnesium dan zink yang boleh membantu untuk memperbaiki aliran darah serta membantu mengelakkan kesejukan, demam dan peluh berlebihan. Halia mengandungi banyak perangsang yang menyokong kesihatan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Khasiat Halia Untuk Lelaki Jangan Dipandang Rendah Halia Ini 10" data-src="https://i2.wp.com/cf.shopee.com.my/file/0a11d5748364ab15128dc812e1203c30" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hanjipin.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Rawatan dengan halia membolehkan untuk mencapai hasil yang positif kerana sifat unik tumbuhan ini. Gula perang mempunyai kandungan mineral yang lebih banyak daripada gula pasir. Penggunaan untuk apa hemapo digunakan? Selama ini ini kita gunakan halia untuk buat sup dan masakan lain tanpa mengetahui nutrisi yang ada dalam halia. Teruskan membaca untuk tahu tentang manfaat kesihatan lagi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="JAHE (Zingiber officinale Rosc.) Tanaman Herbal &amp; Obat Tradisional" data-src="https://i2.wp.com/www.farmasi-id.com/herbal-obat-tradisional/wp-content/uploads/sites/7/2017/02/jahe-Zingiber-officinale-Rosc-500x250.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.farmasi-id.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wangian dan rasa unik halia berasal daripada minyak semula jadinya yakni gingerol. Zat yang dikandung dan khasiat obat dari halia: Malah pengambilan yang berterusan dikatakan dapat membantu menurunkan kandungan gula serta menstabilkan tekanan darah. Halia atau nama saintifiknya zingiber officinale adalah tumbuhan herba yang paling mudah ditemui. Antara bahan bioaktif yang terdapat dalam halia ialah amadaldehyde, paradole, gingerdiol, gingerdiasetat, gingerenon,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Air Rebusan Halia Direbus (dalam stainless steel pot) dengan 3 gelas" data-src="https://i2.wp.com/steemitimages.com/DQmPcfYvMxFrvnrxp7mifyqrWAgHBLFCKUVJYQgigiiHYZY/30784906_10156083311761233_884771707_n.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: skaptich.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Halia adalah penawar yang diketahui berkesan untuk loya yang dikaitkan dengan. Nama lain dari tanaman obat halia adalah (zingeber officinale, rosc.). Bila anda mengalami sakit kepala, cobalah memakai resep dengan bahan zingiber officinale. Khasiat berguna dari halia yang sering dimanfaatkan masyarakat adalah untuk mengobati penyakit reumatik, encok, impoten, keracunan udang, pegal, batuk. Halia mampu membantu mengurangkan loya dan muntah terutamanya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tumbuhan Berkhasiat Obat Tradisional Tumbuhan Jahe atau Halia" data-src="https://i2.wp.com/1.bp.blogspot.com/-baXGKC_3PiE/Vrq6R88GCfI/AAAAAAAAAdw/AfKM3mZG17I/s1600/jaheMerah.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: tumbuhanberkhasiatobat.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Oleh itu, anda boleh memilih produk yang mengandungi gula perang yang mampu meneutralkan rasa halia serta membawa aroma yang harum untuk minuman anda. Gula perang mempunyai kandungan mineral yang lebih banyak daripada gula pasir. Sebab yang tepat tidak diketahui, tetapi dalam kajian kadet tentera laut, mabuk laut akan berkurangan apabila diberi serbuk halia. Ia mengandungi 3 bahan utama iaitu zingerone,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Khasiat Serai Dan Halia Kandungan serai di dalamnya dipercaya bisa" data-src="https://i2.wp.com/www.permataherba.com/image/permataherba/image/data/all_product_images/product-2664/serai-mas-losyen-terapi-anggun-baru.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kasdirty.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bahan halia yang berguna adalah dekat dengan kulit, jadi apabila membersihkan akar, cuba potong sebagai daging sedikit sebanyak mungkin. Viagra tersedia dalam bentuk tablet 25 mg, 50 mg, dan 100 mg. Selama ini ini kita gunakan halia untuk buat sup dan masakan lain tanpa mengetahui nutrisi yang ada dalam halia. Malah pengambilan yang berterusan dikatakan dapat membantu menurunkan kandungan gula.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-word-alighted.html" class="be-post-title">
+				 <h6>meaning of word alighted </h6>
+                </a>
+                <a href="meaning-of-word-alighted.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20word%20alighted&amp;w=50&amp;h=50&amp;c=7" alt="meaning of word alighted">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-french-for-surprise.html" class="be-post-title">
+				 <h6>what is french for surprise </h6>
+                </a>
+                <a href="what-is-french-for-surprise.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20french%20for%20surprise&amp;w=50&amp;h=50&amp;c=7" alt="what is french for surprise">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-you-pronounce-the-name-ayesha.html" class="be-post-title">
+				 <h6>how do you pronounce the name ayesha </h6>
+                </a>
+                <a href="how-do-you-pronounce-the-name-ayesha.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20you%20pronounce%20the%20name%20ayesha&amp;w=50&amp;h=50&amp;c=7" alt="how do you pronounce the name ayesha">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="prisha-full-form.html" class="be-post-title">
+				 <h6>prisha full form </h6>
+                </a>
+                <a href="prisha-full-form.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=prisha%20full%20form&amp;w=50&amp;h=50&amp;c=7" alt="prisha full form">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="unwanted-kit-meaning-in-tamil.html" class="be-post-title">
+				 <h6>unwanted kit meaning in tamil </h6>
+                </a>
+                <a href="unwanted-kit-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=unwanted%20kit%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="unwanted kit meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="air-transport-meaning-in-arabic.html" class="be-post-title">
+				 <h6>air transport meaning in arabic </h6>
+                </a>
+                <a href="air-transport-meaning-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=air%20transport%20meaning%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="air transport meaning in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kya-hua-beta-meaning-in-tamil.html" class="be-post-title">
+				 <h6>kya hua beta meaning in tamil </h6>
+                </a>
+                <a href="kya-hua-beta-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kya%20hua%20beta%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="kya hua beta meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="full-meaning-of-afs.html" class="be-post-title">
+				 <h6>full meaning of afs </h6>
+                </a>
+                <a href="full-meaning-of-afs.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=full%20meaning%20of%20afs&amp;w=50&amp;h=50&amp;c=7" alt="full meaning of afs">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mahabharat-mein-kya-kya-hua-tha.html" class="be-post-title">
+				 <h6>mahabharat mein kya kya hua tha </h6>
+                </a>
+                <a href="mahabharat-mein-kya-kya-hua-tha.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mahabharat%20mein%20kya%20kya%20hua%20tha&amp;w=50&amp;h=50&amp;c=7" alt="mahabharat mein kya kya hua tha">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="internship-programme-meaning-in-marathi.html" class="be-post-title">
+				 <h6>internship programme meaning in marathi </h6>
+                </a>
+                <a href="internship-programme-meaning-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=internship%20programme%20meaning%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="internship programme meaning in marathi">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

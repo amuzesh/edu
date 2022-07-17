@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Simple Air Pollution Definition at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Simple Air Pollution Definition",
+  "datePublished": "2022-04-02T18:02:16Z",
+  "image": "https://tse1.mm.bing.net/th?q=simple%20air%20pollution%20definition",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=simple%20air%20pollution%20definition&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=simple%20air%20pollution%20definition" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=simple%20air%20pollution%20definition" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Simple Air Pollution Definition at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Simple Air Pollution Definition</h2>
+    <p><strong>Simple Air Pollution Definition</strong>. Land, air, and water are all affected by pollution. Pollution takes up space on our land.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=simple%20air%20pollution%20definition" alt="Pollution ppt090720025050phpapp02" />
+        <br>
+        <figcaption>Pollution ppt090720025050phpapp02 from www.slideshare.net</figcaption>
+    </figure>
+        <p>
+        Some scientists believe that releasing too much carbon dioxide into the atmosphere is one of the. Air pollution refers to any physical, chemical or biological change in the air. Pollution is anything that makes the earth dirty and unhealthy.
+    </p>
+    <h3>Pollution ppt090720025050phpapp02</h3>
+    <p>Pollution is when harmful substances are added to the environment and then change it in a bad way. Land, air, and water are all affected by pollution. Pollution is when harmful substances are added to the environment and then change it in a bad way. Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Air &amp; air pollution" data-src="https://i2.wp.com/image.slidesharecdn.com/airairpollution-160306170722/95/air-air-pollution-11-638.jpg?cb=1457284086" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">She played a simple air on the piano. Some scientists believe that releasing too much carbon dioxide into the atmosphere is one of the. According to the world health organization (who), air pollution is one of the world&#039;s biggest killers: Indoor air quality (iaq) refers to the air quality within and around buildings and structures, especially as it relates to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Es air pollution" data-src="https://i2.wp.com/image.slidesharecdn.com/esairpollution-170408051403/95/es-air-pollution-4-638.jpg?cb=1491628536" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Air pollution synonyms, air pollution pronunciation, air pollution translation, english dictionary definition of air pollution. The existence of chemicals in the environment detrimental to the safety of humans and other living organisms, or that inflict damage to the ecosystem or materials, is air. Indoor air quality (iaq) refers to the air quality within and around buildings and structures, especially as.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Atmospheric Pollution Study material for IIT JEE askIITians" data-src="https://i2.wp.com/files.askiitians.com/cdn1/images/2017131-111929740-3789-1-atmospheric-pollution.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.askiitians.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Some scientists believe that releasing too much carbon dioxide into the atmosphere is one of the. Water pollution, air pollution, noise. Air pollution synonyms, air pollution pronunciation, air pollution translation, english dictionary definition of air pollution. Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Air pollutionand its effects and causes" data-src="https://i2.wp.com/image.slidesharecdn.com/airpollution-loyola-120207002134-phpapp02/95/air-pollutionand-its-effects-and-causes-3-728.jpg?cb=1328574809" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Outdoor (ambient) pollution causes around four million people to die. There are five kinds of pollution of the environment: Air pollution occurs when gases, dust, smoke, or odor get into the air and make it unclean. Air pollution what is air pollution? Some scientists believe that releasing too much carbon dioxide into the atmosphere is one of the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="definition of air pollution Phénomène de société la POLLUTION" data-src="https://i0.wp.com/test-dyb.fr/wp-content/uploads/images/definition_of_air_pollution_4.jpg?w=1250" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: test-dyb.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The existence of chemicals in the environment detrimental to the safety of humans and other living organisms, or that inflict damage to the ecosystem or materials, is air. Indoor air quality (iaq) refers to the air quality within and around buildings and structures, especially as it relates to the health and comfort of building occupants. Air pollution occurs when gases,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="definition of air pollution Phénomène de société la POLLUTION" data-src="https://i1.wp.com/test-dyb.fr/wp-content/uploads/images/definition_of_air_pollution_9.jpg?w=1250" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: test-dyb.fr</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">According to the world health organization (who), air pollution is one of the world&#039;s biggest killers: Outdoor (ambient) pollution causes around four million people to die. Land, air, and water are all affected by pollution. Urbanization and industrialization in today’s era are increasing and growing at a rapid pace and. Pollution takes up space on our land.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Air pollution" data-src="https://i2.wp.com/image.slidesharecdn.com/airpollution-111221031749-phpapp01/95/air-pollution-4-728.jpg?cb=1324439701" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">She played a simple air on the piano. Pollution is anything that makes the earth dirty and unhealthy. Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere. Some scientists believe that releasing too much carbon dioxide into the atmosphere is one of the. In.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Air Pollution Definition Examples and Forms" data-src="https://i2.wp.com/imgv2-2-f.scribdassets.com/img/document/120142652/original/f69b870202/1538672776?v=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.lisbonlx.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Many of the things people use. Water pollution, air pollution, noise. According to the world health organization (who), air pollution is one of the world&#039;s biggest killers: Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere. Pollution is anything that makes the earth dirty.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="water pollution definition DriverLayer Search Engine" data-src="https://i2.wp.com/image.slidesharecdn.com/waterpollutioninpetroleumindustry-100428192910-phpapp01/95/water-pollution-in-petroleum-industry-2-728.jpg?cb=1272484019" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: driverlayer.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Land, air, and water are all affected by pollution. Urbanization and industrialization in today’s era are increasing and growing at a rapid pace and. Air pollution, release into the atmosphere of various gases, finely divided solids, or finely dispersed liquid aerosols at rates that exceed the natural capacity of the environment to. Chemicals in the troposphere in sufficient quantities and.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pollution ppt090720025050phpapp02" data-src="https://i2.wp.com/image.slidesharecdn.com/pollution-ppt-090720025050-phpapp02-110528071934-phpapp02/95/pollution-ppt090720025050phpapp02-4-728.jpg?cb=1306567811" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Even at levels lower than those considered safe by united states regulators, exposure to three components of air pollution, fine particulate matter, nitrogen dioxide and ozone, correlates with cardiac and respiratory illness. Air pollution is the natural or artificial input of harmful contaminants into the environment, and may cause instability, disruption or harmful effects to the ecosystem learn about its.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="connexus-bank-locations.html" class="be-post-title">
+				 <h6>connexus bank locations </h6>
+                </a>
+                <a href="connexus-bank-locations.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=connexus%20bank%20locations&amp;w=50&amp;h=50&amp;c=7" alt="connexus bank locations">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-johan.html" class="be-post-title">
+				 <h6>meaning of johan </h6>
+                </a>
+                <a href="meaning-of-johan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20johan&amp;w=50&amp;h=50&amp;c=7" alt="meaning of johan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="female-elephant-meaning-in-english.html" class="be-post-title">
+				 <h6>female elephant meaning in english </h6>
+                </a>
+                <a href="female-elephant-meaning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=female%20elephant%20meaning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="female elephant meaning in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mineral-meaning-in-tamil.html" class="be-post-title">
+				 <h6>mineral meaning in tamil </h6>
+                </a>
+                <a href="mineral-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mineral%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="mineral meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-say-unexpected-in-french.html" class="be-post-title">
+				 <h6>how to say unexpected in french </h6>
+                </a>
+                <a href="how-to-say-unexpected-in-french.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20say%20unexpected%20in%20french&amp;w=50&amp;h=50&amp;c=7" alt="how to say unexpected in french">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-name-of-nischal.html" class="be-post-title">
+				 <h6>meaning name of nischal </h6>
+                </a>
+                <a href="meaning-name-of-nischal.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20name%20of%20nischal&amp;w=50&amp;h=50&amp;c=7" alt="meaning name of nischal">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="quel-type-d-homme-me-convient-test.html" class="be-post-title">
+				 <h6>quel type d&#039;homme me convient test </h6>
+                </a>
+                <a href="quel-type-d-homme-me-convient-test.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=quel%20type%20d%27homme%20me%20convient%20test&amp;w=50&amp;h=50&amp;c=7" alt="quel type d&amp;#039;homme me convient test">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-full-meaning-of-ms.html" class="be-post-title">
+				 <h6>what is full meaning of ms </h6>
+                </a>
+                <a href="what-is-full-meaning-of-ms.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20full%20meaning%20of%20ms&amp;w=50&amp;h=50&amp;c=7" alt="what is full meaning of ms">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-quelle-in-english.html" class="be-post-title">
+				 <h6>what is the meaning of quelle in english </h6>
+                </a>
+                <a href="what-is-the-meaning-of-quelle-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20quelle%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of quelle in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="full-form-of-arsh-meaning.html" class="be-post-title">
+				 <h6>full form of arsh meaning </h6>
+                </a>
+                <a href="full-form-of-arsh-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=full%20form%20of%20arsh%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="full form of arsh meaning">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

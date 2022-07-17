@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Origin Of Word Palindrome at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Origin Of Word Palindrome",
+  "datePublished": "2022-04-12T03:40:05Z",
+  "image": "https://tse1.mm.bing.net/th?q=origin%20of%20word%20palindrome",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=origin%20of%20word%20palindrome&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=origin%20of%20word%20palindrome" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=origin%20of%20word%20palindrome" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Origin Of Word Palindrome at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Origin Of Word Palindrome</h2>
+    <p><strong>Origin Of Word Palindrome</strong>. Dates and numbers can also be a. We have a whole section devoted to the.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=origin%20of%20word%20palindrome" alt="Palindrome Meaning In Malayalam Palindromes In Malayalam Language" />
+        <br>
+        <figcaption>Palindrome Meaning In Malayalam Palindromes In Malayalam Language from neolyrics1.blogspot.com</figcaption>
+    </figure>
+        <p>
+        A palindrome is a word or phrase where the letters read. A  palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam or racecar. Noun palindrome a word, line, verse, number, sentence, etc., reading the same backward as forward, as madam, i&#039;m adam or poor dan is in a droop.
+    </p>
+    <h3>Palindrome Meaning In Malayalam Palindromes In Malayalam Language</h3>
+    <p>The longest known palindromic word is saippuakivikauppias (19 letters), which is finnish for a dealer in lye (caustic soda). Level, madam and racecar are examples of single word palindromes. The term derives from the greek palin dromo (“running back again”). It derives from greek roots that literally mean “running back” ( palin is.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome Week and English Basics Palindromes The Writer Raven" data-src="https://i0.wp.com/thewriterraven.com/wp-content/uploads/2019/09/English-Basics_-Palindromes.png?fit=683%2C1024&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: thewriterraven.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">According to oxford living dictionaries, a palindrome is a word or phrase that reads the same backward as forward: The longest known palindromic word is saippuakivikauppias (19 letters), which is finnish for a dealer in lye (caustic soda). More on palindromes find out more about palindromes by reading our explanation of palindromes and exploring our list of palindromes. A word,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome What Is A Palindrome / Palindromes are words or phrases" data-src="https://i2.wp.com/7esl.com/wp-content/uploads/2020/04/Palindrome-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: athenaq-aback.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Of, relating to, or being a palindrome. Dates and numbers can also be a. A palindrome is a word or phrase where the letters read. What is the origin of the word palindrome? A stretch of dna in which.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="One Word Palindrome Words What Are Palindromes Eage Tutor" data-src="https://i2.wp.com/miro.medium.com/max/643/1*9_G4W9fYti9nx0EG0YZpUw.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gauwnoamaoci.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Level, madam and racecar are examples of single word palindromes. The origin of magical word symbols. “a man, a plan, a canal, panama!”; More on palindromes find out more about palindromes by reading our explanation of palindromes and exploring our list of palindromes. A word or group of words that is the same when you read it forwards from the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="One Word Palindrome Words What Are Palindromes Eage Tutor" data-src="https://i2.wp.com/www.englishmirror.com/images/palindromes-in-english.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gauwnoamaoci.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It lies in an obscure corner of scotland, facing the isle of skye across the sound of sleat. Semordnilaps (the word palindromes in reverse) are words that. Palindromic palindromic (english)adjective palindromic (not comparable). Dates and numbers can also be a. (by extension) a poetic form in which the sequence of words reads the same in either direction.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome Examples In English What Are Palindromes They Re Fun And" data-src="https://i.pinimg.com/originals/f1/26/61/f12661cba0f7be6a277829c91edf9565.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: enriquecimientodelosmasjovenes.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Palindromic palindromic (english)adjective palindromic (not comparable). A word or line that reads the same backward and forward, 1620s, from greek palindromos a recurrence,… see definitions of palindrome. They use whole words rather than letters, for example, first ladies rule the state and state the rule: (by extension) a poetic form in which the sequence of words reads the same in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What is a Palindrome? Palindromic Words &amp; Phrases Palindrome" data-src="https://i2.wp.com/i.ytimg.com/vi/7gbA3pZR1T8/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Word palindromes are an interesting variation of standard palindromes. The longest known palindromic word is saippuakivikauppias (19 letters), which is finnish for a dealer in lye (caustic soda). It derives from greek roots that literally mean “running back” ( palin is. We have a whole section devoted to the. Palindromic palindromic (english)adjective palindromic (not comparable).</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindromes In English Definition Palindrome Kaplan English Blog" data-src="https://i2.wp.com/czechtheworld.com/wp-content/uploads/2020/11/The-Best-List-of-Palindroms.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cassidyz-nettle.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">According to oxford living dictionaries, a palindrome is a word or phrase that reads the same backward as forward: It derives from greek roots that literally mean “running back” ( palin is. A palindrome is a word, sentence, verse, or even number that reads the same backward or forward. A stretch of dna in which. It&#039;s accessible only by a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome Meaning In Malayalam Palindromes In Malayalam Language" data-src="https://i2.wp.com/static.wixstatic.com/media/a27d24_b5447e3b7ada43448ed95fbd8aabd4e3~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: neolyrics1.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The word palindrome comes from the greek word palindromes, which means “running back again.” the word further breaks down into “palin,” which means back, again, and dramein,. It lies in an obscure corner of scotland, facing the isle of skye across the sound of sleat. A palindrome is a word, sentence, verse, or even number that reads the same backward.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Word Meaning of Palindrome What does Palindrome mean? quizcrazy.in" data-src="https://i2.wp.com/www.quizcrazy.in/word-meaning/word-meaning-of-palindrome.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.quizcrazy.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Word palindromes are an interesting variation of standard palindromes. A stretch of dna in which. Level, madam and racecar are examples of single word palindromes. History of a palindrome dan tilque hood river, oregon. | meaning, pronunciation, translations and examples</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="EXPLANATION OF PALINDROME WORDS Palindromes Learn English YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/yrP-WR33cNs/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Of, relating to, or being a palindrome. What is the origin of the word palindrome? It lies in an obscure corner of scotland, facing the isle of skye across the sound of sleat. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive. The origin of magical word symbols.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="nisha-arabic-name.html" class="be-post-title">
+				 <h6>nisha arabic name </h6>
+                </a>
+                <a href="nisha-arabic-name.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=nisha%20arabic%20name&amp;w=50&amp;h=50&amp;c=7" alt="nisha arabic name">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-cute-in-french.html" class="be-post-title">
+				 <h6>meaning of cute in french </h6>
+                </a>
+                <a href="meaning-of-cute-in-french.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20cute%20in%20french&amp;w=50&amp;h=50&amp;c=7" alt="meaning of cute in french">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="female-dog-meaning-spanish.html" class="be-post-title">
+				 <h6>female dog meaning spanish </h6>
+                </a>
+                <a href="female-dog-meaning-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=female%20dog%20meaning%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="female dog meaning spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-measure-newton-metre-of-torque.html" class="be-post-title">
+				 <h6>how to measure newton metre of torque </h6>
+                </a>
+                <a href="how-to-measure-newton-metre-of-torque.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20measure%20newton%20metre%20of%20torque&amp;w=50&amp;h=50&amp;c=7" alt="how to measure newton metre of torque">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wie-bestellt-und-nicht-abgeholt-sprichwort-englisch.html" class="be-post-title">
+				 <h6>wie bestellt und nicht abgeholt sprichwort englisch </h6>
+                </a>
+                <a href="wie-bestellt-und-nicht-abgeholt-sprichwort-englisch.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wie%20bestellt%20und%20nicht%20abgeholt%20sprichwort%20englisch&amp;w=50&amp;h=50&amp;c=7" alt="wie bestellt und nicht abgeholt sprichwort englisch">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-non-newtonian-fluid-made-of.html" class="be-post-title">
+				 <h6>what is non newtonian fluid made of </h6>
+                </a>
+                <a href="what-is-non-newtonian-fluid-made-of.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20non%20newtonian%20fluid%20made%20of&amp;w=50&amp;h=50&amp;c=7" alt="what is non newtonian fluid made of">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="the-meaning-of-humaira-in-quran.html" class="be-post-title">
+				 <h6>the meaning of humaira in quran </h6>
+                </a>
+                <a href="the-meaning-of-humaira-in-quran.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=the%20meaning%20of%20humaira%20in%20quran&amp;w=50&amp;h=50&amp;c=7" alt="the meaning of humaira in quran">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-s-the-plasma-membrane-function.html" class="be-post-title">
+				 <h6>what&#039;s the plasma membrane function </h6>
+                </a>
+                <a href="what-s-the-plasma-membrane-function.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%27s%20the%20plasma%20membrane%20function&amp;w=50&amp;h=50&amp;c=7" alt="what&amp;#039;s the plasma membrane function">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="wie-sieht-gott-aus-kinderfragen.html" class="be-post-title">
+				 <h6>wie sieht gott aus kinderfragen </h6>
+                </a>
+                <a href="wie-sieht-gott-aus-kinderfragen.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=wie%20sieht%20gott%20aus%20kinderfragen&amp;w=50&amp;h=50&amp;c=7" alt="wie sieht gott aus kinderfragen">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-kannada-oldest-language-in-india.html" class="be-post-title">
+				 <h6>is kannada oldest language in india </h6>
+                </a>
+                <a href="is-kannada-oldest-language-in-india.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20kannada%20oldest%20language%20in%20india&amp;w=50&amp;h=50&amp;c=7" alt="is kannada oldest language in india">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

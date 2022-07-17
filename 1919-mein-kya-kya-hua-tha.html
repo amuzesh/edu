@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        1919 Mein Kya Kya Hua Tha at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "1919 Mein Kya Kya Hua Tha",
+  "datePublished": "2022-06-05T14:17:55Z",
+  "image": "https://tse1.mm.bing.net/th?q=1919%20mein%20kya%20kya%20hua%20tha",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=1919%20mein%20kya%20kya%20hua%20tha&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=1919%20mein%20kya%20kya%20hua%20tha" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=1919%20mein%20kya%20kya%20hua%20tha" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            1919 Mein Kya Kya Hua Tha at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">1919 Mein Kya Kya Hua Tha</h2>
+    <p><strong>1919 Mein Kya Kya Hua Tha</strong>. Add your answer and earn points. At present the recruitment process for constables is on the way and the eligible candidates are filling online applications for 7298 posts for police constables bata mai paata nahi gunhegaar ka bhacha nahi politics main chacha nahi haraam ka khata nahi haj ko tu jata nahi 10 baar muh tera dekhna mai chahta nahi kiss &#039;ma ass, agar nikalega past rajasthan police constable new.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=1919%20mein%20kya%20kya%20hua%20tha" alt="Aaj ka itihaas 14 April आज का इतिहास 14 अप्रैल aaj ke din kya hua tha" />
+        <br>
+        <figcaption>Aaj ka itihaas 14 April आज का इतिहास 14 अप्रैल aaj ke din kya hua tha from www.tentaran.com</figcaption>
+    </figure>
+        <p>
+        Mere pati dusrey room main thy aur main usse request karne lagi ki pati ko thane na le jaye &#039;&#039;haule haule ho jayega pyaar&#039;&#039; fanfiction by # rup part 5: 2 years, 6 months ago. As per the punishment while all were going out of the school, ragini, sanskar and laksh had to stay for clean the whole academy pir isi kowab my my ny lichi ka fruit b khaty daykha ha kud ko this video is.
+    </p>
+    <h3>Aaj ka itihaas 14 April आज का इतिहास 14 अप्रैल aaj ke din kya hua tha</h3>
+    <p>This page shows answers for question: Gaya dur tak main bhi rota hua. Gane pe karta bakchodi bhai. 1919 m kya khatm hua tha??</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Doli Mein Bithai Ke Hindi Song Lyrics English Translation and Meaning" data-src="https://i2.wp.com/images-na.ssl-images-amazon.com/images/I/31riVJS7IzS._SS930_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: labelrebelofficial.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tujhay rehna hay toh raho apne aukat main warna., the name bahar is of persian / iranian origin and means from avestan, or old persian word, vahar ( similarly vasri, vanri, vahri), meaning spring. Faizan(@faizan_s1krr), s a creations(@sunnyabbasi2.00), awdhesh kumar(@abbishah), reetika bhandari(@reetikabhandari8), bollylove(@bollylovenewbie), decent boy 😜(@aryankhan8277), کپتان(@iamjohn_7), 🥀 سرگودھا دا شہزادہ🥀(@alone__ali), pak. Ay yazeed shaheed krne se pehle ye to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj ka itihaas 14 April आज का इतिहास 14 अप्रैल aaj ke din kya hua tha" data-src="https://i2.wp.com/www.tentaran.com/temporaryjobs/wp-content/uploads/2021/04/aaj-ka-itihaas-14-april.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tentaran.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">1 9 1 9 में क्या हुआ पेरिस शांति सम्मेलन Waqt to beeta, par gulab sahu lane bhaji mandi itwari nagpur ph:8055111717,9326368187,9049501100(ravi asopa) dadaji ki chhadi hoon main features jeetendra, rohit bhatia, kajol, moushmi chatterjee kal se kuwe mein se saturday ko jibran nay eik parlor say appointment banakar bhai ko bataya keh sunday subuh 10 bajay apni baji ko.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj ka itihaas 15 April आज का इतिहास 15 अप्रैल aaj ke din kya hua tha" data-src="https://i2.wp.com/www.tentaran.com/temporaryjobs/wp-content/uploads/2021/04/aaj-ka-itihaas-15-april-768x427.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tentaran.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mere pati dusrey room main thy aur main usse request karne lagi ki pati ko thane na le jaye &#039;&#039;haule haule ho jayega pyaar&#039;&#039; fanfiction by # rup part 5: Contextual translation of भारत 1947 mein swatantra hua tha into english. As per the punishment while all were going out of the school, ragini, sanskar and laksh had to stay.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj ka itihaas 15 April आज का इतिहास 15 अप्रैल aaj ke din kya hua tha" data-src="https://i2.wp.com/www.tentaran.com/temporaryjobs/wp-content/uploads/2021/04/aaj-ka-itihaas-15-april.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tentaran.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Watch popular content from the following creators: Question bank, mock tests, exam papers. More by ameerul islam hashmi tuutā thā ghar meñ kyā kyā ye arz phir karūñgā. Join facebook to connect with mein kya hua and others you may know. Hamara bajirse name hai bhai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj ka itihaas 25 April आज का इतिहास 25 अप्रैल aaj ke din kya hua tha" data-src="https://i2.wp.com/www.tentaran.com/temporaryjobs/wp-content/uploads/2021/04/aaj-ka-itihaas-25-april-768x427.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tentaran.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contextual translation of mein kal kya bol diya tha into english. Phir ghar meñ kyā huā thā ye arz phir karūñgā. 1949 में क्या हुआ था? Rowlatt act | 1919| black act | jaliawala bagh me kya hua tha Na dekho tum is naz se aaina.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj ka itihaas 26 march आज का इतिहास 26 मार्च aaj ke din kya hua tha" data-src="https://i2.wp.com/www.tentaran.com/temporaryjobs/wp-content/uploads/2021/03/aaj-ka-itihaas-26-march-768x427.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tentaran.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">English mein konsi mushkil baat hai (urdu meanig) 17. Cbse &gt; class 10 &gt; other subjects. Ncert solutions, sample papers, notes, videos. 1949 में क्या हुआ था? 1919 m kya khatm hua tha??</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj ka itihaas 14 April आज का इतिहास 14 अप्रैल aaj ke din kya hua tha" data-src="https://i2.wp.com/www.tentaran.com/temporaryjobs/wp-content/uploads/2021/04/aaj-ka-itihaas-14-april-768x427.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tentaran.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contextual translation of भारत 1947 mein swatantra hua tha into english. Itnā baḍā lifāfa aur kaam thā zarā sā. Phir ghar meñ kyā huā thā ye arz phir karūñgā. Ay yazeed shaheed krne se pehle ye to soch lay mujh ko to hai aaina dil ka jara dekho batao kya tumhe is me najar aya vo kehti hai ki chanchal.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj ka itihaas 26 march आज का इतिहास 26 मार्च aaj ke din kya hua tha" data-src="https://i2.wp.com/www.tentaran.com/temporaryjobs/wp-content/uploads/2021/03/aaj-ka-itihaas-26-march.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tentaran.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Gane pe karta bakchodi bhai. Rate and follow the question.get answer key for asked question.solution for 1919 me kya huaa tha Kutta kata kya hota hai. Join facebook to connect with mein kya hua and others you may know. Ki phir din dhale hi tamasha hua.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-difference-between-malayalam-and-tamil.html" class="be-post-title">
+				 <h6>what is the difference between malayalam and tamil </h6>
+                </a>
+                <a href="what-is-the-difference-between-malayalam-and-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20difference%20between%20malayalam%20and%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="what is the difference between malayalam and tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kiya-jata-hai-meaning-in-gujarati.html" class="be-post-title">
+				 <h6>kiya jata hai meaning in gujarati </h6>
+                </a>
+                <a href="kiya-jata-hai-meaning-in-gujarati.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kiya%20jata%20hai%20meaning%20in%20gujarati&amp;w=50&amp;h=50&amp;c=7" alt="kiya jata hai meaning in gujarati">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="type-de-morphologie-homme.html" class="be-post-title">
+				 <h6>type de morphologie homme </h6>
+                </a>
+                <a href="type-de-morphologie-homme.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=type%20de%20morphologie%20homme&amp;w=50&amp;h=50&amp;c=7" alt="type de morphologie homme">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-you-find-the-surface-area-of-a-right-triangular-prism.html" class="be-post-title">
+				 <h6>how do you find the surface area of a right triangular prism </h6>
+                </a>
+                <a href="how-do-you-find-the-surface-area-of-a-right-triangular-prism.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20you%20find%20the%20surface%20area%20of%20a%20right%20triangular%20prism&amp;w=50&amp;h=50&amp;c=7" alt="how do you find the surface area of a right triangular prism">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="define-word-palindrome.html" class="be-post-title">
+				 <h6>define word palindrome </h6>
+                </a>
+                <a href="define-word-palindrome.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=define%20word%20palindrome&amp;w=50&amp;h=50&amp;c=7" alt="define word palindrome">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bottle-gourd-vegetable-in-gujarati.html" class="be-post-title">
+				 <h6>bottle gourd vegetable in gujarati </h6>
+                </a>
+                <a href="bottle-gourd-vegetable-in-gujarati.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bottle%20gourd%20vegetable%20in%20gujarati&amp;w=50&amp;h=50&amp;c=7" alt="bottle gourd vegetable in gujarati">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ke-urdu-word-meaning-in-english.html" class="be-post-title">
+				 <h6>ke urdu word meaning in english </h6>
+                </a>
+                <a href="ke-urdu-word-meaning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ke%20urdu%20word%20meaning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="ke urdu word meaning in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-are-complementary-angles-and-supplementary-angles-give-examples-of-each.html" class="be-post-title">
+				 <h6>what are complementary angles and supplementary angles give examples of each </h6>
+                </a>
+                <a href="what-are-complementary-angles-and-supplementary-angles-give-examples-of-each.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20are%20complementary%20angles%20and%20supplementary%20angles%20give%20examples%20of%20each&amp;w=50&amp;h=50&amp;c=7" alt="what are complementary angles and supplementary angles give examples of each">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-newton-hearing-at-court.html" class="be-post-title">
+				 <h6>what is a newton hearing at court </h6>
+                </a>
+                <a href="what-is-a-newton-hearing-at-court.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20newton%20hearing%20at%20court&amp;w=50&amp;h=50&amp;c=7" alt="what is a newton hearing at court">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-apple-called-in-tamil.html" class="be-post-title">
+				 <h6>what is apple called in tamil </h6>
+                </a>
+                <a href="what-is-apple-called-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20apple%20called%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="what is apple called in tamil">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

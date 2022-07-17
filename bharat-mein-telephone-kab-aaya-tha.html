@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bharat Mein Telephone Kab Aaya Tha at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Bharat Mein Telephone Kab Aaya Tha",
+  "datePublished": "2022-06-29T11:12:49Z",
+  "image": "https://tse1.mm.bing.net/th?q=bharat%20mein%20telephone%20kab%20aaya%20tha",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=bharat%20mein%20telephone%20kab%20aaya%20tha&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bharat%20mein%20telephone%20kab%20aaya%20tha" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bharat%20mein%20telephone%20kab%20aaya%20tha" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bharat Mein Telephone Kab Aaya Tha at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Bharat Mein Telephone Kab Aaya Tha</h2>
+    <p><strong>Bharat Mein Telephone Kab Aaya Tha</strong>. Police wale ne rakhail bnaya. [email protected] ` kash koi.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=bharat%20mein%20telephone%20kab%20aaya%20tha" alt="Pubg mobile India (lite) release date ninja shado" />
+        <br>
+        <figcaption>Pubg mobile India (lite) release date ninja shado from www.rockingarmy.com</figcaption>
+    </figure>
+        <p>
+        Pdf), text file ( 84 views 84 views guru: आज से ठीक 22 साल 11 महीने 2 हफ्ते और 3 दिन पहले भारत में सेल्यूलर नेटवर्क के द्वारा पहला फोन कॉल किया गया था. Simon commission kab bharat aaya tha?
+    </p>
+    <h3>Pubg mobile India (lite) release date ninja shado</h3>
+    <p>साइमन कमीशन कब भारत आया. Police wale ne rakhail bnaya. Asked dec 24, 2021 in internet by alok raj (29.8k points) internet +3 votes. Chino yatri fahiyan bhatt kab aaya tha.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mobile ka aavishkar kisne kiya Bharat mein mobile sabse pahli bar kab" data-src="https://i2.wp.com/i.ytimg.com/vi/UBWBl9O9XMI/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Chino yatri fahiyan bhatt kab aaya tha. Ek hotel me 3 kastombar khana khane aae the onka 25 our 25 our. Gunde hue aate ki sabji. Bharat me pahla mobile kab aaya,kisne pahla call kiya tha. Tab maine kaha jab bapu nahi hai to fir aaj kele ya baigan ki sabji bana le, hum dono wahi kha lenge, tujhe bhi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="India mein mobile phone kab aaya shorts YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/o9T5sP_GCp0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Cheni leakhak bharat kab aaya tha. Bharat mein internet kab aaya tha? भारत में टेलिफोन कब आया था? Anjan hai koyee balki isliye kyunki aap. Kas banane wale ne dil kanch ka banaya hota, tod ne wale ke hath me jakham to aya hota। wajha hum kabhi khone na denge, zindgi ke har pal mein.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="&#039;Bang Bang&#039; poster is copied from &#039;Knight and Day&#039; Bollywood Copy" data-src="https://i2.wp.com/bollywoodcopy.com/wp-content/uploads/2016/09/9.jpg?fit=1666%2C1044&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bollywoodcopy.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bharat vyas was born in bikaner in the state of rajasthan on 6 january 1918 in pushkarna brahmin family pandit ji mere marne ke baad f m roti kapda aur makan{cutehunk®} watch. Cheni leakhak bharat kab aaya tha. Gunde hue aate ki sabji. Baap ka beti se nikah hindi kahani urdu kahani story humna voice mai to sirf sweety mam.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pubg mobile India (lite) release date ninja shado" data-src="https://i2.wp.com/1.bp.blogspot.com/-FVqNlJThceA/X7o7wSdFDoI/AAAAAAAAB2A/NbPsBEF4g9MsAnmCu2ztEJ0d8T5kDwXqgCLcBGAsYHQ/s1970/PicsArt_11-22-02.22.59.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.rockingarmy.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Fahyan bharat mein kab aaya tha online gk question tests. [email protected] ` kash koi. भारत में टेलीफोन कब आया था | bharat mein telephone kab aaya tha#bharat_mein_telephone_kab_aaya_tha#bharatmeintelephonekabaayatha#. Mai sahar se dur form house me rahata hu meri famile me six log hai,mai sabse chota hu,meri do sister aur ek bhai hai dono sister badi hai ,mai jab chota tha.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lirik Lagu Uff dan Artinya (Bang Bang!) Pecinta India" data-src="https://i2.wp.com/3.bp.blogspot.com/-B0vDk9sZpwQ/WvrX6A1ai2I/AAAAAAAADh0/knMlFhXIsHEvaNmjVT8WOpE7FJYEVTcQwCLcBGAs/s1600/maxresdefault%2B%252849%2529.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pecinta-india.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Gunde hue aate ki sabji. Asked dec 24, 2021 in internet by alok raj (29.8k points) internet +3 votes. Bharat me pahla mobile kab aaya,kisne pahla. Bharat mein internet kab aaya tha? Tab maine kaha jab bapu nahi hai to fir aaj kele ya baigan ki sabji bana le, hum dono wahi kha lenge, tujhe bhi to pasand hai iski.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pubg mobile India (lite) release date ninja shado" data-src="https://i2.wp.com/1.bp.blogspot.com/-FVqNlJThceA/X7o7wSdFDoI/AAAAAAAAB2A/NbPsBEF4g9MsAnmCu2ztEJ0d8T5kDwXqgCLcBGAsYHQ/w1200-h630-p-k-no-nu/PicsArt_11-22-02.22.59.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.rockingarmy.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">भारत में टेलिफोन कब आया था? Baap ka beti se nikah hindi kahani urdu kahani story humna voice mai to sirf sweety mam ka hi soch raha tha mohan choti, actor: Bharat me pahla mobile kab aaya,kisne pahla. Fahyan bharat mein kab aaya tha online gk question tests. आज से ठीक 22 साल 11 महीने 2 हफ्ते और 3 दिन.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="🔥 25+ Best Memes About Gaya Gaya Memes" data-src="https://i2.wp.com/pics.onsizzle.com/ladka-phone-pe-apne-dost-ko-la-kya-be-kutteke-6963948.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: onsizzle.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Simon commission kab bharat aaya tha? Bharat mein telephone kab aaya tha? Gunde hue aate ki sabji. Asked may 23 in history by ravi singh (23.6k points) edited may 24 by ravi singh. Baap ka beti se nikah hindi kahani urdu kahani story humna voice mai to sirf sweety mam ka hi soch raha tha mohan choti, actor:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="carryminati india mein kab aaya YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/ppDaqoPp9l4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bharat vyas was born in bikaner in the state of rajasthan on 6 january 1918 in pushkarna brahmin family pandit ji mere marne ke baad f m roti kapda aur makan{cutehunk®} watch. Bharat me pahla mobile kab aaya,kisne pahla call kiya tha. Kas banane wale ne dil kanch ka banaya hota, tod ne wale ke hath me jakham to aya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Lirik Lagu Uff dan Artinya (Bang Bang!) Pecinta India" data-src="https://i2.wp.com/3.bp.blogspot.com/-B0vDk9sZpwQ/WvrX6A1ai2I/AAAAAAAADh0/knMlFhXIsHEvaNmjVT8WOpE7FJYEVTcQwCLcBGAs/s640/maxresdefault%2B%252849%2529.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pecinta-india.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bharat mein telephone kab aaya tha? Chini yatri fyahiyan bharat kab. Garib ki beti ka dahej. Asked may 23 in history by ravi singh (23.6k points) edited may 24 by ravi singh. भारत में टेलिफोन कब आया था?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Raag Pravaah 07 September 2018 Keepalivemusic" data-src="https://i2.wp.com/www.keepalivemusic.com/wp-content/uploads/2018/08/41-Todi-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.keepalivemusic.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">भारत में टेलीफोन कब आया था | bharat mein telephone kab aaya tha#bharat_mein_telephone_kab_aaya_tha#bharatmeintelephonekabaayatha#. Bharat mein internet kab aaya tha? Bharat vyas was born in bikaner in the state of rajasthan on 6 january 1918 in pushkarna brahmin family pandit ji mere marne ke baad f m roti kapda aur makan{cutehunk®} watch. साइमन कमीशन कब भारत आया. भारत में टेलिफोन कब.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-many-types-of-commands-are-there.html" class="be-post-title">
+				 <h6>how many types of commands are there </h6>
+                </a>
+                <a href="how-many-types-of-commands-are-there.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20many%20types%20of%20commands%20are%20there&amp;w=50&amp;h=50&amp;c=7" alt="how many types of commands are there">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-name-samantha.html" class="be-post-title">
+				 <h6>what is the meaning of name samantha </h6>
+                </a>
+                <a href="what-is-the-meaning-of-name-samantha.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20name%20samantha&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of name samantha">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-hindi-word-paribhasha-in-english.html" class="be-post-title">
+				 <h6>meaning of hindi word paribhasha in english </h6>
+                </a>
+                <a href="meaning-of-hindi-word-paribhasha-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20hindi%20word%20paribhasha%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="meaning of hindi word paribhasha in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="well-ne-demek-ingilizcede.html" class="be-post-title">
+				 <h6>well ne demek ingilizcede </h6>
+                </a>
+                <a href="well-ne-demek-ingilizcede.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=well%20ne%20demek%20ingilizcede&amp;w=50&amp;h=50&amp;c=7" alt="well ne demek ingilizcede">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="quelle-vie-de-chien.html" class="be-post-title">
+				 <h6>quelle vie de chien </h6>
+                </a>
+                <a href="quelle-vie-de-chien.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=quelle%20vie%20de%20chien&amp;w=50&amp;h=50&amp;c=7" alt="quelle vie de chien">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="mean-nicknames-for-your-ex-boyfriend.html" class="be-post-title">
+				 <h6>mean nicknames for your ex boyfriend </h6>
+                </a>
+                <a href="mean-nicknames-for-your-ex-boyfriend.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=mean%20nicknames%20for%20your%20ex%20boyfriend&amp;w=50&amp;h=50&amp;c=7" alt="mean nicknames for your ex boyfriend">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="name-meaning-in-hindi-sahil.html" class="be-post-title">
+				 <h6>name meaning in hindi sahil </h6>
+                </a>
+                <a href="name-meaning-in-hindi-sahil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=name%20meaning%20in%20hindi%20sahil&amp;w=50&amp;h=50&amp;c=7" alt="name meaning in hindi sahil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-s-the-definition-of-love-language.html" class="be-post-title">
+				 <h6>what&#039;s the definition of love language </h6>
+                </a>
+                <a href="what-s-the-definition-of-love-language.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%27s%20the%20definition%20of%20love%20language&amp;w=50&amp;h=50&amp;c=7" alt="what&amp;#039;s the definition of love language">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="which-of-the-following-is-an-example-of-bias-free-language.html" class="be-post-title">
+				 <h6>which of the following is an example of bias-free language </h6>
+                </a>
+                <a href="which-of-the-following-is-an-example-of-bias-free-language.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=which%20of%20the%20following%20is%20an%20example%20of%20bias-free%20language&amp;w=50&amp;h=50&amp;c=7" alt="which of the following is an example of bias-free language">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-narrative-poem-called.html" class="be-post-title">
+				 <h6>what is a narrative poem called </h6>
+                </a>
+                <a href="what-is-a-narrative-poem-called.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20narrative%20poem%20called&amp;w=50&amp;h=50&amp;c=7" alt="what is a narrative poem called">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

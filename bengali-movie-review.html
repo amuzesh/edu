@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bengali Movie Review at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Bengali Movie Review",
+  "datePublished": "2022-05-17T18:55:39Z",
+  "image": "https://tse1.mm.bing.net/th?q=bengali%20movie%20review",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=bengali%20movie%20review&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bengali%20movie%20review" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bengali%20movie%20review" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bengali Movie Review at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Bengali Movie Review</h2>
+    <p><strong>Bengali Movie Review</strong>. Tarun banerjee july 10, 2022. Mussanjemaatu is a 2008 indian kannada language romantic film starring sudeep and ramya.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=bengali%20movie%20review" alt="(Bengali)&quot; Movie Review An Entertaining Thriller" />
+        <br>
+        <figcaption>(Bengali)&quot; Movie Review An Entertaining Thriller from bollywoodmayanagri.blogspot.com</figcaption>
+    </figure>
+        <p>
+        A tight, pacy thriller that keeps you invested mukhosh movie review: Bony, and parambrata, deserve a round of applause for daring to enter uncharted territory in bengali cinema. With karuna bannerjee, shekhar chatterjee, ranjit mallick.
+    </p>
+    <h3>(Bengali)&quot; Movie Review An Entertaining Thriller</h3>
+    <p>Jisshu sengupta, swastika mukherjee and others : Get all the latest movie reviews in bengali. The film is based on adaptation of two of william shakespeare’s tragedies: Life of an elderly couple and the bond that parents, children and other members of the family share together in a indian family in bengal.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bisorjon (2017) Bengali Movie" data-src="https://i2.wp.com/staticimg.spicyonion.com/images/profile/title/bisorjon-bengali-movie/bisorjon-bengalimovie.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: spicyonion.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Mussanjemaatu is a 2008 indian kannada language romantic film starring sudeep and ramya. Life of an elderly couple and the bond that parents, children and other members of the family share together in a indian family in bengal. The movie was remade in. The game 90 ghanta director: Rotten tomatoes, home of the tomatometer, is the most trusted measurement of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Shukno Lanka Bengali Film Review Story Casts" data-src="https://i2.wp.com/www.socialvillage.in/attachments/resources/43889-1-shukno-lanka-desktop-wallpapers034.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.socialvillage.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Birsa dasgupta’s film, which translates to ‘the mask’ in bengali, explores the. With soumitra chatterjee, swatilekha sengupta, rituparna sengupta, aparajita adhya. Life of an elderly couple and the bond that parents, children and other members of the family share together in a indian family in bengal. Oct 18, 2021, 06.11 pm ist critic&#039;s rating: The shooting of the film started.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Critics on Beparoyaa Bengali Movie Review Rating (2/5) &amp; First Day" data-src="https://i2.wp.com/theindiantalks.com/wp-content/uploads/2016/01/Beparoyaa-Bengali-Movie-Review.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.theindiantalks.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bony, and parambrata, deserve a round of applause for daring to enter uncharted territory in bengali cinema. In an episode of ghosh &amp; company, rituparno ghosh’s eminently watchable talk show that made even babul supriyo sound interesting, ghosh chides aniruddha ray chaudhuri and kaushik ganguly, celebrated filmmakers of contemporary bengal, for not being. পদবি বদলের গল্প ‘কুলের আচার’, হাসির মোড়কে.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Top 10 Bengali Movies of Dev WittyColumn" data-src="https://i2.wp.com/wittycolumn.com/wp-content/uploads/2019/09/dev.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wittycolumn.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The bengali, a 2021 documentary by filmmaker kavery kaul, addresses the dangers of roaming into unfamiliar territory but also celebrates what can be gained from the experience. The film is based on adaptation of two of william shakespeare’s tragedies: পদবি বদলের গল্প ‘কুলের আচার’, হাসির মোড়কে সাজানো চিত্রনাট্য, পড়ুন রিভিউ. তাপসী পান্নু একাই হিরো ‘‌সাবাস মিঠু’‌তে #movie #moviereview #review #entertainment.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mask 2020 Bangla Dubbed Full ORG Movie 720p HDRip 700MB x264 MKV" data-src="https://i2.wp.com/i.imgur.com/BJrRwX9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.300mbfilms4u.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A tight, pacy thriller that keeps you invested; Prices (hindi, 1 / 4. The game 90 ghanta director: The music of the film was launched on 4 april 2008. The shooting of the film started in january 2016.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(Bengali)&quot; Movie Review An Entertaining Thriller" data-src="https://i2.wp.com/1.bp.blogspot.com/-on13JR8gpa8/XXd4tdJ5PTI/AAAAAAAAA5g/4A6S0fyET9ABbbqnkzJXOUW07IwctsmAgCLcBGAs/s1600/MV5BNmQxYmE4MmEtY2Q4Ni00ZmE3LWJkMjItYzRlZjRiZDAwMmViXkEyXkFqcGdeQXVyMTAxMjc1NDI%2540._V1_QL50_SY1000_CR0%252C0%252C666%252C1000_AL_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bollywoodmayanagri.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Unfortunately, the bengali film industry latched on to that very legacy of the celebrated filmmaker. Mussanjemaatu is a 2008 indian kannada language romantic film starring sudeep and ramya. Check out bengali movie cinema halls in kolkata, delhi, mumbai, bangalore, pune and other cities.you can now search for new bengali movies, read reviews, view the trailers and share your opinion on.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bengali Girlfriend Movie Review &amp; Ratings Audience Response Live" data-src="https://i2.wp.com/www.dekhnews.com/entertainment/wp-content/uploads/2018/11/FvAGheG.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dekhnews.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The movie is produced by suresh jain. A tight, pacy thriller that keeps you invested mukhosh movie review: Julius caesar and antony and cleopatra. Read bollywood movie review, tollywood movie review, tollywood cinema review, movie review by critics, cinema ratings, movie story, music and star cast of your favourite bangla movies. Bongo banjo is supplying bengali web series reviews, bengali.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Love Express (2016) Bengali Movie" data-src="https://i2.wp.com/staticimg.spicyonion.com/images/profile/title/love-express-bengali-movie/love-express-bengali-movie.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: spicyonion.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Check out bengali movie cinema halls in kolkata, delhi, mumbai, bangalore, pune and other cities.you can now search for new bengali movies, read reviews, view the trailers and share your opinion on the same. Marathi, telugu, tamil, kannada, malayalam, bengali) 1. Tarun banerjee july 10, 2022. Bony, and parambrata, deserve a round of applause for daring to enter uncharted territory.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Parbona Ami Charte Toke (2015) Bengali Movie" data-src="https://i2.wp.com/staticimg.spicyonion.com/images/profile/title/parbona-ami-charte-toke-bengali-movie/parbona-ami-charte-toke-bengali-movie.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: spicyonion.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tarun banerjee july 10, 2022. The music of the film was launched on 4 april 2008. Read what the movie critics say, give your own rating and write your take on the story, music and cast of your favourite bengali flick. Marathi, telugu, tamil, kannada, malayalam, bengali) 1. অম্বরীশের দাবি, চেহারার জন্যই নায়িকারা গাল টিপে আদর করে.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Rangbaaz Bengali Movie Review, Trailer, Poster Shakib Khan, Bubly" data-src="https://i2.wp.com/2.bp.blogspot.com/-LMkaCgD4CLU/WaBc1cjF5YI/AAAAAAAALX0/P24L1jHw5U8Eo9Bblr3afxM2XTVPPzaXwCLcBGAs/s1600/Rangbaaz-movie-poster-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.filmnstars.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Switzerland, starring abir chatterjee &amp; rukmini maitra, is a story about a family who have to make ends meet to travel to shimla, but end up going to switzer. Check out bengali movie cinema halls in kolkata, delhi, mumbai, bangalore, pune and other cities.you can now search for new bengali movies, read reviews, view the trailers and share your opinion.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-english-word-palpable.html" class="be-post-title">
+				 <h6>meaning of english word palpable </h6>
+                </a>
+                <a href="meaning-of-english-word-palpable.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20english%20word%20palpable&amp;w=50&amp;h=50&amp;c=7" alt="meaning of english word palpable">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="lawan-kata-bengis-adalah.html" class="be-post-title">
+				 <h6>lawan kata bengis adalah </h6>
+                </a>
+                <a href="lawan-kata-bengis-adalah.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=lawan%20kata%20bengis%20adalah&amp;w=50&amp;h=50&amp;c=7" alt="lawan kata bengis adalah">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komodo-termasuk-hewan-mamalia-atau-bukan.html" class="be-post-title">
+				 <h6>komodo termasuk hewan mamalia atau bukan </h6>
+                </a>
+                <a href="komodo-termasuk-hewan-mamalia-atau-bukan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komodo%20termasuk%20hewan%20mamalia%20atau%20bukan&amp;w=50&amp;h=50&amp;c=7" alt="komodo termasuk hewan mamalia atau bukan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-flow-meter-used-for.html" class="be-post-title">
+				 <h6>what is flow meter used for </h6>
+                </a>
+                <a href="what-is-flow-meter-used-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20flow%20meter%20used%20for&amp;w=50&amp;h=50&amp;c=7" alt="what is flow meter used for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-ashar-in-arabic.html" class="be-post-title">
+				 <h6>meaning of ashar in arabic </h6>
+                </a>
+                <a href="meaning-of-ashar-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20ashar%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="meaning of ashar in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-most-accurate-definition-of-media-bias-apex.html" class="be-post-title">
+				 <h6>what is the most accurate definition of media bias apex </h6>
+                </a>
+                <a href="what-is-the-most-accurate-definition-of-media-bias-apex.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20most%20accurate%20definition%20of%20media%20bias%20apex&amp;w=50&amp;h=50&amp;c=7" alt="what is the most accurate definition of media bias apex">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-the-word-samurai.html" class="be-post-title">
+				 <h6>meaning of the word samurai </h6>
+                </a>
+                <a href="meaning-of-the-word-samurai.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20the%20word%20samurai&amp;w=50&amp;h=50&amp;c=7" alt="meaning of the word samurai">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-tecnologia-informatica.html" class="be-post-title">
+				 <h6>que es tecnologia informatica </h6>
+                </a>
+                <a href="que-es-tecnologia-informatica.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20tecnologia%20informatica&amp;w=50&amp;h=50&amp;c=7" alt="que es tecnologia informatica">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-kan-jam-mean-in-english.html" class="be-post-title">
+				 <h6>what does kan jam mean in english </h6>
+                </a>
+                <a href="what-does-kan-jam-mean-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20kan%20jam%20mean%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what does kan jam mean in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aap-kaise-hai-english-translation.html" class="be-post-title">
+				 <h6>aap kaise hai english translation </h6>
+                </a>
+                <a href="aap-kaise-hai-english-translation.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aap%20kaise%20hai%20english%20translation&amp;w=50&amp;h=50&amp;c=7" alt="aap kaise hai english translation">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

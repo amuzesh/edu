@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kata Bengis Adalah at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Kata Bengis Adalah",
+  "datePublished": "2022-05-27T05:12:11Z",
+  "image": "https://tse1.mm.bing.net/th?q=kata%20bengis%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kata%20bengis%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kata%20bengis%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kata%20bengis%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kata Bengis Adalah at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kata Bengis Adalah</h2>
+    <p><strong>Kata Bengis Adalah</strong>. Arti kata bengis menurut kbbi 1 bengis [be·ngis] kata adjektiva (kata sifat) 1) bersifat keras tanpa belas kasihan kepada manusia atau binatang; Arti kata sifat lainnya untuk.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kata%20bengis%20adalah" alt="Anies Baswedan Berusaha jadi &quot;Firaun&quot; Catatan Rully Moenandir" />
+        <br>
+        <figcaption>Anies Baswedan Berusaha jadi &quot;Firaun&quot; Catatan Rully Moenandir from rullymoenandir.blogspot.com</figcaption>
+    </figure>
+        <p>
+        3 tajam dan pedas (tt perkataan): Jenis kata yang pertama adalah kata benda yang nanti akan dibahas mendetail lagi di bagian bawah. Berikut ini makna dan tulisan kata bengal yang benar:
+    </p>
+    <h3>Anies Baswedan Berusaha jadi &quot;Firaun&quot; Catatan Rully Moenandir</h3>
+    <p>Biasakan mulai dari sekarang, ya. 3 tajam dan pedas (tt perkataan): Raja itu sangat — thd rakyatnya; Raja itu sangat — terhadap rakyatnya;</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tegas Bukan Bengis ala Anies" data-src="https://i2.wp.com/idrtimes.com/wp-content/uploads/2020/09/tegas-bukan-bengis-ala-anies.jpg?v=1600214452" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: idrtimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Raja itu sangat — terhadap rakyatnya; 1 bengis / 1 be·ngis/ a 1 bersifat keras tanpa belas kasihan kpd manusia atau binatang; Apabila kecenderungan itu mendalam dan menguat, maka ia dinamakan rindu. (2) menyebabkan penderitaan (kesengsaraan) yang berat: Rima akhir ganda tak sempurna [rima ganda tak sempurna adalah persamaan bunyi pada sebagian dua suku kata terakhir.] ametis, ateis, belis, betis,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="15 Petikan Puisi Wiji Thukul Ini Bisa Bikin Marah, Juga Menangis. Hidup" data-src="https://i2.wp.com/cdn-image.hipwee.com/wp-content/uploads/2017/01/hipwee-WijiThukul3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hipwee.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Bengis, secara umum bisa diartikan sebagai sifat kejam yang tidak berbelas kasihan, secara sederhana dan lebih spesifik dinyatakan dalam ungkapan perilakusadis.perilaku sadis adalah perilaku orang bengis. Penggunaannya lumrah ditambahkan pada setiap kalimat. Sinonim kata bengis adalah zalim, aniaya, buas, kejam, lalim. Menjadikan hamba dapat mengaduh pada tuhannya. Bengis jika diulurkan bukan pada waktunya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kesalahan umum tatabahasa" data-src="https://i2.wp.com/image.slidesharecdn.com/kesalahanumumtatabahasa-nadzriah-111203035940-phpapp01/95/kesalahan-umum-tatabahasa-14-728.jpg?cb=1322885796" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Arti kata bengis adalah menyebabkan penderitaan (kesengsaraan) yang berat. Vitriol adalah salah satu istilah kimia kuno yang kini dipakai sebagai metafora untuk menggambarkan dengan tajam perasaan yang ada pada manusia. Bengis jika diulurkan bukan pada waktunya. Bantuan penjelasan simbol huruf yang ada. (2) menyebabkan penderitaan (kesengsaraan) yg berat:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dari kecil aku pilih ayah dari ibu, sehinggalah ayah pergi tinggalkan" data-src="https://i2.wp.com/hai.mehbaca.com/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-20-at-10.59.01-PM.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hai.mehbaca.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">[a] (1) bersifat keras tanpa belas kasihan kepada manusia atau binatang; Bagaimana bengis dan sadis ini bisa terbentuk? Berikut ini adalah arti, makna, pengertian, definisi dari kata  bengis  menurut kamus besar bahasa indonesia (kbbi) online dan menurut para ahli bahasa. Raja itu sangat — thd rakyatnya; 2 menyebabkan penderitaan (kesengsaraan) yg berat:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7 Arti Kata Bengis di Kamus Besar Bahasa Indonesia (KBBI) Lektur.ID" data-src="https://i2.wp.com/lektur.id/wp-content/uploads/2020/04/bengka.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lektur.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Terdapat 7 arti kata &#039;bengis&#039; di kbbi. (2) menyebabkan penderitaan (kesengsaraan) yg berat: Hukuman yang bengis, tindakan yang bengis. Untuk menyebutkan maksud di atas, kata yang benar adalah “garang” yang memiliki arti pemarah lagi bengis, galak atau ganas. Terdapat juga antonym, lawan kata, tesaurus inggris dan indonesia dari bengis.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Puisi Tentang Bengis Rindu 5 Bait Oleh Deanitadean_" data-src="https://i2.wp.com/www.puisipendek.net/wp-content/uploads/2020/08/bengis-rindu-768x768.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.puisipendek.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(2) menyebabkan penderitaan (kesengsaraan) yg berat: Berikut ini makna dan tulisan kata bengal yang benar: Bagaimana bengis dan sadis ini bisa terbentuk? Apabila kecenderungan itu mendalam dan menguat, maka ia dinamakan rindu. Berikut adalah penjelasan dari arti kata bengis berdasarkan kbbi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Anies Baswedan Berusaha jadi &quot;Firaun&quot; Catatan Rully Moenandir" data-src="https://i2.wp.com/4.bp.blogspot.com/-gRhdNy9AAeU/XH7NtAl76bI/AAAAAAABgnE/f5I7MvJ4Ipg8yydw_FdikG53_DAhZNmaQCPcBGAYYCw/s1600/insert-fotoa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: rullymoenandir.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(3) tajam dan pedas (tt. Bengis jika diulurkan bukan pada waktunya. Raja itu sangat • bengis thd rakyatnya; (2) menyebabkan penderitaan (kesengsaraan) yg berat: Apabila kecenderungan itu mendalam dan menguat, maka ia dinamakan rindu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="puisi itu adalah kau" data-src="https://i2.wp.com/2.bp.blogspot.com/-Kh-naCPLuco/VWqsosb7hrI/AAAAAAAAKCk/kz6yLmk7Lew/s1600/puisi%2Bitu%2Badalah%2Bkau.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: absurditasmalka.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut ini adalah penjelasan dan arti kata bengis berdasarkan kamus besar bahasa indonesia (kbbi) online adalah: Vitriol adalah salah satu istilah kimia kuno yang kini dipakai sebagai metafora untuk menggambarkan dengan tajam perasaan yang ada pada manusia. Nama lain dari jenis kata ini adalah nomina, yang mengacu pada suatu benda baik konkret maupun abstrak. Menjadikan hamba dapat mengaduh pada tuhannya..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Sebat lesbian Jangan tunjuk Islam agama bengis, kata Dr M Free" data-src="https://i2.wp.com/s3media.freemalaysiatoday.com/wp-content/uploads/2018/09/tun-mahathir-mohamad-040918-2-696x435.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.freemalaysiatoday.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">3 tajam dan pedas (tt perkataan): Penggunaannya lumrah ditambahkan pada setiap kalimat. 2 menyebabkan penderitaan (kesengsaraan) yg berat: Kebanyakan dai kita pasti beranggapan bahwa “wacana” adalah kata yang menggambarkan sebuah rencana yang gagal atau hanya omong kosong belaka. (2) menyebabkan penderitaan (kesengsaraan) yang berat:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7 Arti Kata Bengis di Kamus Besar Bahasa Indonesia (KBBI) Lektur.ID" data-src="https://i2.wp.com/lektur.id/wp-content/uploads/2020/04/bengik-atau-bengek.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lektur.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kata yang berima dengan bengis. (2) menyebabkan penderitaan (kesengsaraan) yg berat: Bengis, secara umum bisa diartikan sebagai sifat kejam yang tidak berbelas kasihan, secara sederhana dan lebih spesifik dinyatakan dalam ungkapan perilakusadis.perilaku sadis adalah perilaku orang bengis. Berikut ini makna dan tulisan kata bengal yang benar: Namun, semesra langit memeluk bulan.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-a-c-stand-for-in-history.html" class="be-post-title">
+				 <h6>what does a.c stand for in history </h6>
+                </a>
+                <a href="what-does-a-c-stand-for-in-history.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20a.c%20stand%20for%20in%20history&amp;w=50&amp;h=50&amp;c=7" alt="what does a.c stand for in history">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="baap-baap-hota-hai-meaning-in-tamil.html" class="be-post-title">
+				 <h6>baap baap hota hai meaning in tamil </h6>
+                </a>
+                <a href="baap-baap-hota-hai-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=baap%20baap%20hota%20hai%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="baap baap hota hai meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="la-perla-habana-cigar-review.html" class="be-post-title">
+				 <h6>la perla habana cigar review </h6>
+                </a>
+                <a href="la-perla-habana-cigar-review.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=la%20perla%20habana%20cigar%20review&amp;w=50&amp;h=50&amp;c=7" alt="la perla habana cigar review">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kannada-numbers-1-to-100-in-english-words.html" class="be-post-title">
+				 <h6>kannada numbers 1 to 100 in english words </h6>
+                </a>
+                <a href="kannada-numbers-1-to-100-in-english-words.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kannada%20numbers%201%20to%20100%20in%20english%20words&amp;w=50&amp;h=50&amp;c=7" alt="kannada numbers 1 to 100 in english words">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-ayanna-mean-in-arabic.html" class="be-post-title">
+				 <h6>what does ayanna mean in arabic </h6>
+                </a>
+                <a href="what-does-ayanna-mean-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20ayanna%20mean%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="what does ayanna mean in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="narrative-essay-definition-literature.html" class="be-post-title">
+				 <h6>narrative essay definition literature </h6>
+                </a>
+                <a href="narrative-essay-definition-literature.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=narrative%20essay%20definition%20literature&amp;w=50&amp;h=50&amp;c=7" alt="narrative essay definition literature">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-allie-mean-in-spanish.html" class="be-post-title">
+				 <h6>what does allie mean in spanish </h6>
+                </a>
+                <a href="what-does-allie-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20allie%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what does allie mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="female-infanticide-meaning-in-tamil.html" class="be-post-title">
+				 <h6>female infanticide meaning in tamil </h6>
+                </a>
+                <a href="female-infanticide-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=female%20infanticide%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="female infanticide meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-estas-bien-guey-mean.html" class="be-post-title">
+				 <h6>what does estas bien guey mean </h6>
+                </a>
+                <a href="what-does-estas-bien-guey-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20estas%20bien%20guey%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does estas bien guey mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-bengali-meaning-of-the-word-inevitable.html" class="be-post-title">
+				 <h6>what is the bengali meaning of the word inevitable </h6>
+                </a>
+                <a href="what-is-the-bengali-meaning-of-the-word-inevitable.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20bengali%20meaning%20of%20the%20word%20inevitable&amp;w=50&amp;h=50&amp;c=7" alt="what is the bengali meaning of the word inevitable">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

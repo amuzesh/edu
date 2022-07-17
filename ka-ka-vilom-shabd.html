@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Ka Ka Vilom Shabd at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Ka Ka Vilom Shabd",
+  "datePublished": "2022-06-07T11:04:01Z",
+  "image": "https://tse1.mm.bing.net/th?q=ka%20ka%20vilom%20shabd",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=ka%20ka%20vilom%20shabd&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ka%20ka%20vilom%20shabd" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ka%20ka%20vilom%20shabd" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Ka Ka Vilom Shabd at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Ka Ka Vilom Shabd</h2>
+    <p><strong>Ka Ka Vilom Shabd</strong>. Leave a reply cancel reply. जानें क्या होता है सुखी का विलोम शब्द हिन्दी में ( sukhi ka vilom shabd in hindi grammar ) हिन्दी व्याकरण आज हम सभी छात्र पढ़ते है।</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=ka%20ka%20vilom%20shabd" alt="Vilom Shabd in Hindi (Antonyms) विलोम शब्द विपरीतार्थक शब्द हिन्दी" />
+        <br>
+        <figcaption>Vilom Shabd in Hindi (Antonyms) विलोम शब्द विपरीतार्थक शब्द हिन्दी from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Swagat vipritarthak, swagat antonyms in hindi, vilom of swagat, swagat ka vilom., in “wordtodictionary” you will find the word antonym of the swagat ‘ and along with the derivation. Hindi me prabhav ka vilom shabd dushprabhav hota hai. कृपण का विलोम शब्द उदार होता है। आज के महत्वपूर्ण नवीनतम प्रश्न.
+    </p>
+    <h3>Vilom Shabd in Hindi (Antonyms) विलोम शब्द विपरीतार्थक शब्द हिन्दी</h3>
+    <p>जानें काम का विलोम शब्द क्या है? फूल का विलोम शब्दphool ka vilom shabdphool ka vilom shabd kya hogaphool ka vilom shabd fulफूल का विलोम बताइएफूल का. Know (antonyms in hindi) vilom shabd paribhasha, definition and get some popular examples. मित्रो आज इस पोस्ट में हम आपको बताने जा रहे है कि vilom shabd kise kahate hai?, vilom shabd kya hota hai?</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kushal Ka Vilom Shabd Sadi kuwu" data-src="https://i2.wp.com/i.ytimg.com/vi/qpPAYn1ocQQ/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sadikuwu.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">दोस्तों साक्षर का विलोम शब्द होता है। निरक्षर होना । साक्षर का मतलब होता है पढ़ने लिखने की क्षमता जिसको किसी भी भाषा के अंदर पढ़ना. Sadgun/सद्गुण ka vilom shabd in hindi, english, hinglish at one place. Your email address will not be published. Khandan ka vilom (opposite word) kya hai? शब्द के विलोम शब्द के बारे में अनेक.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vilom Shabd in Hindi (Antonyms) विलोम शब्द / विपरीतार्थक शब्द हिन्दी" data-src="https://i.pinimg.com/originals/41/71/3e/41713ee822f461dc2a0f98b7951b6b7a.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: in.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">वन के विलोम शब्द के बारे में अनेक स्कूली और प्रतियोगी. कमल का विलोम शब्द क्या होगा? Khandan ka vilom (opposite word) kya hai? हिंदी में प्रभाव का विलोम शब्द दुष्प्रभाव होता है. Sadgun/सद्गुण ka vilom shabd in hindi, english, hinglish at one place.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kushal Ka Vilom Shabd Sadi kuwu" data-src="https://i2.wp.com/1.bp.blogspot.com/-B8G1ckY0kbY/XZCPY66B0zI/AAAAAAAACh4/cfUTjckJpTo9fLj78SS5E_RDlWdLzq2QwCLcBGAsYHQ/s1600/Vilom%2BShabd.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sadikuwu.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Shaant/शांत ka vilom shabd in hindi, english, hinglish at one place. अलग का विलोम शब्द इकट्टा होता है। आज के महत्वपूर्ण नवीनतम प्रश्न Vilom shabd of the day Share it with your friends on facebook whatsapp etc. वन के विलोम शब्द के बारे में अनेक स्कूली और प्रतियोगी.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vilom shabd विलोम शब्द YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/YdXWpA4oTYo/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Krpan ka vilom shabd kya hota hai : Vilom shabd of the day कमल का विलोम शब्द क्या होगा? Find here hindi vilom shabd of khandan (खण्डन). जानें काम का विलोम शब्द क्या है?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vilom shabd विलोम शब्द YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/faRnrw8qmf4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Know (antonyms in hindi) vilom shabd paribhasha, definition and get some popular examples. विलोम शब्द , vilom shabd. हिंदी में प्रभाव का विलोम शब्द दुष्प्रभाव होता है. फूल का विलोम शब्दphool ka vilom shabdphool ka vilom shabd kya hogaphool ka vilom shabd fulफूल का विलोम बताइएफूल का. Also check a huge list of hindi vilom shabd.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pin on Hindi Grammar हिन्दी व्याकरण (Vyakaran)" data-src="https://i.pinimg.com/originals/d6/56/11/d6561117947741d8045392cd6f946638.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Find here hindi vilom shabd of khandan (खण्डन). कमल का विलोम शब्द क्या होगा? जानें क्या होता है सुखी का विलोम शब्द हिन्दी में ( sukhi ka vilom shabd in hindi grammar ) हिन्दी व्याकरण आज हम सभी छात्र पढ़ते है। Here is list of vilom shabd (विलोम शब्द) in hindi. Krpan ka vilom shabd kya hota hai :</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vilom Shabd" data-src="https://i2.wp.com/www.hinditeacheronline.com/wp-content/uploads/2017/05/Vilom-Shabd.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hinditeacheronline.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">विलोम शब्द , vilom shabd. अलग का विलोम शब्द इकट्टा होता है। आज के महत्वपूर्ण नवीनतम प्रश्न Hindi me prabhav ka vilom shabd dushprabhav hota hai. दोस्तों आलस्य का विलोम शब्द होता है निरालस्य या दोस्तों आलस्य के मतलब के बारे मे आप अच्छी तरह से जानते हैं। आलस्य का मतलब होता है जब. हिंदी में प्रभाव का विलोम शब्द.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="vilom shabd............. Brainly.in" data-src="https://i2.wp.com/hi-static.z-dn.net/files/d2f/6bd2cfca24b2bf13666b5b9f3c0228ed.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Your email address will not be published. Krpan ka vilom shabd kya hota hai : Kamal ka vilom shabd kya hoga? जानें क्या होता है सुखी का विलोम शब्द हिन्दी में ( sukhi ka vilom shabd in hindi grammar ) हिन्दी व्याकरण आज हम सभी छात्र पढ़ते है। इस बारे में अधिकांश लोगो को.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vilom Shabd in Hindi (Antonyms) विलोम शब्द विपरीतार्थक शब्द हिन्दी" data-src="https://i.pinimg.com/originals/fb/fe/93/fbfe93886e641654602b2fa734a35a27.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">अपेक्षा का मतलब होता है आशा, उम्मीद, आकांक्षा, अन्ववेक्षा, तुलना। जबकि उपेक्षा का मतलब होता है तिरष्कार, ध्यान न देना. Your email address will not be published. Krpan ka vilom shabd kya hota hai : Shaant/शांत ka vilom shabd in hindi, english, hinglish at one place. Kala ka vilom shabd june 14, 2021 june 14, 2021 मनोज मिश्रा काला का.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="1 se 20 tak vilom shabd likhiye Brainly.in" data-src="https://i2.wp.com/hi-static.z-dn.net/files/d2c/ebb28bd41ce98c9809d5f310158b32c3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brainly.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Vilom shabd in hindi alag ka vilom shabd kya hota hai : Also check a huge list of hindi vilom shabd. कमल का विलोम शब्द क्या होगा? Share it with your friends on facebook whatsapp etc. अपेक्षा का मतलब होता है आशा, उम्मीद, आकांक्षा, अन्ववेक्षा, तुलना। जबकि उपेक्षा का मतलब होता है तिरष्कार, ध्यान न देना.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kiski-car-in-english.html" class="be-post-title">
+				 <h6>kiski car in english </h6>
+                </a>
+                <a href="kiski-car-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kiski%20car%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="kiski car in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-prashan.html" class="be-post-title">
+				 <h6>meaning of prashan </h6>
+                </a>
+                <a href="meaning-of-prashan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20prashan&amp;w=50&amp;h=50&amp;c=7" alt="meaning of prashan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-hou-bian-in-english.html" class="be-post-title">
+				 <h6>what is hou bian in english </h6>
+                </a>
+                <a href="what-is-hou-bian-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20hou%20bian%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is hou bian in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="humaira-meaning-in-quran.html" class="be-post-title">
+				 <h6>humaira meaning in quran </h6>
+                </a>
+                <a href="humaira-meaning-in-quran.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=humaira%20meaning%20in%20quran&amp;w=50&amp;h=50&amp;c=7" alt="humaira meaning in quran">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-name-means-princess-in-italian.html" class="be-post-title">
+				 <h6>what name means princess in italian </h6>
+                </a>
+                <a href="what-name-means-princess-in-italian.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20name%20means%20princess%20in%20italian&amp;w=50&amp;h=50&amp;c=7" alt="what name means princess in italian">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-wie-heißt-du-mean-in-english.html" class="be-post-title">
+				 <h6>what does wie heißt du mean in english </h6>
+                </a>
+                <a href="what-does-wie-heißt-du-mean-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20wie%20hei%C3%9Ft%20du%20mean%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what does wie heißt du mean in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="como-se-pronuncia-me-gusta-escuchar-musica-en-inglés.html" class="be-post-title">
+				 <h6>como se pronuncia me gusta escuchar musica en inglés </h6>
+                </a>
+                <a href="como-se-pronuncia-me-gusta-escuchar-musica-en-inglés.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=como%20se%20pronuncia%20me%20gusta%20escuchar%20musica%20en%20ingl%C3%A9s&amp;w=50&amp;h=50&amp;c=7" alt="como se pronuncia me gusta escuchar musica en inglés">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="basic-english-words-with-meaning-in-marathi-pdf.html" class="be-post-title">
+				 <h6>basic english words with meaning in marathi pdf </h6>
+                </a>
+                <a href="basic-english-words-with-meaning-in-marathi-pdf.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=basic%20english%20words%20with%20meaning%20in%20marathi%20pdf&amp;w=50&amp;h=50&amp;c=7" alt="basic english words with meaning in marathi pdf">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="watashi-and-boku-difference.html" class="be-post-title">
+				 <h6>watashi and boku difference </h6>
+                </a>
+                <a href="watashi-and-boku-difference.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=watashi%20and%20boku%20difference&amp;w=50&amp;h=50&amp;c=7" alt="watashi and boku difference">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-mean-by-when-in-tamil.html" class="be-post-title">
+				 <h6>what is mean by when in tamil </h6>
+                </a>
+                <a href="what-is-mean-by-when-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20mean%20by%20when%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="what is mean by when in tamil">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Primer Untuk Apa at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Primer Untuk Apa",
+  "datePublished": "2022-04-10T09:03:55Z",
+  "image": "https://tse1.mm.bing.net/th?q=primer%20untuk%20apa",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=primer%20untuk%20apa&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=primer%20untuk%20apa" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=primer%20untuk%20apa" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Primer Untuk Apa at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Primer Untuk Apa</h2>
+    <p><strong>Primer Untuk Apa</strong>. Jadi apa yang dimaksud dengan data primer dan data sekunder dalam data pelanggan? Ga semua orang bisa sampe derajat ini, even para sahabat rasulullah pun ga semuanya sampe.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=primer%20untuk%20apa" alt="Top 10 Primer Terbaik Untuk Kulit Berminyak Wanita22" />
+        <br>
+        <figcaption>Top 10 Primer Terbaik Untuk Kulit Berminyak Wanita22 from wanita22.com</figcaption>
+    </figure>
+        <p>
+        Ysl touche eclat blur primer, primer dengan efek kilau yang menyamarkan noda di wajah. Selain menggunakan face primer, biasanya banyak wanita yang mengandalkan setting spray sebagai langkah akhir makeup. Survei adalah metode pengumpulan data primer untuk tujuan penelitian.
+    </p>
+    <h3>Top 10 Primer Terbaik Untuk Kulit Berminyak Wanita22</h3>
+    <p>Oleh karena itu, primer akan membantu tampilan makeup yang lebih halus dan lembut. 7 primer terbaik untuk kulit berminyak pilihan cosmo. Gunakan pembersih yang lembut untuk mencuci muka, mengelupas dan mengoleskan pelembab ringan sebelum melakukan hal lain. Ysl touche eclat blur primer, primer dengan efek kilau yang menyamarkan noda di wajah.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="10 Primer Untuk Kulit Kering Terbaik 2020 Bagusmana.id" data-src="https://i2.wp.com/bagusmana.id/wp-content/uploads/2020/01/Primer-Untuk-Kulit-Kering-Terbaik.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bagusmana.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Untuk itu, kamu perlu mengetahui apa saja contoh kebutuhan primer yang sangat diperlukan dan dibutuhkan dalam kehidupan manusia. Gunakan pembersih yang lembut untuk mencuci muka, mengelupas dan mengoleskan pelembab ringan sebelum melakukan hal lain. Pcr alias polymerase chain reaction adalah salah satu teknik yang paling banyak digunakan dalam biologi molekuler. Wajah yang lembut ini akan memudahkan pemakaian makeup selanjutnya. Selain.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="5 Rekomendasi Face Primer untuk Kulit Kering BukaReview" data-src="https://i2.wp.com/s0.bukalapak.com/uploads/attachment/38467/LOREAL.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: review.bukalapak.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Oleh karena itu, primer akan membantu tampilan makeup yang lebih halus dan lembut. Dengan wajah yang siap makeup, maka hasilnya akan baik pula. Ini membantu untuk membuat pengumpulan data primer lebih spesifik karena dengan bantuan data sekunder, kita dapat mengetahui apa saja kesenjangan dan kekurangan dan informasi tambahan apa yang perlu. Produk primer apa saja yang berada di pasaran dan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Merek Primer Terbaik untuk Bibir, Mata, dan Wajah Wanita22" data-src="https://i2.wp.com/media.wanita22.com/wp-content/uploads/2018/10/31024341/15-Primer-Terbaik-di-Dunia-yang-Bisa-Dibeli-di-Apotek-6-653x420.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wanita22.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apakah sesuatu merupakan sumber primer atau sekunder seringkali tergantung pada topik dan penggunaannya. Yuk, baca 12 primer yang bagus untuk makeup tahan lama! Persiapkan wajah dan bersihkan ujung jari sebelum pakai. Gunakan pembersih yang lembut untuk mencuci muka, mengelupas dan mengoleskan pelembab ringan sebelum melakukan hal lain. Membuat kulit lebih sehat dan bercahaya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Apa itu Primer Makeup? Kenali Jenis, Kegunaan, dan Cara Menggunakannya" data-src="https://i2.wp.com/merahputih.com/media/24/d7/cc/24d7cce12cb353132eaaf2c981805543.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: merahputih.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Berikut ulasannya dikutip dari stylecraze, minggu (3/7/2022). Jangan heran, keistimewaan epoxy surfarcer mampu memberikan warna yang persis atau sangat mirip dengan warna asli substrat, atau warna sebelumnya pada substrat tersebut. Apakah sesuatu merupakan sumber primer atau sekunder seringkali tergantung pada topik dan penggunaannya. 7 primer terbaik untuk kulit berminyak pilihan cosmo. Ysl touche eclat blur primer, primer dengan efek kilau.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bagaimana cara mendesain primer untuk qpcr 2021 Berita" data-src="https://i2.wp.com/pic.weblogographic.com/img/news/520/how-to-design-primers-for-qpcr.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: id.weblogographic.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Pcr alias polymerase chain reaction adalah salah satu teknik yang paling banyak digunakan dalam biologi molekuler. Biarkan meresap ke dalam kulit. Referensi primer itu digunakan oleh mujtahid mutlak (imam mazhab) yang menguasai berbagai bidang ilmu. Yuk mendesain primer dengan primer3plus. Baik itu foundation, concealer, bedak, maupun blush on.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Primer/Base Makeup Itu Apa Sihh???" data-src="https://i2.wp.com/lh3.googleusercontent.com/-FvT0ll4wWeA/WPrjBMLtciI/AAAAAAAAANM/iYImdC8fMw0/s2560/%25255BUNSET%25255D.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: reviewemakirit.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ysl touche eclat blur primer, primer dengan efek kilau yang menyamarkan noda di wajah. Untuk mendapatkan riasan wajah yang awet dan tahan lama bisa dengan melakukan berbagai cara. Penggunaan setting spray ini biasanya dianggap sudah cukup tetapi ada produk baru yang muncul yakni priming water. 7 primer terbaik untuk kulit berminyak pilihan cosmo. Jika dilakukan secara manual, maka kita harus.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="5 Fungsi Eye Primer untuk Wajah Anda, Tidak Hanya untuk Mata" data-src="https://i2.wp.com/foodonmydog.com/wp-content/uploads/2019/12/fungsi-eyeprimer-1024x512.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: foodonmydog.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apa yang dimaksud dengan data primer dan data sekunder dalam statistika? Dalam proses ini, data primer adalah pengumpulan data atau informasi untuk pertama kalinya, sedangkan data sekunder adalah data yang telah dikumpulkan atau dikumpulkan oleh orang lain. Ternyata masih banyak juga wanita yang belum tahu apa sebenarnya fungsi primer dalam bermake up. Elf mineral infused face primer, sheer face primer.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Top 10 Primer Terbaik Untuk Kulit Berminyak Wanita22" data-src="https://i2.wp.com/media.wanita22.com/wp-content/uploads/2018/10/31061602/Top-10-Primer-Terbaik-Untuk-Kulit-Berminyak-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wanita22.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kadang ada yang merasa saat menggunakan foundation menjadi sulit. Apa kelebihan dan kekurangan data sekunder? Berikut ulasannya dikutip dari stylecraze, minggu (3/7/2022). Kelebihan data sekunder lebih ekonomis. Biarkan meresap ke dalam kulit.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mengapa Harus Menggunakan Primer Coat? Kenali Dulu Fungsinya" data-src="https://i2.wp.com/www.catkayu.com/wp-content/uploads/2019/12/Apa-Itu-Primer-untuk-Kayu-Temukan-Primer-Terbaik-untuk-Digunakan-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.catkayu.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Primer adalah produk kosmetik yang dipakai sebelum kamu mengaplikasikan makeup. Produk primer coat paint yang rekomended untuk finishing duco fungsi primer dan kapan harus digunakan penggunaan primer coat sebagai base coat sangat penting dan akan memberikan banyak fungsi lainnya. Primer akan memberikan kamu wajah yang lebih siap untuk makeup. Persiapkan wajah dan bersihkan ujung jari sebelum pakai. Sehingga tepat digunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Primer/Base Makeup Itu Apa Sihh???" data-src="https://i2.wp.com/3.bp.blogspot.com/-V2pPqQH303E/WPtNi-piBQI/AAAAAAAAANs/M-y_IX1QibIEEMNfHwC_Im4VqOmzY4FNACLcB/s1600/PhotoGrid_1492849609437.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: reviewemakirit.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Primer lebih peka dari bahan peledak utama. Produk primer coat paint yang rekomended untuk finishing duco fungsi primer dan kapan harus digunakan penggunaan primer coat sebagai base coat sangat penting dan akan memberikan banyak fungsi lainnya. Penggunaan setting spray ini biasanya dianggap sudah cukup tetapi ada produk baru yang muncul yakni priming water. Wajah yang lembut ini akan memudahkan pemakaian.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kya-matlab-meaning-in-tamil.html" class="be-post-title">
+				 <h6>kya matlab meaning in tamil </h6>
+                </a>
+                <a href="kya-matlab-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kya%20matlab%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="kya matlab meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-say-angry-in-arabic.html" class="be-post-title">
+				 <h6>how to say angry in arabic </h6>
+                </a>
+                <a href="how-to-say-angry-in-arabic.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20say%20angry%20in%20arabic&amp;w=50&amp;h=50&amp;c=7" alt="how to say angry in arabic">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="borrow-meaning-in-hindi-and-pictures.html" class="be-post-title">
+				 <h6>borrow meaning in hindi and pictures </h6>
+                </a>
+                <a href="borrow-meaning-in-hindi-and-pictures.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=borrow%20meaning%20in%20hindi%20and%20pictures&amp;w=50&amp;h=50&amp;c=7" alt="borrow meaning in hindi and pictures">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-the-name-samantha-jane.html" class="be-post-title">
+				 <h6>meaning of the name samantha-jane </h6>
+                </a>
+                <a href="meaning-of-the-name-samantha-jane.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20the%20name%20samantha-jane&amp;w=50&amp;h=50&amp;c=7" alt="meaning of the name samantha-jane">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komodo-kadal-raksasa-menuju-kepunahan.html" class="be-post-title">
+				 <h6>komodo kadal raksasa menuju kepunahan </h6>
+                </a>
+                <a href="komodo-kadal-raksasa-menuju-kepunahan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komodo%20kadal%20raksasa%20menuju%20kepunahan&amp;w=50&amp;h=50&amp;c=7" alt="komodo kadal raksasa menuju kepunahan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-stunning-in-english.html" class="be-post-title">
+				 <h6>what is the meaning of stunning in english </h6>
+                </a>
+                <a href="what-is-the-meaning-of-stunning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20stunning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of stunning in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-tamil-word-in-english.html" class="be-post-title">
+				 <h6>meaning of tamil word in english </h6>
+                </a>
+                <a href="meaning-of-tamil-word-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20tamil%20word%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="meaning of tamil word in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="explain-ka-hindi-kya-hota-hai.html" class="be-post-title">
+				 <h6>explain ka hindi kya hota hai </h6>
+                </a>
+                <a href="explain-ka-hindi-kya-hota-hai.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=explain%20ka%20hindi%20kya%20hota%20hai&amp;w=50&amp;h=50&amp;c=7" alt="explain ka hindi kya hota hai">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-ruman-in-bengali.html" class="be-post-title">
+				 <h6>what is the meaning of ruman in bengali </h6>
+                </a>
+                <a href="what-is-the-meaning-of-ruman-in-bengali.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20ruman%20in%20bengali&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of ruman in bengali">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="english-word-in-marathi.html" class="be-post-title">
+				 <h6>english word in marathi </h6>
+                </a>
+                <a href="english-word-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=english%20word%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="english word in marathi">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

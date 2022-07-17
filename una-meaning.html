@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Una Meaning at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Una Meaning",
+  "datePublished": "2022-06-29T19:01:12Z",
+  "image": "https://tse1.mm.bing.net/th?q=una%20meaning",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=una%20meaning&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=una%20meaning" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=una%20meaning" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Una Meaning at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Una Meaning</h2>
+    <p><strong>Una Meaning</strong>. Looking for online definition of una or what una stands for? What does una mean in latin?</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=una%20meaning" alt="Frequently Meaning YouTube" />
+        <br>
+        <figcaption>Frequently Meaning YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Una definition, a female given name: The una, a woman&#039;s rights magazine founded by caroline healey dall and paulina kellogg wright davis This ancient name is popular in ireland but rarely heard here.
+    </p>
+    <h3>Frequently Meaning YouTube</h3>
+    <p>Showing only slang/internet slang definitions ( show all 16 definitions) note: (latinoamérica) (ser pobre) to be really poor; English words for una include a, an, one and any. (en subasta) going, going, gone!;</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="DefinitionPyramid Media4Math" data-src="https://i2.wp.com/www.media4math.com/sites/default/files/Definition--Pyramid.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.media4math.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una originates in latin language and means one. » synonyms and related words: Information and translations of una in the most comprehensive dictionary definitions resource on the web. However, spelt with an initial accent it is an irish feminine name, originating in gaelic and meaning lamb. Hacerse las uñas to have one&#039;s nails done;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="ADVERTISING MEANING knowledgeabletutorial" data-src="https://i2.wp.com/www.knowledgeablefact.com/wp-content/uploads/2020/11/AN-OVERVIEW-ON-SALES-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.knowledgeablefact.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">2 (enfático) (pelea, paliza) armar una to kick up a fuss. Each letter inside your christian name has a number equivalent. The meaning of una in english origin is one. English words for una include a, an, one and any. It&#039;s stated that numbers hold the key to our inner most personality.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="+50 Confused Words and Meaning Lessons For English" data-src="https://i2.wp.com/lessonsforenglish.com/wp-content/uploads/2020/06/50-Confused-Words-and-Meaning.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lessonsforenglish.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What does una mean in latin? The meaning of úna is may be derived from the celtic word for &#039;lamb&#039;. The stem un could never be used inside a sentence without a prefix. The infinitives were suna (“ a thing being black ”) and tuna (“ a person being black ”); Information and translations of una in the most comprehensive.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Frequently Meaning YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/zhBdj6wXDMk/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The infinitives were suna (“ a thing being black ”) and tuna (“ a person being black ”); The meaning of una in english origin is one. It is of latin origin, and the importance of a one. (latinoamérica) (ser pobre) to be really poor; Information and translations of una in the most comprehensive dictionary definitions resource on the web.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Liquefaction Definition in Science" data-src="https://i2.wp.com/www.thoughtco.com/thmb/hcA-cLDltcSDPw_9E4OSi6Ktwfw=/3111x1950/filters:fill(auto,1)/GettyImages-600651121-58993da65f9b5874ee6a0927.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thoughtco.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una in irish is úna. It&#039;s stated that numbers hold the key to our inner most personality. Everything in life, can be reduced to a number, and each number has a meaning. ¡a la una, a las dos, a las tres! Find more italian words at wordhippo.com!</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="obnoxious Definition of obnoxious mPaathShaala" data-src="https://i2.wp.com/www.mpaathshaala.com/wp-content/uploads/2020/10/obnoxious-Landscape-1-scaled.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.mpaathshaala.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una de dos either one thing or the other. The meaning of una in english origin is one. It&#039;s stated that numbers hold the key to our inner most personality. From a latin word meaning “one.” see more. Will you people come to dinner.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vigorously Meaning YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/5e8m5SmW5DU/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What does una abbreviation stand for? Each letter inside your christian name has a number equivalent. Todos a una all together. Comerse las uñas to bite one&#039;s nails; This ancient name is popular in ireland but rarely heard here.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="meaning lockscreen Google Search Unusual words, Rare words, Cool words" data-src="https://i.pinimg.com/736x/70/4f/88/704f88b5558040e8fd2063ed94a19ee0--word-meaning-language.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What does una mean in latin? What does una abbreviation stand for? We have 76 other definitions for una in our acronym attic. Listen to the pronunciation of úna. She symbolizes truth, unity, and the one, true.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dream Meaning of Encyclopedia Dream Interpretation" data-src="https://i2.wp.com/www.dreaminterpretation.co/wp-content/uploads/dream-interpretation-encyclopedia_1200x0.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dreaminterpretation.co</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">What does una mean as an abbreviation? Una is listed in the world&#039;s largest and most authoritative dictionary database of abbreviations and acronyms the free dictionary Una was a character in edmund spenser&#039;s epic poem the faerie queen. The anglisierte form of the name of feminine of latin unus. It is of latin origin, and the meaning of una is.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Personification Definition &amp; Examples Literary Terms" data-src="https://i2.wp.com/sbt.blob.core.windows.net/storyboards/kristy-littlehale/personification-definition.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.storyboardthat.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una de dos either one thing or the other. The una, a woman&#039;s rights magazine founded by caroline healey dall and paulina kellogg wright davis The name una is girl&#039;s name of latin origin meaning one; We have 76 other definitions for una in our acronym attic. En used by nigerians to refee to plenty people.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-the-word-prisha-in-sanskrit.html" class="be-post-title">
+				 <h6>meaning of the word prisha in sanskrit </h6>
+                </a>
+                <a href="meaning-of-the-word-prisha-in-sanskrit.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20the%20word%20prisha%20in%20sanskrit&amp;w=50&amp;h=50&amp;c=7" alt="meaning of the word prisha in sanskrit">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="root-word-of-clueless.html" class="be-post-title">
+				 <h6>root word of clueless </h6>
+                </a>
+                <a href="root-word-of-clueless.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=root%20word%20of%20clueless&amp;w=50&amp;h=50&amp;c=7" alt="root word of clueless">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="most-spoken-language-in-karnataka.html" class="be-post-title">
+				 <h6>most spoken language in karnataka </h6>
+                </a>
+                <a href="most-spoken-language-in-karnataka.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=most%20spoken%20language%20in%20karnataka&amp;w=50&amp;h=50&amp;c=7" alt="most spoken language in karnataka">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="finite-element-method-def.html" class="be-post-title">
+				 <h6>finite element method def </h6>
+                </a>
+                <a href="finite-element-method-def.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=finite%20element%20method%20def&amp;w=50&amp;h=50&amp;c=7" alt="finite element method def">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tamil-nadu-rivers-details-in-tamil.html" class="be-post-title">
+				 <h6>tamil nadu rivers details in tamil </h6>
+                </a>
+                <a href="tamil-nadu-rivers-details-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tamil%20nadu%20rivers%20details%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="tamil nadu rivers details in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-visual-merchandising-in-marathi.html" class="be-post-title">
+				 <h6>meaning of visual merchandising in marathi </h6>
+                </a>
+                <a href="meaning-of-visual-merchandising-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20visual%20merchandising%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="meaning of visual merchandising in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="whats-maiden-name-means.html" class="be-post-title">
+				 <h6>whats maiden name means </h6>
+                </a>
+                <a href="whats-maiden-name-means.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=whats%20maiden%20name%20means&amp;w=50&amp;h=50&amp;c=7" alt="whats maiden name means">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="numbers-in-kannada-1-to-100-in-words.html" class="be-post-title">
+				 <h6>numbers in kannada 1 to 100 in words </h6>
+                </a>
+                <a href="numbers-in-kannada-1-to-100-in-words.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=numbers%20in%20kannada%201%20to%20100%20in%20words&amp;w=50&amp;h=50&amp;c=7" alt="numbers in kannada 1 to 100 in words">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="miner-word-meaning-in-malayalam.html" class="be-post-title">
+				 <h6>miner word meaning in malayalam </h6>
+                </a>
+                <a href="miner-word-meaning-in-malayalam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=miner%20word%20meaning%20in%20malayalam&amp;w=50&amp;h=50&amp;c=7" alt="miner word meaning in malayalam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-dar-cuenta-mean-in-english.html" class="be-post-title">
+				 <h6>what does dar cuenta mean in english </h6>
+                </a>
+                <a href="what-does-dar-cuenta-mean-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20dar%20cuenta%20mean%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what does dar cuenta mean in english">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Phonepe Kab Aaya Tha at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Phonepe Kab Aaya Tha",
+  "datePublished": "2022-03-22T23:32:46Z",
+  "image": "https://tse1.mm.bing.net/th?q=phonepe%20kab%20aaya%20tha",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=phonepe%20kab%20aaya%20tha&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=phonepe%20kab%20aaya%20tha" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=phonepe%20kab%20aaya%20tha" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Phonepe Kab Aaya Tha at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Phonepe Kab Aaya Tha</h2>
+    <p><strong>Phonepe Kab Aaya Tha</strong>. I&#039;m fcking pissed, why did i even share my name.baad me maine bol diya ki i don&#039;t wish to share my details, to sarcastically hasne laga aur mera majak udaya. Jinme se ek achi family se the aur ek gareeb ghar se the.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=phonepe%20kab%20aaya%20tha" alt="Coronavirus India Mein Kab Aaya Tha NACOROS" />
+        <br>
+        <figcaption>Coronavirus India Mein Kab Aaya Tha NACOROS from nacoros.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Jinme se ek achi family se the aur ek gareeb ghar se the. Ek hotel me 3 kastombar khana khane aae the onka 25 our 25 our 25 rupya bil bana onne 3 no ne malakar de deeye rupya total kitne 75 rupya ho gae shet ne discount kat kar 5 rupya bapesh kar diye betar ne socha ki me inko ke ke rupya bapesh karunga so 2rupya usne jebme dalliye kastombaro ke kitne peshe lage 24.24.24 rupye lage 24.24.24 kitne ho gae 72 rupye our 2 usne. Bharat me computer kab aaya.
+    </p>
+    <h3>Coronavirus India Mein Kab Aaya Tha NACOROS</h3>
+    <p>About press copyright contact us creators advertise developers terms privacy policy &amp; safety how youtube works test new features press copyright contact us creators. Google pay app download karna hai. Electronic computer ka aviskar kab hua tha. Bharat me pahla mobile kab aaya,kisne pahla call kiya tha.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="COMEDYVIDEO FUNNYVIDEO TIKTOK TIKTOKINDIA AURANGZAB KAB AAYA THA YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/l8licEjIuA4/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">सिकंदर राजा पुरुवास के शासनकाल में भारत आया था। भारत के महान राजा पुरुवास या राजा पोरस का राज्य पंजाब में झेलम से लेकर चेनाब नदी तक फैला हुआ था। वर्तमान. Lic humare bhudape me tab kaam ati hai,jub humain humare apne akela chaod dete hai home; Contextual translation of didi ka phone aaya tha into english. Hindustan mein mobile.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aurangzeb Bharat kab aaya tha (Acting, Comedy, Tiktok) YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/e8W6tlbb5cY/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Or yadi aapko yah jankari pasand aaye to share karna naa bule. देश के शासन को प्रभावि रूप से चलाने के लिए एक संघीय तथा लचीले संविधान का निर्माण किया. हरिवंशराय बच्चन (hindi poems of harivansh rai bachchan) है अँधेरी रात पर दीवा जलाना कब मना है (hai andheri raat par diva jalana kab mana hai ) यात्रा और यात्री.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Coronavirus India Mein Kab Aaya Tha NACOROS" data-src="https://i2.wp.com/i.ytimg.com/vi/XamR1mjYorA/sddefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nacoros.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">बाबर को भी पूरी तरह यह समझ आ गया था कि जब तक राणा की शक्ति को क्षीण नहीं किया जाएगा तब तक भारत में अपनी स्थिति को संगठित करना उसके लिए असंभव होगा। बाबर और. ♦ 1993 me organized wireless world conference me ibm sim name ka pahla smartphone pes kiya gaya.isme shuruati dor ki screen touch lagi hui.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Dialogues And Meme Templates From The Movie Indian Meme Templates" data-src="https://i2.wp.com/indianmemetemplates.com/wp-content/uploads/tum-kab-aaye-sabse-pehle-mein-hi-aaya.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: indianmemetemplates.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">सिकंदर राजा पुरुवास के शासनकाल में भारत आया था। भारत के महान राजा पुरुवास या राजा पोरस का राज्य पंजाब में झेलम से लेकर चेनाब नदी तक फैला हुआ था। वर्तमान. Electronic computer ka aviskar kab hua tha. साइमन कमीशन की सिफारिशें recommendations of simon commission in hindi. Par duniya me bahut ucha naam kamana chahte the 2007 se pahle.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Coronavirus India Mein Kab Aaya Tha NACOROS" data-src="https://i2.wp.com/i.ytimg.com/vi/k_lprPyaDLY/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nacoros.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Most popular messaging app whatsapp ko do dosto ne mil kar banaya tha. Answered aug 21, 2021 by pranav kumar (20.3k points) selected aug 21, 2021 by anjaliyadav. September 23, 2017 at 9:39 pm. हरिवंशराय बच्चन (hindi poems of harivansh rai bachchan) है अँधेरी रात पर दीवा जलाना कब मना है (hai andheri raat par diva jalana kab mana hai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bharat kab aaya tha? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/nqUKSL1-9xM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Internet ki khoj kisne ki thi.yadi aapko is jankari ke bare me kuch puchna ho to niche comment box me comment karke puch sakte hai. Jinme se ek achi family se the aur ek gareeb ghar se the. Electronic computer ka aviskar kab hua tha. Bharat me pahla mobile kab aaya,kisne pahla call kiya tha. Bharat mein sabse tej bhookamp.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aurangzeb kab aaya tha🤔🤔😜 YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/esf4PhAu-EM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Answered aug 21, 2021 by pranav kumar (20.3k points) selected aug 21, 2021 by anjaliyadav. Or yadi aapko yah jankari pasand aaye to share karna naa bule. Google pay app download karna hai. Sabse pahle window ka various konse sun mai aaya tha. I&#039;m fcking pissed, why did i even share my name.baad me maine bol diya ki i don&#039;t.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Coronavirus India Mein Kab Aaya Tha NACOROS" data-src="https://i2.wp.com/i.ytimg.com/vi/4LM7EAzmTe8/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: nacoros.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ab to aap zarur janna cahnge ki whatsapp kisne banaya. September 23, 2017 at 9:39 pm. Answered aug 21, 2021 by pranav kumar (20.3k points) selected aug 21, 2021 by anjaliyadav. I&#039;m fcking pissed, why did i even share my name.baad me maine bol diya ki i don&#039;t wish to share my details, to sarcastically hasne laga aur mera majak.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="aurangzeb bharat kab aaya tha Kapil Sharma Funny Comedy King" data-src="https://i2.wp.com/i.ytimg.com/vi/ZiccOHOT0nE/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">हिंदुस्तान में मोबाइल फोन कब लांच हुआ था? Maine naam bata diya, but why do these mf&#039;s need my information? I&#039;m fcking pissed, why did i even share my name.baad me maine bol diya ki i don&#039;t wish to share my details, to sarcastically hasne laga aur mera majak udaya. में चन्द्रगुप्त द्वितीय के शासन काल. Bharat me computer kab.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aurangzeb bharat kab aaya tha. YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/7ipXxqwT83s/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">वास्कोडिगामा (वास्को द गामा) समुंद्र के रास्ते भारत पहुँचने. भारत में पहला mobile phone कब आया था और पहली कॉल किसने की थी? Hindustan mein mobile phone kab launch hua tha? I&#039;m fcking pissed, why did i even share my name.baad me maine bol diya ki i don&#039;t wish to share my details, to sarcastically hasne laga aur mera majak.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-word-pale-in-malayalam.html" class="be-post-title">
+				 <h6>meaning of word pale in malayalam </h6>
+                </a>
+                <a href="meaning-of-word-pale-in-malayalam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20word%20pale%20in%20malayalam&amp;w=50&amp;h=50&amp;c=7" alt="meaning of word pale in malayalam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kannada-alphabets-with-examples.html" class="be-post-title">
+				 <h6>kannada alphabets with examples </h6>
+                </a>
+                <a href="kannada-alphabets-with-examples.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kannada%20alphabets%20with%20examples&amp;w=50&amp;h=50&amp;c=7" alt="kannada alphabets with examples">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="taç-beyit-ne-demektir.html" class="be-post-title">
+				 <h6>taç beyit ne demektir </h6>
+                </a>
+                <a href="taç-beyit-ne-demektir.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ta%C3%A7%20beyit%20ne%20demektir&amp;w=50&amp;h=50&amp;c=7" alt="taç beyit ne demektir">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="af-word-meaning-in-urdu.html" class="be-post-title">
+				 <h6>af word meaning in urdu </h6>
+                </a>
+                <a href="af-word-meaning-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=af%20word%20meaning%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="af word meaning in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-you-want-malayalam-meaning.html" class="be-post-title">
+				 <h6>what you want malayalam meaning </h6>
+                </a>
+                <a href="what-you-want-malayalam-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20you%20want%20malayalam%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="what you want malayalam meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-inevitable-a-word.html" class="be-post-title">
+				 <h6>is inevitable a word </h6>
+                </a>
+                <a href="is-inevitable-a-word.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20inevitable%20a%20word&amp;w=50&amp;h=50&amp;c=7" alt="is inevitable a word">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="klinik-ve-laboratuvar-korelasyonu-ne-demek.html" class="be-post-title">
+				 <h6>klinik ve laboratuvar korelasyonu ne demek </h6>
+                </a>
+                <a href="klinik-ve-laboratuvar-korelasyonu-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=klinik%20ve%20laboratuvar%20korelasyonu%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="klinik ve laboratuvar korelasyonu ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-hindi-word-pari.html" class="be-post-title">
+				 <h6>meaning of hindi word pari </h6>
+                </a>
+                <a href="meaning-of-hindi-word-pari.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20hindi%20word%20pari&amp;w=50&amp;h=50&amp;c=7" alt="meaning of hindi word pari">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-familysearch-accurate-reddit.html" class="be-post-title">
+				 <h6>is familysearch accurate reddit </h6>
+                </a>
+                <a href="is-familysearch-accurate-reddit.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20familysearch%20accurate%20reddit&amp;w=50&amp;h=50&amp;c=7" alt="is familysearch accurate reddit">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="which-is-the-oldest-language-between-kannada-and-tamil.html" class="be-post-title">
+				 <h6>which is the oldest language between kannada and tamil </h6>
+                </a>
+                <a href="which-is-the-oldest-language-between-kannada-and-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=which%20is%20the%20oldest%20language%20between%20kannada%20and%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="which is the oldest language between kannada and tamil">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

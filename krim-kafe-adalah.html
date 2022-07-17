@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Krim Kafe Adalah at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Krim Kafe Adalah",
+  "datePublished": "2022-06-24T20:44:26Z",
+  "image": "https://tse1.mm.bing.net/th?q=krim%20kafe%20adalah",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=krim%20kafe%20adalah&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=krim%20kafe%20adalah" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=krim%20kafe%20adalah" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Krim Kafe Adalah at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Krim Kafe Adalah</h2>
+    <p><strong>Krim Kafe Adalah</strong>. Kita biasa mengenalnya dengan nama ice cream cone yang biasa di jual di fastfood. Harganya juga sangat bersahabat sehingga lebih terjangkau oleh semua kalangan.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=krim%20kafe%20adalah" alt="KAPAL API KRIM KAFE 150GR Shopee Indonesia" />
+        <br>
+        <figcaption>KAPAL API KRIM KAFE 150GR Shopee Indonesia from shopee.co.id</figcaption>
+    </figure>
+        <p>
+        Whipping cream biasanya dijual dalam bentuk cair dan bubuk yang kemudian dicampur dengan air es sebelum dikocok. 1 porsi (3 g) per porsi. Sebuah kafe di johor, malaysia.
+    </p>
+    <h3>KAPAL API KRIM KAFE 150GR Shopee Indonesia</h3>
+    <p>Minuman ini terdiri dari espresso dan steamed milk dengan rasio 1:1. Kemudian diberi perasa manis dan ditambah bahan pengikat. Es krim moringa dan teh hijau. Es krim adalah sebuah makanan beku yang dibuat dari produk susu seperti krim, lalu dicampur dengan perasa dan pemanis buatan ataupun alami.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nikmatnya Es Krim di Kafe Pelangi Semarang" data-src="https://i2.wp.com/3.bp.blogspot.com/-JgTRkGSfbko/VpSJf8be0HI/AAAAAAAAKB4/nxDZ3ExsjQ4/s1600/Kafe%2BPelangi%2BSemarang5.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dewirieka.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apalagi rasa es krim semakin punya rasa yang beragam seperti stroberi, vanila, cokelat, sampai green tea! Nah, di surabaya ada lho kafe khusus yang menu andalannya adalah es krim. Belum lagi tambahan topping seperti wafer, coklat potongan, marshmallow sampai sirup. Vanishing cream adalah kosmetika yang digunakan untuk maksud membersihkan, melembabkan, dan sebagai alas bedak. Krim tipe m/a atau o/w.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="9 Kedai Es Krim Favorit di Malang Amazing Malang" data-src="https://i2.wp.com/amazingmalang.id/wp-content/uploads/2019/05/photo_2019-05-06_15-38-05.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: amazingmalang.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kocok 250 ml krim encer dengan 1 sdt air jeruk nipis atau cuka. 1 porsi (3 g) per porsi. Pada dasarnya es krim bisa di bagi 2 macam. Kita biasa mengenalnya dengan nama ice cream cone yang biasa di jual di fastfood. Produk yang satu ini merupakan non dairy product sehingga bisa memberikan rasa gurih yang enak.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="KAPAL API KRIM KAFE 150GR Shopee Indonesia" data-src="https://i2.wp.com/cf.shopee.co.id/file/3f71a13351bc7994fec183ac8fe183ee" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: shopee.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kafe book &amp; gelato dapat dihubungi di bookgelato@gmail.com atau 085697088856. Selain dapat mendinginkan kerongkongan, es krim cokelat juga mempunyai manfaat lain untuk kesehatan. Jika kamu berkunjung ke cafe ini, jamu malah jadi hidangan elegan. Kapalapistore.com) kapal api krim kafe terdiri dari komposisi bahan sirup glukosa, minyak nabati, pengemulsi nabati, perisa sintetik krim susu, penstabil. Berikut beberapa istilah yang umum digunakan.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Menu Es Krim yang Dianggap Rasis di Sebuah Kafe di Prancis terdepan.ID" data-src="https://i2.wp.com/terdepan.id/wp-content/uploads/2020/07/es-krim-di-kafe-le-poussin-bleu-dipermasalahkan-warganet_200729201653-839.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: terdepan.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Istilah kafe (café) berasal dari kata coffee yang berarti kopi. Jika kamu berkunjung ke cafe ini, jamu malah jadi hidangan elegan. Apalagi rasa es krim semakin punya rasa yang beragam seperti stroberi, vanila, cokelat, sampai green tea! Tidak terkecuali pada usaha cafe ice cream ini. Kafe book &amp; gelato dapat dihubungi di bookgelato@gmail.com atau 085697088856.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jual KAPAL API KRIM KAFE NON DAIRY CREAMER KOTAK 500GR Kab. Tangerang" data-src="https://i2.wp.com/ecs7.tokopedia.net/img/cache/700/attachment/2020/8/15/-1/-1_0bcb4d29-6208-488b-a59a-e8ba90864284.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.tokopedia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kafe book &amp; gelato didirikan di jalan tanjung duren barat raya no. Istilah kafe (café) berasal dari kata coffee yang berarti kopi. 63 orang melihat barang ini. Kapal api krim kafe 150gr. Menggunakan krim pagi, krim siang, dan krim malam memiliki alasan tersendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="3 Kafe Ais Krim yang Anda MESTI Cuba di Kuching" data-src="https://i2.wp.com/www.iloveborneo.my/wp-content/uploads/2019/10/70123387_3034739829901214_7326869458541084672_n-696x870.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.iloveborneo.my</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Salah satu solusi yang paling tepat adalah merawat kulit dengan menggunakan krim siang dan krim malam. Meski bertekstur kental, double cream ini sama sekali tidak memakai bahan pengental lho. Kafe book &amp; gelato dapat dihubungi di bookgelato@gmail.com atau 085697088856. Salah satu pilihan menu es krim favorit bagi banyak orang adalah es krim chocolate cookies.penyajiannya sangat mudah dan tak membutuhkan waktu.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Penikmat Es Krim, 10 Kafe Es Krim yang Ada di Surabaya Ini Wajib" data-src="https://i2.wp.com/ilmupedia.co.id/uploads/article/media_upload/19272/cvr.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ilmupedia.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lihat produk ini di shopee; Kita biasa mengenalnya dengan nama ice cream cone yang biasa di jual di fastfood. Kapal api krim kafe non dairy creamer adalah produk dari merek kopi lokal yang banyak disukai masyarakat. Cappuccino adalah olahan espresso yang paling banyak digemari, terutama bagi penikmat kopi dengan rasa lebih mild. Kapal api krim kafe 150gr adalah krimer yang.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Nikmatnya Es Krim di Kafe Pelangi Semarang" data-src="https://i2.wp.com/1.bp.blogspot.com/-kwBRbCxULjI/VpSGnZ74TnI/AAAAAAAAKBE/W3aUcTLvjMc/s1600/Kafe%2BPelangi%2BSemarang3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dewirieka.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kapal api krim kafe memiliki rasa yang lembut dan gurih (sumber foto: Ayo, pencinta es krim harus mampir ke sini! Pada dasarnya es krim bisa di bagi 2 macam. Kafe book &amp; gelato dapat dihubungi di bookgelato@gmail.com atau 085697088856. Penggunaannya menjadi resiko anda sendiri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="5 Resep Minuman dengan Es Krim ala Kafe Hits yang Nikmat dan Segar" data-src="https://i2.wp.com/glicowings.co.id/uploads/offline_activity/5-resep-minuman-dengan-es-krim-ala-kafe-hits-yang-nikmat-dan-segar/ecad8583c5c4992da3b0c7ef9921860c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: glicowings.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Meski bertekstur kental, double cream ini sama sekali tidak memakai bahan pengental lho. Produk yang satu ini merupakan non dairy product sehingga bisa memberikan rasa gurih yang enak. Kapal api krim kafe 150gr adalah krimer yang lembut dan terasa lebih creamy yang cocok di nikmati bersama secangkir kopi. Salah satu solusi yang paling tepat adalah merawat kulit dengan menggunakan krim.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Setelah Kafe Jamban, Kini Ada Es Krim &#039;Poopy&#039; Atas Kloset Travel" data-src="https://i2.wp.com/cdns.klimg.com/dream.co.id/resized/630x440/news/2017/11/03/69600/setelah-kafe-jamban-kini-ada-es-krim-poopy-atas-kloset-171103a_3x2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: travel.dream.co.id</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tidak terkecuali pada usaha cafe ice cream ini. Kapal api krim kafe memiliki rasa yang lembut dan gurih (sumber foto: Lihat produk ini di shopee; Krim tipe m/a atau o/w. Whipping cream biasanya dijual dalam bentuk cair dan bubuk yang kemudian dicampur dengan air es sebelum dikocok.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="air-force-word-meaning-in-urdu.html" class="be-post-title">
+				 <h6>air force word meaning in urdu </h6>
+                </a>
+                <a href="air-force-word-meaning-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=air%20force%20word%20meaning%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="air force word meaning in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="quelle-merveille-translate-french-to-english.html" class="be-post-title">
+				 <h6>quelle merveille translate french to english </h6>
+                </a>
+                <a href="quelle-merveille-translate-french-to-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=quelle%20merveille%20translate%20french%20to%20english&amp;w=50&amp;h=50&amp;c=7" alt="quelle merveille translate french to english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="persian-cat-names.html" class="be-post-title">
+				 <h6>persian cat names </h6>
+                </a>
+                <a href="persian-cat-names.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=persian%20cat%20names&amp;w=50&amp;h=50&amp;c=7" alt="persian cat names">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kacche-kele-ki-bhaji-ki-recipe.html" class="be-post-title">
+				 <h6>kacche kele ki bhaji ki recipe </h6>
+                </a>
+                <a href="kacche-kele-ki-bhaji-ki-recipe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kacche%20kele%20ki%20bhaji%20ki%20recipe&amp;w=50&amp;h=50&amp;c=7" alt="kacche kele ki bhaji ki recipe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kya-kar-rahi-hai-kya.html" class="be-post-title">
+				 <h6>kya kar rahi hai kya </h6>
+                </a>
+                <a href="kya-kar-rahi-hai-kya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kya%20kar%20rahi%20hai%20kya&amp;w=50&amp;h=50&amp;c=7" alt="kya kar rahi hai kya">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="history-of-samantha.html" class="be-post-title">
+				 <h6>history of samantha </h6>
+                </a>
+                <a href="history-of-samantha.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=history%20of%20samantha&amp;w=50&amp;h=50&amp;c=7" alt="history of samantha">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="unique-nicknames-for-guys-with-meaning.html" class="be-post-title">
+				 <h6>unique nicknames for guys with meaning </h6>
+                </a>
+                <a href="unique-nicknames-for-guys-with-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=unique%20nicknames%20for%20guys%20with%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="unique nicknames for guys with meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-the-name-kulture.html" class="be-post-title">
+				 <h6>what is the meaning of the name kulture </h6>
+                </a>
+                <a href="what-is-the-meaning-of-the-name-kulture.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20the%20name%20kulture&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of the name kulture">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-an-optical-power-meter-used-for.html" class="be-post-title">
+				 <h6>what is an optical power meter used for </h6>
+                </a>
+                <a href="what-is-an-optical-power-meter-used-for.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20an%20optical%20power%20meter%20used%20for&amp;w=50&amp;h=50&amp;c=7" alt="what is an optical power meter used for">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-hopelessly.html" class="be-post-title">
+				 <h6>what is the meaning of hopelessly </h6>
+                </a>
+                <a href="what-is-the-meaning-of-hopelessly.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20hopelessly&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of hopelessly">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

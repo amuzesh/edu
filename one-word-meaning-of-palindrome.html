@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        One Word Meaning Of Palindrome at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "One Word Meaning Of Palindrome",
+  "datePublished": "2022-03-18T09:37:51Z",
+  "image": "https://tse1.mm.bing.net/th?q=one%20word%20meaning%20of%20palindrome",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=one%20word%20meaning%20of%20palindrome&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=one%20word%20meaning%20of%20palindrome" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=one%20word%20meaning%20of%20palindrome" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            One Word Meaning Of Palindrome at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">One Word Meaning Of Palindrome</h2>
+    <p><strong>One Word Meaning Of Palindrome</strong>. It is nicknamed “the palindrome” because the third movement, the second half of the minuet is the same as the first but backwards. A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam or racecar.there are also numeric palindromes,.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=one%20word%20meaning%20of%20palindrome" alt="Palindrome Sentences Palindromes In English Language School Lead / A" />
+        <br>
+        <figcaption>Palindrome Sentences Palindromes In English Language School Lead / A from candanceh-dump.blogspot.com</figcaption>
+    </figure>
+        <p>
+        They use whole words rather than letters, for example, first ladies rule the state and state the rule: A word, phrase, or number that reads the same backward. It is nicknamed “the palindrome” because the third movement, the second half of the minuet is the same as the first but backwards.
+    </p>
+    <h3>Palindrome Sentences Palindromes In English Language School Lead / A</h3>
+    <p>1 n a word or phrase that reads the same backward as forward type of: It derives from greek roots that literally mean “running back” ( palin is. A palindrome can be a single word or a series of words, like a sentence. This tool support unlimited word.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome Worksheet Worksheet Maker" data-src="https://i.pinimg.com/originals/bf/da/ae/bfdaae5774dc658f6b42b5c5ab6531da.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: naeileum-eunnaqiah.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dates, which are palindromes in both the mm/dd/yyyy format and the dd/mm/yyyy format are very rare. Create your own words today! A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam or racecar.there are also numeric palindromes,. Britannica dictionary definition of palindrome. Examples of english palindromes there are.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome just b.CAUSE" data-src="https://i2.wp.com/elimufeynman.s3.amazonaws.com/media/resources/Image-8-fun-with-words.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: justbcause.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Britannica dictionary definition of palindrome. A palindrome is a word, number, phrase, or sequence of characters that reads the same backward as forward. A palindrome is a word, a phrase, a verse, a number or a sentence, the letters of which, when taken in reverse order, give the same word, phrase, verse, number or sentence. A palindrome is a word,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="It&#039;s Palindrome Week" data-src="https://i2.wp.com/www.couponsaregreat.net/wp-content/uploads/2014/04/palindrome-definition.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.couponsaregreat.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">They use whole words rather than letters, for example, first ladies rule the state and state the rule: This palindrome definition means that if one were to read a palindrome from right to left instead of from left to. A word or group of words that is the same when you read it forwards from the beginning or…. Let’s spice.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Example palindrome words" data-src="https://i2.wp.com/elimufeynman.s3.amazonaws.com/media/resources/Image-2-fun-with-words.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: yjumogaw14.plan.ru.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A palindrome can be a single word or a series of words, like a sentence. Dates, which are palindromes in both the mm/dd/yyyy format and the dd/mm/yyyy format are very rare. A palindrome is a word that runs both ways—literally. A word or group of words that is the same when you read it forwards from the beginning or…. A.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Word Meaning of Palindrome What does Palindrome mean? quizcrazy.in" data-src="https://i2.wp.com/www.quizcrazy.in/word-meaning/word-meaning-of-palindrome.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.quizcrazy.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Palindrome as a noun means a word, phrase, or sentence that reads the same backward or forward (ex.: A word or group of words that is the same when you read it forwards from the beginning or…. This tool support unlimited word. Other interesting palindromes palindrome dates. According to your dictionary, a palindrome is a word, phrase, number, or sequence.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="EXPLANATION OF PALINDROME WORDS Palindromes Learn English YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/yrP-WR33cNs/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Palindrome as a noun means a word, phrase, or sentence that reads the same backward or forward (ex.: The word palindrome comes from the greek word palindromes, which means “running back again.” the word further breaks down into “palin,” which means back, again,. We’re going to chalk that up to a cat dressed up like a taco. It is nicknamed.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome Words Examples / Python Program To Check A Given String Is" data-src="https://i2.wp.com/image.slidesharecdn.com/presentation3-170414090750/95/english-ppt-8-638.jpg?cb=1492161724" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: edhilton.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The word palindrome comes from the greek word palindromes, which means “running back again.” the word further breaks down into “palin,” which means back, again,. A palindrome is a word or phrase that is the same both backwards and forwards. There are relatively few possible 2d. Dates, which are palindromes in both the mm/dd/yyyy format and the dd/mm/yyyy format are.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome Sentences Palindromes In English Language School Lead / A" data-src="https://i2.wp.com/i.ytimg.com/vi/z-5HChTA0ME/sddefault.jpg#404_is_fine" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: candanceh-dump.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A palindrome is a word, number, phrase, or sequence of characters that reads the same backward as forward. Type in a few words below and click talk soup! A word, phrase, verse, or sentence that reads the same backward or forward. A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Palindrome What Is A Palindrome / Palindromes are words or phrases" data-src="https://i2.wp.com/7esl.com/wp-content/uploads/2020/04/Palindrome-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: athenaq-aback.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Palindrome (noun) palindrome / ˈ pælənˌdroʊm/ noun. An inﬁnite word ω ∈ an is called episturmian if it is closed under mirror image (meaning if u = u 1u 2 ···u k is a subword of ω, then logomyway entries january 2, 2010 (01022010)3 but it’s. Punctuation does not factor into a palindrome. Palindrome definition, a word, line, verse, number,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="One Word Palindrome Words What Are Palindromes Eage Tutor" data-src="https://i2.wp.com/www.englishmirror.com/images/palindromes-in-english.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: gauwnoamaoci.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">According to your dictionary, a palindrome is a word, phrase, number, or sequence of words that reads the same backward as forward. Punctuation does not factor into a palindrome. This palindrome definition means that if one were to read a palindrome from right to left instead of from left to. A palindrome is a word, number, phrase, or sequence of.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="amazing-facts-about-kannada-language.html" class="be-post-title">
+				 <h6>amazing facts about kannada language </h6>
+                </a>
+                <a href="amazing-facts-about-kannada-language.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=amazing%20facts%20about%20kannada%20language&amp;w=50&amp;h=50&amp;c=7" alt="amazing facts about kannada language">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="apprentice-meaning-meaning-in-marathi.html" class="be-post-title">
+				 <h6>apprentice meaning meaning in marathi </h6>
+                </a>
+                <a href="apprentice-meaning-meaning-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=apprentice%20meaning%20meaning%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="apprentice meaning meaning in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-tamil-name-for-avocado.html" class="be-post-title">
+				 <h6>what is tamil name for avocado </h6>
+                </a>
+                <a href="what-is-tamil-name-for-avocado.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20tamil%20name%20for%20avocado&amp;w=50&amp;h=50&amp;c=7" alt="what is tamil name for avocado">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-bitter-gourd-in-hindi.html" class="be-post-title">
+				 <h6>meaning of bitter gourd in hindi </h6>
+                </a>
+                <a href="meaning-of-bitter-gourd-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20bitter%20gourd%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="meaning of bitter gourd in hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-full-form-of-act.html" class="be-post-title">
+				 <h6>what is full form of act </h6>
+                </a>
+                <a href="what-is-full-form-of-act.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20full%20form%20of%20act&amp;w=50&amp;h=50&amp;c=7" alt="what is full form of act">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-a-tenor-mean.html" class="be-post-title">
+				 <h6>what does a tenor mean </h6>
+                </a>
+                <a href="what-does-a-tenor-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20a%20tenor%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does a tenor mean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kaise-hai-aap-meaning-tamil.html" class="be-post-title">
+				 <h6>kaise hai aap meaning tamil </h6>
+                </a>
+                <a href="kaise-hai-aap-meaning-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kaise%20hai%20aap%20meaning%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="kaise hai aap meaning tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-pacing-mean-in-a-story.html" class="be-post-title">
+				 <h6>what does pacing mean in a story </h6>
+                </a>
+                <a href="what-does-pacing-mean-in-a-story.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20pacing%20mean%20in%20a%20story&amp;w=50&amp;h=50&amp;c=7" alt="what does pacing mean in a story">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-roman-in-the-bible.html" class="be-post-title">
+				 <h6>is roman in the bible </h6>
+                </a>
+                <a href="is-roman-in-the-bible.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20roman%20in%20the%20bible&amp;w=50&amp;h=50&amp;c=7" alt="is roman in the bible">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-the-muslim-name-sadiya.html" class="be-post-title">
+				 <h6>meaning of the muslim name sadiya </h6>
+                </a>
+                <a href="meaning-of-the-muslim-name-sadiya.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20the%20muslim%20name%20sadiya&amp;w=50&amp;h=50&amp;c=7" alt="meaning of the muslim name sadiya">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

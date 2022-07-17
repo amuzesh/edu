@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Ac To Ac Application at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Ac To Ac Application",
+  "datePublished": "2022-05-06T16:56:43Z",
+  "image": "https://tse1.mm.bing.net/th?q=ac%20to%20ac%20application",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=ac%20to%20ac%20application&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ac%20to%20ac%20application" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=ac%20to%20ac%20application" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Ac To Ac Application at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Ac To Ac Application</h2>
+    <p><strong>Ac To Ac Application</strong>. They are used in power electronic applications. We would like to show you a description here but the site won’t allow us.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=ac%20to%20ac%20application" alt="AC to AC Converter Circuit and its Working" />
+        <br>
+        <figcaption>AC to AC Converter Circuit and its Working from www.edgefx.in</figcaption>
+    </figure>
+        <p>
+        Both alternating current and direct current describes the two types of current flow in a circuit. Please sign in online application system. Download ac conversion and enjoy it on your iphone, ipad and ipod touch.
+    </p>
+    <h3>AC to AC Converter Circuit and its Working</h3>
+    <p>Both alternating current and direct current describes the two types of current flow in a circuit. What is alternating current (ac) and direct current (dc) and its applications. The examination will be conducted on august 07, 2022. We would like to show you a description here but the site won’t allow us.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ac Motor Application Ac Motor Kit Picture" data-src="https://i2.wp.com/3.bp.blogspot.com/-_j2nuQ_qpsU/UhdJ3sPmaZI/AAAAAAAAAY0/-ijQjZUenEg/s640/Ac-Motor-Application.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: acmotorkitpicture.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The cooling assistance benefit helps eligible households buy and install an air conditioner or fan up to a cost of $800. Cleans the air within a confined space by getting rid of airborne smoke, odors, germs, allergens, contaminants. Receiving a student number (reference number) does not imply. The examination will be conducted on august 07, 2022. This means that you.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Beat the heat with ACTC’s Air Conditioning program ACTC" data-src="https://i2.wp.com/ashland.kctcs.edu/news/2020/Air condi.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ashland.kctcs.edu</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apply to study at sol plaatje university. Closing dates vary from program to program and can be confirmed with different faculties. Application from 15.06.2022 to 25.06.2022. The examination will be conducted on august 07, 2022. They are used in power electronic applications.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Microsoft Word IEEEPCA_AC Motor Application 08 Paper.doc EE Publishers" data-src="https://i2.wp.com/www.ee.co.za/wp-content/uploads/2017/09/Drives-Siemens-3-fig-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ee.co.za</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This means that you can get around $50 to $300 under the priya conditioner. Ac offers nationally accredited vocational education and training (vet) and higher education. Reduces humidity and cools the indoor. Manage your cibc air canada ac. Some applications of ac generators are listed below:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AC Motor Theory Sciencing" data-src="https://i2.wp.com/img-aws.ehowcdn.com/877x500/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/0b5d40b7b6094abdb105d68b65574feb.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sciencing.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you&#039;re an ambitious undergraduate or a professional a few years out of college, we want you to explore our associate consultant (ac) role. Check your eligibility and apply. It provides you with 10% of the cost of the air conditioner. Download ac conversion and enjoy it on your iphone, ipad and ipod touch. Apply to study at sol plaatje.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AC Detector Circuit With Awesome Application 6 Steps (with Pictures" data-src="https://i2.wp.com/content.instructables.com/ORIG/FE3/XMYR/JDUKK6OO/FE3XMYRJDUKK6OO.jpg?auto=webp&amp;frame=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.instructables.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Download ac conversion and enjoy it on your iphone, ipad and ipod touch. Reduces humidity and cools the indoor. We would like to show you a description here but the site won’t allow us. Start your application by choosing one of the forms below. The cooling assistance benefit helps eligible households buy and install an air conditioner or fan up.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ac dc converter application guidelines" data-src="https://i2.wp.com/image.slidesharecdn.com/ac-dcconverterapplicationguidelines-160105031924/95/ac-dc-converter-application-guidelines-2-638.jpg?cb=1451963992" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Application from 15.06.2022 to 25.06.2022. Apply to study at sol plaatje university. If you&#039;re an ambitious undergraduate or a professional a few years out of college, we want you to explore our associate consultant (ac) role. Reduces humidity and cools the indoor. The notification of the capf ac examination will be released on april 20, 2022.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ac Delco Spark Plug Application Guide" data-src="https://i2.wp.com/oldeststars.com/images/1347f10139c51a28c82d547d3789f49c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: oldeststars.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(+27 21 959 3900/01 or admissions@uwc.ac.za) if you may change your. There is no application fee required to. Reduces humidity and cools the indoor. Please sign in online application system. Admit card download from 07.07.2022 12pm to 12.07.2022 11:59pm</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AC to AC Converter Circuit and its Working" data-src="https://i2.wp.com/www.edgefx.in/wp-content/uploads/2015/05/Practical-Application-of-Simple-AC-to-AC-Converter-Circuit-by-Edgefxkits.com_.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.edgefx.in</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Some applications of ac generators are listed below: Check your eligibility and apply. Application from 15.06.2022 to 25.06.2022. Receiving a student number (reference number) does not imply. There is no application fee required to.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Microsoft Word IEEEPCA_AC Motor Application 08 Paper.doc EE Publishers" data-src="https://i2.wp.com/www.ee.co.za/wp-content/uploads/2017/09/Drives-Siemens-3-fig-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ee.co.za</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Download ac conversion and enjoy it on your iphone, ipad and ipod touch. Cycloconverters are majorly called as frequency changers that convert the ac. It provides you with 10% of the cost of the air conditioner. Start your application by choosing one of the forms below. What is alternating current (ac) and direct current (dc) and its applications.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="5 Applications of AC Motors" data-src="https://i2.wp.com/www.electricalapparatus.net/wp-content/uploads/AdobeStock_17718791.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.electricalapparatus.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Receiving a student number (reference number) does not imply. Online applications are now open for the 2023 academic year for the following qualifications: Please enter your 11 digit customer id: As an associate consultant, you’ll. Cleans the air within a confined space by getting rid of airborne smoke, odors, germs, allergens, contaminants.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-are-you-malayalam-meaning-reply.html" class="be-post-title">
+				 <h6>how are you malayalam meaning reply </h6>
+                </a>
+                <a href="how-are-you-malayalam-meaning-reply.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20are%20you%20malayalam%20meaning%20reply&amp;w=50&amp;h=50&amp;c=7" alt="how are you malayalam meaning reply">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-arish-name-in-hindi.html" class="be-post-title">
+				 <h6>what is the meaning of arish name in hindi </h6>
+                </a>
+                <a href="what-is-the-meaning-of-arish-name-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20arish%20name%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of arish name in hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bad-meaning-in-tamil.html" class="be-post-title">
+				 <h6>bad meaning in tamil </h6>
+                </a>
+                <a href="bad-meaning-in-tamil.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bad%20meaning%20in%20tamil&amp;w=50&amp;h=50&amp;c=7" alt="bad meaning in tamil">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-time-period-of-a-christmas-story.html" class="be-post-title">
+				 <h6>what is the time period of a christmas story </h6>
+                </a>
+                <a href="what-is-the-time-period-of-a-christmas-story.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20time%20period%20of%20a%20christmas%20story&amp;w=50&amp;h=50&amp;c=7" alt="what is the time period of a christmas story">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kya-aapko-chahiye-meaning-in-telugu.html" class="be-post-title">
+				 <h6>kya aapko chahiye meaning in telugu </h6>
+                </a>
+                <a href="kya-aapko-chahiye-meaning-in-telugu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kya%20aapko%20chahiye%20meaning%20in%20telugu&amp;w=50&amp;h=50&amp;c=7" alt="kya aapko chahiye meaning in telugu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="according-to-newton-gravity-was-a-force-how-about-einstein.html" class="be-post-title">
+				 <h6>according to newton gravity was a force how about einstein </h6>
+                </a>
+                <a href="according-to-newton-gravity-was-a-force-how-about-einstein.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=according%20to%20newton%20gravity%20was%20a%20force%20how%20about%20einstein&amp;w=50&amp;h=50&amp;c=7" alt="according to newton gravity was a force how about einstein">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="yüce-ne-demek-felsefe.html" class="be-post-title">
+				 <h6>yüce ne demek felsefe </h6>
+                </a>
+                <a href="yüce-ne-demek-felsefe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=y%C3%BCce%20ne%20demek%20felsefe&amp;w=50&amp;h=50&amp;c=7" alt="yüce ne demek felsefe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="que-es-un-hack-informatico.html" class="be-post-title">
+				 <h6>que es un hack informatico </h6>
+                </a>
+                <a href="que-es-un-hack-informatico.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=que%20es%20un%20hack%20informatico&amp;w=50&amp;h=50&amp;c=7" alt="que es un hack informatico">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-nickname-meaning.html" class="be-post-title">
+				 <h6>what does nickname meaning </h6>
+                </a>
+                <a href="what-does-nickname-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20nickname%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="what does nickname meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-meaning-of-quelle-in-english.html" class="be-post-title">
+				 <h6>what is the meaning of quelle in english </h6>
+                </a>
+                <a href="what-is-the-meaning-of-quelle-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20meaning%20of%20quelle%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is the meaning of quelle in english">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

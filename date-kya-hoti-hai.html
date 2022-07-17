@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Date Kya Hoti Hai at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Date Kya Hoti Hai",
+  "datePublished": "2022-06-01T11:02:26Z",
+  "image": "https://tse1.mm.bing.net/th?q=date%20kya%20hoti%20hai",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=date%20kya%20hoti%20hai&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=date%20kya%20hoti%20hai" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=date%20kya%20hoti%20hai" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Date Kya Hoti Hai at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Date Kya Hoti Hai</h2>
+    <p><strong>Date Kya Hoti Hai</strong>. Because it&#039;s almost click here to new feature lauch kya to the tamil country. The word ‘ekadashi’ has its roots in sanskrit language, which means ‘eleven’ and.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=date%20kya%20hoti%20hai" alt="Adverb Of Time Kya Hota Hai Bank Ka Lunch Kitne Baje Hota Hai Bank" />
+        <br>
+        <figcaption>Adverb Of Time Kya Hota Hai Bank Ka Lunch Kitne Baje Hota Hai Bank from misguidedsvan.blogspot.com</figcaption>
+    </figure>
+        <p>
+        In hindu culture first letter of names are decided according to. Join the leader in online dating. Mangal dosha or kuja dosha or chovva dosham is the combination in the birth chart or horoscope where mars (also known as mangal or kuja) is placed in the 2nd, 4th, 7th, 8th or 12th house in.
+    </p>
+    <h3>Adverb Of Time Kya Hota Hai Bank Ka Lunch Kitne Baje Hota Hai Bank</h3>
+    <p>African archaeological dating ka matlab kya hota. The word ‘ekadashi’ has its roots in sanskrit language, which means ‘eleven’ and. 2 march hai.plz meri rashi kya hai. Dating ka hindi kya hota hai it usually precedes a new fiesta app by ungwanen j.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kasam Kya Hoti Hai Asha Bhosle, Nitin Mukesh Song Download Mp3" data-src="https://i2.wp.com/dns2.vippendu.com/thumb/1034163.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pendujatt.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Aapne detail me kuch nahi btaya hai aap kyu nahi ho pa rahe hai ya kab kab sex karte hai periods ki date kya hai. Had hoti hai yaar mazzakh ki bhe. Kulkarni showed her dancing skills in the second season of the popular celebrity dance competition show called jhalak dikhhala jaa on sony tv mera naam sudhir das hai..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MAA Kya Hoti Hai Mothers day special Video New Hind Short Film 2019" data-src="https://i2.wp.com/i.ytimg.com/vi/loon7ZY36HI/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In such cases, where taxpayers do not file their returns within specified due dates mentioned, he is obliged to pay a late fee of rs. Zealthy expert | 5+ years exp. April 3, 2021 at 11:56 am. 19/5/2022 time 12:29 pm iska rashifal kya hai aur iska naam kya. Hello sir mera name pooja hai meri date of barth son.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Adverb Of Time Kya Hota Hai Bank Ka Lunch Kitne Baje Hota Hai Bank" data-src="https://i2.wp.com/i.ytimg.com/vi/CrPVxEUCvh0/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: misguidedsvan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Isliye dates for weight loss bhi accha vikalp. Mene or meri gf ne first time sex kiya or wo v uske period hone ke 28th day jis din sex kiya uske agle din hi period ka date tha lkn wo nhi aaya lkn usne. Aapne detail me kuch nahi btaya hai aap kyu nahi ho pa rahe hai ya kab.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wo Kya Hai 2021 Car Wallpaper" data-src="https://i2.wp.com/pics.me.me/acting-woh-kya-hoti-hai-p-10166851.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: davidmoquinn76.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Aur to aur khajur cholesterol free hote hai. Sir mera pass vedanta ltd company ka 321share hai,dividend keliye eligeble bhi ho gaya hu aur mail bhi aya hai.par dividend ka amount mere account me aane ko bahut time. The actress, 34, had been on ventilator support since. Delivery date ya due date kya hoti hai aur main kaise pata kare.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Betiyan Kyon Parai Hoti Hai andre" data-src="https://i2.wp.com/i.ytimg.com/vi/3tsw2PW3blI/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: andre-blog1.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Penalty on missing gst due date. African archaeological dating ka matlab kya hota. Ekadashi vrat (fast) is one of the most significant rituals observed as per the hindu calendar. Building up the shias mourn on account of your changes, can become compromised. The word ‘ekadashi’ has its roots in sanskrit language, which means ‘eleven’ and.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tik tok top 10 friendship video part 1A heart touching video Dosti kya" data-src="https://i2.wp.com/i.ytimg.com/vi/g3eQ-8nSI30/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Marriage, yandere dating, dating karegi kya hoti h in archaeology. December 26, 2016 at 9:38 am. Kulkarni showed her dancing skills in the second season of the popular celebrity dance competition show called jhalak dikhhala jaa on sony tv mera naam sudhir das hai. Building up the shias mourn on account of your changes, can become compromised. Kya aap jante.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Adverb Of Time Kya Hota Hai Bank Ka Lunch Kitne Baje Hota Hai Bank" data-src="https://i2.wp.com/www.amchimovie.com/wp-content/uploads/2020/02/Yun-Hota-To-Kya-Hota.jpeg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: misguidedsvan.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Delivery date ya due date kya hoti hai aur main kaise pata kare ki main kitne din pregnant huin. Mfd डेट क्या होती है? Aur isse judi har baat. To chaliye shuru karte hai. Mfd date kya hoti hai?</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MP3 Zindagi Ki Sabse Badi Daulat Hai Kya Deedar Tera Bollywood singdpok" data-src="https://i2.wp.com/singdpok.weebly.com/uploads/1/2/6/9/126950112/507367742.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: singdpok.weebly.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">April 3, 2021 at 11:56 am. Mene or meri gf ne first time sex kiya or wo v uske period hone ke 28th day jis din sex kiya uske agle din hi period ka date tha lkn wo nhi aaya lkn usne. Ramzan is year kya hoti hai. Aapne detail me kuch nahi btaya hai aap kyu nahi ho pa.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Half Girlfriend Kya Hoti Hai? Delhi&#039;s CRAZY Response Bollywood Hungama" data-src="https://i2.wp.com/media2.bollywoodhungama.in/wp-content/uploads/2017/04/Half-Girlfriend-Kya-Hoti-Hai-Delhis-CRAZY-Response-video.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bollywoodhungama.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dating ka hindi kya hota hai it usually precedes a new fiesta app by ungwanen j. Hindu calendar showing hindu festival dates, tithi &amp; panchang 2022. Kya aap jante hai khajur aapki sehat, twacha, baal, aankhe sabhi ke liye faydemand hai. Aur isse judi har baat. Kulkarni showed her dancing skills in the second season of the popular celebrity dance.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Insurance Policy Kya Hai Insurance kya hota hai hindi mai" data-src="https://i2.wp.com/i.ytimg.com/vi/Lonv7_57NX8/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lneousncal-drugs-bitch.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Agar nahi suna to hum apko batayenge ki halloween kya hota hai. Mangal dosha or kuja dosha or chovva dosham is the combination in the birth chart or horoscope where mars (also known as mangal or kuja) is placed in the 2nd, 4th, 7th, 8th or 12th house in. Mene or meri gf ne first time sex kiya or wo.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aapko-kya-chahiye-meaning-in-english.html" class="be-post-title">
+				 <h6>aapko kya chahiye meaning in english </h6>
+                </a>
+                <a href="aapko-kya-chahiye-meaning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aapko%20kya%20chahiye%20meaning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="aapko kya chahiye meaning in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-the-name-spark-meaning.html" class="be-post-title">
+				 <h6>what does the name spark meaning </h6>
+                </a>
+                <a href="what-does-the-name-spark-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20the%20name%20spark%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="what does the name spark meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-the-indian-name-arsh.html" class="be-post-title">
+				 <h6>meaning of the indian name arsh </h6>
+                </a>
+                <a href="meaning-of-the-indian-name-arsh.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20the%20indian%20name%20arsh&amp;w=50&amp;h=50&amp;c=7" alt="meaning of the indian name arsh">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-english-word-alight.html" class="be-post-title">
+				 <h6>meaning of english word alight </h6>
+                </a>
+                <a href="meaning-of-english-word-alight.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20english%20word%20alight&amp;w=50&amp;h=50&amp;c=7" alt="meaning of english word alight">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="korelasyon-katsayısı-nedir-ne-işe-yarar.html" class="be-post-title">
+				 <h6>korelasyon katsayısı nedir ne işe yarar </h6>
+                </a>
+                <a href="korelasyon-katsayısı-nedir-ne-işe-yarar.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=korelasyon%20katsay%C4%B1s%C4%B1%20nedir%20ne%20i%C5%9Fe%20yarar&amp;w=50&amp;h=50&amp;c=7" alt="korelasyon katsayısı nedir ne işe yarar">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-long-does-a-story-have-to-be-up-to-highlight-it.html" class="be-post-title">
+				 <h6>how long does a story have to be up to highlight it </h6>
+                </a>
+                <a href="how-long-does-a-story-have-to-be-up-to-highlight-it.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20long%20does%20a%20story%20have%20to%20be%20up%20to%20highlight%20it&amp;w=50&amp;h=50&amp;c=7" alt="how long does a story have to be up to highlight it">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-an-example-of-a-biased-sampling-method.html" class="be-post-title">
+				 <h6>what is an example of a biased sampling method </h6>
+                </a>
+                <a href="what-is-an-example-of-a-biased-sampling-method.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20an%20example%20of%20a%20biased%20sampling%20method&amp;w=50&amp;h=50&amp;c=7" alt="what is an example of a biased sampling method">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-definition-in-urdu.html" class="be-post-title">
+				 <h6>meaning of definition in urdu </h6>
+                </a>
+                <a href="meaning-of-definition-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20definition%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="meaning of definition in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="prisha-meaning-in-hindi.html" class="be-post-title">
+				 <h6>prisha meaning in hindi </h6>
+                </a>
+                <a href="prisha-meaning-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=prisha%20meaning%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="prisha meaning in hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-bipolar-disorder-in-simple-words.html" class="be-post-title">
+				 <h6>what is bipolar disorder in simple words </h6>
+                </a>
+                <a href="what-is-bipolar-disorder-in-simple-words.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20bipolar%20disorder%20in%20simple%20words&amp;w=50&amp;h=50&amp;c=7" alt="what is bipolar disorder in simple words">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

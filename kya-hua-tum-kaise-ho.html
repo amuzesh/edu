@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kya Hua Tum Kaise Ho at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Kya Hua Tum Kaise Ho",
+  "datePublished": "2022-06-30T16:22:24Z",
+  "image": "https://tse1.mm.bing.net/th?q=kya%20hua%20tum%20kaise%20ho",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=kya%20hua%20tum%20kaise%20ho&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kya%20hua%20tum%20kaise%20ho" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=kya%20hua%20tum%20kaise%20ho" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kya Hua Tum Kaise Ho at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Kya Hua Tum Kaise Ho</h2>
+    <p><strong>Kya Hua Tum Kaise Ho</strong>. Kya soch hai re teri. Ho jata hai kaise pyar:</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=kya%20hua%20tum%20kaise%20ho" alt="Wajah Tum Ho Lyrics Hate Story 3 Armaan Malik Latest Popular Lyrics" />
+        <br>
+        <figcaption>Wajah Tum Ho Lyrics Hate Story 3 Armaan Malik Latest Popular Lyrics from www.populyrics.com</figcaption>
+    </figure>
+        <p>
+        Contextual translation of salim kya hua tumko tum bimar ho kya into english. Chaliye niche diye easy steps me janate hai lag jati kyun yaar, na jane koi: Jaane ye bas mera dil.
+    </p>
+    <h3>Wajah Tum Ho Lyrics Hate Story 3 Armaan Malik Latest Popular Lyrics</h3>
+    <p>Once we get to the chorus, frey plays these chords: Kya kar rahe ho translated in punjabi posted on 28 5% ladkiyan sachme ekdam sache hote he itna true or real ki 95% jo ladkiyan hoti. Discover short videos related to yeh kya hua kaise hua on tiktok. Main baarish ki boli samajhta nahi tha hawaaon se main yun ulajhta nahi tha hai.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Mere Liye Tum Kaafi Ho Lyrics Ayushmann Khurana Pakistani Dramas" data-src="https://i2.wp.com/1.bp.blogspot.com/-w4iiys1Ueg4/Xj2Kiong8RI/AAAAAAAAAMs/Xyl9JaxNiS4trsmGva2CvxTQd6EBUy0UwCLcBGAsYHQ/s1600/Mere%2BLiye%2BTum%2BKaafi%2BHo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pakistanidramasostlyrics.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hawaaon se main yun ulajhta nahi. Kya haal ho gaya hai yeh mera. There are also options to choose your favorite artist. Kya gunda banega re tu gif. Main baarish ki boli samajhta nahi tha.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="HUM TUM LYRICS Sukriti Kakar Prakriti Kakar" data-src="https://i2.wp.com/lyricsraag.com/wp-content/uploads/2020/10/gheafczktcm.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lyricsraag.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Main baarish ki boli samajhta nahi tha hawaaon se main yun ulajhta nahi tha hai. Mujh se ye jahaan tumhe “tum” bhi ho “main” kya fiqar ab humein tum ho. The one learning a language! Kaise kahen (recreated) rustam lavania &amp; diwyanshu. View the profiles of people named tum kaise hua.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Hum Tum Lyrics Sukriti Kakar and Prakriti Kakar stringlyrics" data-src="https://i2.wp.com/stringlyrics.com/wp-content/uploads/2020/10/Untitled-design-25-1-1-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: stringlyrics.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Tu itna zaroori, kaise hua. Contextual translation of salim kya hua tumko tum bimar ho kya into english. Bhaiya ek baar star par gardish cha gye ghar me bimari ne apna basera kar dia ghar me 1. F c d7 am f c dm e felder plays this: Do you know how to improve your language skills all you.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wajah Tum Ho Song Lyrics From Wajah Tum Ho" data-src="https://i2.wp.com/lyricsing.com/wp-content/uploads/wajah-tum-ho-Song-Lyrics.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lyricsing.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hawaaon se main yun ulajhta nahi. Song lyrics of yeh kya hua jane kya hua from movie yash (1996) Jaane ye bas mera dil. Mujh se ye jahaan tumhe “tum” bhi ho “main” kya fiqar ab humein tum ho. Parrot bimar ho to kya kare.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Tum Bin Jiya Jaye Kaise Lyrics Tum Bin lyricsofbollywoodsongs" data-src="https://i1.wp.com/img.youtube.com/vi/5MnAPQRxy-g/maxresdefault.jpg?w=999&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lyricsofbollywoodsongs.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Am em hansta rehta hu tujhse mil kar kyu aajkal am em badle badle hain mere tevar kyu aajkal f g c aankhein meri har jagah f g c dhoondhe tujhe bewajah f dm g ye main. कई बार ऐसा होता है कि बहुत प्रयास करने के बाद भी कोई काम नहीं बनता और यदि बन भी जाता है तो.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wajah Tum Ho Lyrics Hate Story 3 Armaan Malik Latest Popular Lyrics" data-src="https://i2.wp.com/www.populyrics.com/wp-content/uploads/2018/10/wajah-tum-ho-1024x576.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.populyrics.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Contextual translation of salim kya hua tumko tum bimar ho kya into english. Kya soch hai re teri. Ho jata hai kaise pyar: Kya gunda banega re tu gif. Main baarish ki boli samajhta nahi tha.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wajah Tum Ho Lyrics Armaan Malik Hate Story 3 Movie" data-src="https://i2.wp.com/lyricsraag.com/wp-content/uploads/2015/11/zvxbf1rmw.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: lyricsraag.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kya kar rahe ho translated in punjabi. Ke tum mere kya ho. Contextual translation of salim kya hua tumko tum bimar ho kya into english. Kya kar rahe ho translated in punjabi posted on 28 5% ladkiyan sachme ekdam sache hote he itna true or real ki 95% jo ladkiyan hoti. Kya soch hai re teri.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Chitra Tum Bin Jiya Jaye Kaise Lyrics Musixmatch" data-src="https://i2.wp.com/s.mxmcdn.net/images-storage/albums/3/5/6/5/2/8/26825653_800_800.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.musixmatch.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Conservatism in education ppt, cm g# d#. कई बार ऐसा होता है कि बहुत प्रयास करने के बाद भी कोई काम नहीं बनता और यदि बन भी जाता है तो बनते. Tu itna zaroori kaise hua kaise hua, kaise hua tu itna zaroori kaise hua. Presenting the lyrical video of the song kaise hua that portrays the phase of love.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Kaise Mujhe + Tum Ho Lyrics Palak Muchhal, Aditya Narayan TSeries" data-src="https://i2.wp.com/www.lyricsmint.com/wp-content/uploads/2017/08/kaise-mujhe-tum-ho-lyrics-tseries-mixtape-palak-aditya.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.lyricsmint.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kaise main kahoon tum kya ho debojit dutta. Dil kholkar apna me tumhe kaise dhikhau. Kya soch hai re teri. View the profiles of people named tum kaise hua. Main baarish ki boli samajhta nahi tha hawaaon se main yun ulajhta nahi tha hai.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Aaj Mere Saath Ho Tum Lyrics Tony Kakkar &amp; Sonu Sood Lyricshost" data-src="https://i2.wp.com/www.lyricshost.com/wp-content/uploads/2021/08/Sonu-Soon-Niddhi-Agerwal.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.lyricshost.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Chaliye niche diye easy steps me janate hai lag jati kyun yaar, na jane koi: Kaise kahen (recreated) rustam lavania &amp; diwyanshu. Ab muje period 18 june ko suru hue h pichli bar 24 may ko aaye the.ab m pregnent hone ke liye kab sex karu.plz jaldi btaiyega.plz plz plzreply.hmarishadi ko 4 month ho gye h. Ke tum mere kya.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="la-perla-mx-reviews.html" class="be-post-title">
+				 <h6>la perla mx reviews </h6>
+                </a>
+                <a href="la-perla-mx-reviews.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=la%20perla%20mx%20reviews&amp;w=50&amp;h=50&amp;c=7" alt="la perla mx reviews">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="names-of-persian-origin.html" class="be-post-title">
+				 <h6>names of persian origin </h6>
+                </a>
+                <a href="names-of-persian-origin.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=names%20of%20persian%20origin&amp;w=50&amp;h=50&amp;c=7" alt="names of persian origin">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-anata-mean-in-spanish.html" class="be-post-title">
+				 <h6>what does anata mean in spanish </h6>
+                </a>
+                <a href="what-does-anata-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20anata%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what does anata mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-the-word-alicea.html" class="be-post-title">
+				 <h6>meaning of the word alicea </h6>
+                </a>
+                <a href="meaning-of-the-word-alicea.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20the%20word%20alicea&amp;w=50&amp;h=50&amp;c=7" alt="meaning of the word alicea">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="malayalam-names-for-dance-group.html" class="be-post-title">
+				 <h6>malayalam names for dance group </h6>
+                </a>
+                <a href="malayalam-names-for-dance-group.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=malayalam%20names%20for%20dance%20group&amp;w=50&amp;h=50&amp;c=7" alt="malayalam names for dance group">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="boku-wa-vs-watashi.html" class="be-post-title">
+				 <h6>boku wa vs watashi </h6>
+                </a>
+                <a href="boku-wa-vs-watashi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=boku%20wa%20vs%20watashi&amp;w=50&amp;h=50&amp;c=7" alt="boku wa vs watashi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="cómo-se-pronuncia-escuchar.html" class="be-post-title">
+				 <h6>cómo se pronuncia escuchar </h6>
+                </a>
+                <a href="cómo-se-pronuncia-escuchar.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=c%C3%B3mo%20se%20pronuncia%20escuchar&amp;w=50&amp;h=50&amp;c=7" alt="cómo se pronuncia escuchar">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="döl-ne-demektir.html" class="be-post-title">
+				 <h6>döl ne demektir </h6>
+                </a>
+                <a href="döl-ne-demektir.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=d%C3%B6l%20ne%20demektir&amp;w=50&amp;h=50&amp;c=7" alt="döl ne demektir">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-hota-in-english.html" class="be-post-title">
+				 <h6>what is hota in english </h6>
+                </a>
+                <a href="what-is-hota-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20hota%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is hota in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-word-the-mean.html" class="be-post-title">
+				 <h6>what does word the mean </h6>
+                </a>
+                <a href="what-does-word-the-mean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20word%20the%20mean&amp;w=50&amp;h=50&amp;c=7" alt="what does word the mean">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

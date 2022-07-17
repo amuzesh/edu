@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Komodo Dragon Facts Wiki at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Komodo Dragon Facts Wiki",
+  "datePublished": "2022-06-29T09:58:03Z",
+  "image": "https://tse1.mm.bing.net/th?q=komodo%20dragon%20facts%20wiki",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=komodo%20dragon%20facts%20wiki&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=komodo%20dragon%20facts%20wiki" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=komodo%20dragon%20facts%20wiki" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Komodo Dragon Facts Wiki at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Komodo Dragon Facts Wiki</h2>
+    <p><strong>Komodo Dragon Facts Wiki</strong>. Quote let one get too close and you&#039;ll wind up missing a foot. stats; However, as time has gone on, science and research has showed us.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=komodo%20dragon%20facts%20wiki" alt="Komodo Dragon Animal Facts And Photos All Wildlife Photographs" />
+        <br>
+        <figcaption>Komodo Dragon Animal Facts And Photos All Wildlife Photographs from wildlife-photographs.blogspot.com</figcaption>
+    </figure>
+        <p>
+        2) komodo dragons are venomous komodo dragons are known for their notorious, venomous hunting strikes. Learn about the biggest lizard in the world! Quote let one get too close and you&#039;ll wind up missing a foot. stats;
+    </p>
+    <h3>Komodo Dragon Animal Facts And Photos All Wildlife Photographs</h3>
+    <p>10 interesting facts about komodo dragons. Check out this video to get an idea of just how huge komodo dragons can get. They are 3 feet high and up to 10 feet long. Young komodo dragons roll around in poop and climb trees to avoid getting eaten.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Dragon 5 Interesting Facts Plus Fun Facts, Bites and Treatment" data-src="https://i2.wp.com/www.pestwiki.com/wp-content/uploads/2017/05/Komodo-dragon-close-up.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pestwiki.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wild komodo dragons are found only on. Komodo monitor, ora scientific name: The island is particularly notable as the habitat of the komodo dragon, the largest lizard on earth, which is named after the island. But they do not always hunt. Komodo dragon (varanus komodoensis), also known as komodo monitor, is the largest known living lizard on earth found in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FileKomodo dragon at the Memphis Zoo.JPG Wikimedia Commons" data-src="https://i2.wp.com/upload.wikimedia.org/wikipedia/commons/thumb/6/63/Komodo_dragon_at_the_Memphis_Zoo.JPG/1599px-Komodo_dragon_at_the_Memphis_Zoo.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: commons.wikimedia.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The komodo dragon (varanus komodoensis), also known as the komodo monitor, is the largest living species of lizard. The average length of a komodo dragon is between 7.5 and 8.5 feet and, once again, males are typically larger than females. The komodo dragon is the largest and heaviest lizard in the world. Komodo dragon (varanus komodoensis), also known as komodo.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Dragon Attacks Pig" data-src="https://i2.wp.com/site-547756.mozfiles.com/files/547756/medium/Komodo-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: greatkomododragon.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The komodo dragon is a top predator, it is the largest lizard known to man. Today, they are the largest lizards still in existence. Their skin is usually gray in color reinforced by. 1,400 the komodo dragon (or varanus komodoensis) is a large species of reptile that lives on the indonesian isles of komodo, rinca, flores and gili motang. Quote.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Dragon Tail Whip" data-src="https://i2.wp.com/www.hellofaread.com/wp-content/uploads/2019/11/NINTCHDBPICT000397976143.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: greatkomododragon.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">However, as time has gone on, science and research has showed us. Komodo island has a surface area of 390 square kilometres and a human population of over two thousand. This creature growing to a maximum length of 3 metres (10 ft). Komodo dragon (varanus komodoensis), also known as komodo monitor, is the largest known living lizard on earth found.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Darwin killed God Everything you always wanted to know about Komodo" data-src="https://i2.wp.com/3.bp.blogspot.com/-l7OkXuhp4T4/XQ6KMOzWAaI/AAAAAAAAGXM/065Xmn1VqjA-AyWRNKyj7KJs1uu9gzP3wCK4BGAYYCw/s1600/komodo-dragon-mating-820x514.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: darwinkilledgod.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lives exclusively in an indonesian island also called probe, the name dragonderives from the fact that its size and length make it look like a dragon, in addition to that, is the oldest and largest species of reptiles.in the nineteenth century sailors and fishermen of the islands of flores andsumbawa often. After an expedition by a dutch official, the results.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Dragon Key Facts, Information &amp; Habitat" data-src="https://i2.wp.com/animalcorner.org/wp-content/uploads/2015/02/komodo-dragon-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: animalcorner.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It premiered on june 15, 2018. Minnesota zoo denver zoo san diego zoo calgary zoo planet zoo list of species zoo tycoon planet zoo book movies and more cedar animal adventures at canada&#039;s wild wonderland Level atk def 1 2660 3080 2 2665 3086 3 2672 3094 4 2680 3103 5 It has razor sharp teeth curved backwards enabling it.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Dragons Wiki" data-src="https://i2.wp.com/pbs.twimg.com/media/C6PT7a8XEAU6_-J.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: greatkomododragon.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komodo dragons have island gigantism. Quote let one get too close and you&#039;ll wind up missing a foot. stats; They are grey or greyish brown and its tongue has a yellowish appearance. Komodo dragons are scavengers who are known for their carcass hunting. 15 komodo dragon is a rare bombie card.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FileKomodo.jpg Wikimedia Commons" data-src="https://i2.wp.com/upload.wikimedia.org/wikipedia/commons/thumb/8/84/Komodo.jpg/1024px-Komodo.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: commons.wikimedia.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It premiered on june 15, 2018. The komodo dragon (varanus komodoensis), also known as the komodo monitor, is the largest living species of lizard. Quote let one get too close and you&#039;ll wind up missing a foot. stats; 15 komodo dragon is a rare bombie card. They are able to locate a carcass which is even located 5.9 miles away.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Komodo Dragon Animal Facts And Photos All Wildlife Photographs" data-src="https://i2.wp.com/3.bp.blogspot.com/-Mj2Hz0Arb14/UVpaL5EueLI/AAAAAAAACSk/vn73QaDSzkA/s1600/Komodo+Dragon+3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: wildlife-photographs.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Komodo dragon is the largest species of monitor lizard. They are 3 feet high and up to 10 feet long. The komodo dragon is the largest and heaviest lizard in the world. It occurs on komodo island and a few neighbouring islands of the lesser sunda islands of indonesia. Today, they are the largest lizards still in existence.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FileKomodo dragon Varanus komodoensis Ragunan Zoo 5.JPG Wikipedia" data-src="https://i2.wp.com/upload.wikimedia.org/wikipedia/commons/thumb/1/13/Komodo_dragon_Varanus_komodoensis_Ragunan_Zoo_5.JPG/1280px-Komodo_dragon_Varanus_komodoensis_Ragunan_Zoo_5.JPG" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: en.wikipedia.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Check out this video to get an idea of just how huge komodo dragons can get. Some of the largest komodo dragons can grow up to 10 feet long! The popular interest in the lizard’s large size and predatory habits has allowed this endangered species to become an ecotourist attraction, which has. It occurs on komodo island and a few.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="origin-of-word-palliative.html" class="be-post-title">
+				 <h6>origin of word palliative </h6>
+                </a>
+                <a href="origin-of-word-palliative.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=origin%20of%20word%20palliative&amp;w=50&amp;h=50&amp;c=7" alt="origin of word palliative">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kaisa-kaisa-tha.html" class="be-post-title">
+				 <h6>kaisa kaisa tha </h6>
+                </a>
+                <a href="kaisa-kaisa-tha.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kaisa%20kaisa%20tha&amp;w=50&amp;h=50&amp;c=7" alt="kaisa kaisa tha">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kannada-vs-canada.html" class="be-post-title">
+				 <h6>kannada vs canada </h6>
+                </a>
+                <a href="kannada-vs-canada.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=kannada%20vs%20canada&amp;w=50&amp;h=50&amp;c=7" alt="kannada vs canada">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-air-pollution-in-simple-words.html" class="be-post-title">
+				 <h6>meaning of air pollution in simple words </h6>
+                </a>
+                <a href="meaning-of-air-pollution-in-simple-words.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20air%20pollution%20in%20simple%20words&amp;w=50&amp;h=50&amp;c=7" alt="meaning of air pollution in simple words">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="when-to-use-three-or-four-ellipses.html" class="be-post-title">
+				 <h6>when to use three or four ellipses </h6>
+                </a>
+                <a href="when-to-use-three-or-four-ellipses.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=when%20to%20use%20three%20or%20four%20ellipses&amp;w=50&amp;h=50&amp;c=7" alt="when to use three or four ellipses">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="la-vieja-habana-maduro-review.html" class="be-post-title">
+				 <h6>la vieja habana maduro review </h6>
+                </a>
+                <a href="la-vieja-habana-maduro-review.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=la%20vieja%20habana%20maduro%20review&amp;w=50&amp;h=50&amp;c=7" alt="la vieja habana maduro review">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-one-newton-meter-equal-to.html" class="be-post-title">
+				 <h6>what is one newton meter equal to </h6>
+                </a>
+                <a href="what-is-one-newton-meter-equal-to.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20one%20newton%20meter%20equal%20to&amp;w=50&amp;h=50&amp;c=7" alt="what is one newton meter equal to">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-gravitational-force-state-newton-s-law-of-gravitation.html" class="be-post-title">
+				 <h6>what is gravitational force state newton&#039;s law of gravitation </h6>
+                </a>
+                <a href="what-is-gravitational-force-state-newton-s-law-of-gravitation.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20gravitational%20force%20state%20newton%27s%20law%20of%20gravitation&amp;w=50&amp;h=50&amp;c=7" alt="what is gravitational force state newton&amp;#039;s law of gravitation">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="lot-of-miss-you-meaning-in-marathi.html" class="be-post-title">
+				 <h6>lot of miss you meaning in marathi </h6>
+                </a>
+                <a href="lot-of-miss-you-meaning-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=lot%20of%20miss%20you%20meaning%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="lot of miss you meaning in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-does-ayana-mean-in-spanish.html" class="be-post-title">
+				 <h6>what does ayana mean in spanish </h6>
+                </a>
+                <a href="what-does-ayana-mean-in-spanish.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20does%20ayana%20mean%20in%20spanish&amp;w=50&amp;h=50&amp;c=7" alt="what does ayana mean in spanish">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

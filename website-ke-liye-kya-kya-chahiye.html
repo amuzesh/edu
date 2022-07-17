@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Website Ke Liye Kya Kya Chahiye at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Website Ke Liye Kya Kya Chahiye",
+  "datePublished": "2022-05-18T00:16:27Z",
+  "image": "https://tse1.mm.bing.net/th?q=website%20ke%20liye%20kya%20kya%20chahiye",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=website%20ke%20liye%20kya%20kya%20chahiye&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=website%20ke%20liye%20kya%20kya%20chahiye" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=website%20ke%20liye%20kya%20kya%20chahiye" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Website Ke Liye Kya Kya Chahiye at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Website Ke Liye Kya Kya Chahiye</h2>
+    <p><strong>Website Ke Liye Kya Kya Chahiye</strong>. Chaliye ab hum jan late hai ki website banane ke liye basic requirement kya kya hoti hai , website banana koi muskil kaam nahi hai , aaj kal koi bhi jise koi bhi technical knowledge na ho vo bhi website ko bana sakta hai. Agar aap dubai 5 days ke liye ghumane ja rahe ho to aap estimated man ke chalo apke 2000+6000+20000+25000+10000 = 63000 rs kharch honge.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=website%20ke%20liye%20kya%20kya%20chahiye" alt="Website ya blog banane ke liye kya chahiye? LAGHUDYOG" />
+        <br>
+        <figcaption>Website ya blog banane ke liye kya chahiye? LAGHUDYOG from laghudyog.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Php&amp;javascript, html&amp;css, website&amp;blogpsot template designing sikhne ke baad sikhe: Sir ek website me traffic barhane ke liye hum kya kar sakte hai. Html&amp;css ke sath me website aur blogspot ke tempalte design karna sikhne ke bad me bootstrap sikhe.
+    </p>
+    <h3>Website ya blog banane ke liye kya chahiye? LAGHUDYOG</h3>
+    <p>Etsi töitä, jotka liittyvät hakusanaan upsc ke liye kya qualification chahiye tai palkkaa maailman suurimmalta makkinapaikalta, jossa on yli 21 miljoonaa. Kya aap jante hai vitamin a se bharpur bhojan baccho ko dene se unke kuposhan se marne ki aashanka ko 24 fisadi tak kam kiya ja sakta hai jis din aap adhura kaam. Php&amp;javascript, html&amp;css, website&amp;blogpsot template designing sikhne ke baad sikhe: Aap social media sites ka sahi upayog kar sakte hain.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Best Website Design ke Liye Hme KisKis Chij ka Help Chahiye. kab kya" data-src="https://i2.wp.com/3.bp.blogspot.com/-Mskm4MmwSjk/WZ7ox3fIQUI/AAAAAAAACRU/OpOAMWPvkv0d9AzlXKv-qj-5O8YrcD45wCEwYBhgL/s1600/Best%2BWebsite%2BDesign%2Bke%2BLiye%2BHme%2BKis-Kis%2BChij%2Bk.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: suryarishavrai.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Asked dec 24, 2021 in internet by alok raj (29.8k points) वेबसाइट बनाने के लिए क्या करना चाहिए? Chaliye ab hum jan late hai ki website banane ke liye basic requirement kya kya hoti hai , website banana koi muskil kaam nahi hai , aaj kal koi bhi jise koi bhi technical knowledge na ho vo bhi website ko bana.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Website ya blog banane ke liye kya chahiye? LAGHUDYOG" data-src="https://i2.wp.com/2.bp.blogspot.com/-V6fel43_yWs/Ws0_0aavYHI/AAAAAAAAAQw/ig5JBGBE_SA5Oh2Vywztp2UWzIUicJt6gCLcBGAs/s640/IMG_20180411_040933.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: laghudyog.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Website ya blog se earning ke bahut se tareeke hai jiske liye apko adsense kya hai aur website se paise kamane ke tareeko ko pdna chahiye. वेब डेवलपर (web developer) वह व्यक्ति होता है जो किसी वेबसाइट को स्क्रैच (शुरुवात) से विकसित करता है और उसकी देखभाल करने का. August 17, 2020 at 4:25 pm. Users ask questions on 100s.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Backlinks kya hai aur SEO ke liye backlinks kyon jaroori hai" data-src="https://i2.wp.com/jankaribook.com/wp-content/uploads/2017/05/BACKLINKS-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: jankaribook.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Apni website ke topic ka knowlage:. Coding sikhne ke liye aur kya hona chahiye online gk question tests. Digital marketing ka sabse tough hissa hota hai “shuru karna”. Small business ke liye tips: Aap jis topic ko select karte hai apni website ke liye, us topic par jaruri nahi.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Backlinks kya hai or ye seo ke liye kyu important hai Brij wala" data-src="https://i2.wp.com/1.bp.blogspot.com/-tAfJNghr6MY/WKq-y7bZFrI/AAAAAAAABIU/XRk4PpOsJns1iilGWKxcAIMFEBbveeDIACK4B/s640/Backlinks-Kya-Hai-or-Ye-Blog-SEO-Ke-Liye-Kyo-Important-Hote-Hai.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: brijwala.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Html kya hai html kaise sikhe in hindi. Users ask questions on 100s of topics related to love, life, career, politics, religion, sports, personal care etc. Vokal app bridges the knowledge gap in india in indian languages by getting the best minds to answer questions of the common man. Chaliye ab hum jan late hai ki website banane ke liye.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Digital Locker Me Apna Account Kaise Banaye, Iske Fayde Kya Hai" data-src="https://i2.wp.com/4.bp.blogspot.com/-fl-Q4IVpF7g/W3EKY187dBI/AAAAAAAAGgI/FYcSHS9VXVY9JB-byI0leVpjzhK2La9hgCLcBGAs/s1600/How-To-Create-DigiLocker-Account.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.internethappyworld.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hum aap ko best content contest mein hissa lainay ke liye dawat dete hain, jis ki total 5000$ inaami raqam hai bechara pyar me lut gaya bechara pyar me lut gaya bank account band karne ka process bahut easy hai, but kya aapko pata hai, bank account band karne ke process aur bank account band karne ke pahle hame kya.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Biggest site for Jadu and Jinnat ka ilaj elaj tor k liye wazaif" data-src="https://i2.wp.com/3.bp.blogspot.com/-KGQQlAtXHos/WadQAKrnGdI/AAAAAAAAAo8/up06L1sAb7w8B_FOBVoy43Ya44usGwAkgCLcBGAs/w1200-h630-p-k-no-nu/Jinnat%2BSe%2BNijat%2BHasil%2BKarney%2BKe%2BLiye%2BKya%2BKarna%2BChahiye-.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 001newera.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Patel thursday, 7th april 2022 at 10:17 pm. August 17, 2020 at 4:25. 5 month baby ko kya khilana chahiye. Reet form ke liye documents/reet ka form bharne ke liye kya kya documents chahiye/reet documents req इस आलेख में visa kya hai, visa kaise banaye, visa kaise apply kare,visa kyu zaruri hai,visa ke liye documents,visa information in hindi,visa ke liye.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Website blog banane ke liye kya kya cheezo ki jarurat padti hai ,Kitne" data-src="https://i2.wp.com/4.bp.blogspot.com/-TLnPK7KfDyA/Wz7idtcnnXI/AAAAAAAAAZ4/zib7V0ZbS9AzqlGhZMB4vTU4qSRekTdVwCLcBGAs/w1200-h630-p-k-no-nu/%25E0%25A4%25B5%25E0%25A5%2587%25E0%25A4%25AC%25E0%25A4%25B8%25E0%25A4%25BE%25E0%25A4%2587%25E0%25A4%259F%2B%25E0%25A4%25AC%25E0%25A4%25A8%25E0%25A4%25BE%25E0%25A4%25A8%25E0%25A5%2587%2B%25E0%25A4%2595%25E0%25A5%2587%2B%25E0%25A4%25B2%25E0%25A4%25BF%25E0%25A4%258F%2B%25E0%25A4%2595%25E0%25A5%258D%25E0%25A4%25AF%25E0%25A4%25BE%2B%25E0%25A4%2595%25E0%25A5%258D%25E0%25A4%25AF%25E0%25A4%25BE%2B%25E0%25A4%259A%25E0%25A4%25BE%25E0%25A4%25B9%25E0%25A4%25BF%25E0%25A4%258F.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hindimehelps.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Website banane ke liye kya chaiye? Hum aap ko best content contest mein hissa lainay ke liye dawat dete hain, jis ki total 5000$ inaami raqam hai bechara pyar me lut gaya bechara pyar me lut gaya bank account band karne ka process bahut easy hai, but kya aapko pata hai, bank account band karne ke process aur bank account.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="website banane ke liye kya kya chahiye" data-src="https://i2.wp.com/1.bp.blogspot.com/-FGutuel21Dw/XIFNnMHOkkI/AAAAAAAACOA/nRdxUQxx4nYESFOoK4DJNLMN0XCoe6s2ACLcBGAs/w1200-h630-p-k-no-nu/website-banane-ke-liye-kya-kya-chahiye.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.gujaratitips.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Kya kya qualifications chahiye admission k liye. August 17, 2020 at 4:25 pm. Website ya blog se earning ke bahut se tareeke hai jiske liye apko adsense kya hai aur website se paise kamane ke tareeko ko pdna chahiye. The vokal app is available in 11 indian languages. Aap social media sites ka sahi upayog kar sakte hain.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Website Banane Ke Liya Kya Kya Chahiye » BloggingMyTips" data-src="https://i0.wp.com/www.bloggingmytips.com/wp-content/uploads/2019/11/what-is-needed-to-create-a-website-in-hindi-1.jpg?fit=700%2C340&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bloggingmytips.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">इस आलेख में visa kya hai, visa kaise banaye, visa kaise apply kare,visa kyu zaruri hai,visa ke liye documents,visa information in hindi,visa ke liye kya document chahiye,visa kitne din me banta hai,visa क्या है ?,visa कितने प्रकार का होता हैं,visa के लिए आवश्यक दस्तावेज,वीज़ा. Hum aap ko best content contest mein hissa lainay ke liye dawat dete hain, jis ki.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wordpress Website ka Backup kaise le kab kya kaise" data-src="https://i2.wp.com/4.bp.blogspot.com/-s2r0iZoatko/WnPByApj_-I/AAAAAAAAC-Q/9wDzl8igZNM31QJBZOMVr23NTz1EQ2KAgCLcBGAs/s1600/_IMG_000000_000000_1517535456128.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: suryarishavrai.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Html&amp;css ke sath me website aur blogspot ke tempalte design karna sikhne ke bad me bootstrap sikhe. आंगनवाड़ी सुपरवाइजर के लिए क्या योग्यता होनी चाहिए? Aap social media sites ka sahi upayog kar sakte hain. Reet form ke liye documents/reet ka form bharne ke liye kya kya documents chahiye/reet documents req Ya chahen to fb ads ka istamal kar sakte.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="gravitational-force-of-earth-in-newtons.html" class="be-post-title">
+				 <h6>gravitational force of earth in newtons </h6>
+                </a>
+                <a href="gravitational-force-of-earth-in-newtons.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=gravitational%20force%20of%20earth%20in%20newtons&amp;w=50&amp;h=50&amp;c=7" alt="gravitational force of earth in newtons">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="la-perla-habana-1515-review.html" class="be-post-title">
+				 <h6>la perla habana 1515 review </h6>
+                </a>
+                <a href="la-perla-habana-1515-review.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=la%20perla%20habana%201515%20review&amp;w=50&amp;h=50&amp;c=7" alt="la perla habana 1515 review">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-savage-in-marathi.html" class="be-post-title">
+				 <h6>meaning of savage in marathi </h6>
+                </a>
+                <a href="meaning-of-savage-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20savage%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="meaning of savage in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="expression-espagnol-drôle.html" class="be-post-title">
+				 <h6>expression espagnol drôle </h6>
+                </a>
+                <a href="expression-espagnol-drôle.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=expression%20espagnol%20dr%C3%B4le&amp;w=50&amp;h=50&amp;c=7" alt="expression espagnol drôle">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-asante-name.html" class="be-post-title">
+				 <h6>meaning of asante name </h6>
+                </a>
+                <a href="meaning-of-asante-name.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20asante%20name&amp;w=50&amp;h=50&amp;c=7" alt="meaning of asante name">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-are-some-boy-names-that-mean-green.html" class="be-post-title">
+				 <h6>what are some boy names that mean green </h6>
+                </a>
+                <a href="what-are-some-boy-names-that-mean-green.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20are%20some%20boy%20names%20that%20mean%20green&amp;w=50&amp;h=50&amp;c=7" alt="what are some boy names that mean green">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="define-ka-hindi-kya-hota-hai.html" class="be-post-title">
+				 <h6>define ka hindi kya hota hai </h6>
+                </a>
+                <a href="define-ka-hindi-kya-hota-hai.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=define%20ka%20hindi%20kya%20hota%20hai&amp;w=50&amp;h=50&amp;c=7" alt="define ka hindi kya hota hai">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="kya-bolte-h.html" class="be-post-title">
+				 <h6>@ kya bolte h </h6>
+                </a>
+                <a href="kya-bolte-h.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=%40%20kya%20bolte%20h&amp;w=50&amp;h=50&amp;c=7" alt="@ kya bolte h">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-hindi-word-karan.html" class="be-post-title">
+				 <h6>meaning of hindi word karan </h6>
+                </a>
+                <a href="meaning-of-hindi-word-karan.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20hindi%20word%20karan&amp;w=50&amp;h=50&amp;c=7" alt="meaning of hindi word karan">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="komodo-jenis-hewan-apa.html" class="be-post-title">
+				 <h6>komodo jenis hewan apa </h6>
+                </a>
+                <a href="komodo-jenis-hewan-apa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=komodo%20jenis%20hewan%20apa&amp;w=50&amp;h=50&amp;c=7" alt="komodo jenis hewan apa">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

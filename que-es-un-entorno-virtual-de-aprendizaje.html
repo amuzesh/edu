@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Que Es Un Entorno Virtual De Aprendizaje at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Que Es Un Entorno Virtual De Aprendizaje",
+  "datePublished": "2022-06-09T01:04:08Z",
+  "image": "https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual%20de%20aprendizaje",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual%20de%20aprendizaje&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual%20de%20aprendizaje" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual%20de%20aprendizaje" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Que Es Un Entorno Virtual De Aprendizaje at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Que Es Un Entorno Virtual De Aprendizaje</h2>
+    <p><strong>Que Es Un Entorno Virtual De Aprendizaje</strong>. De todos estos, los que se usan en la educación básica regular son los eva, los cuales se caracterizan por: Los entornos de aprendizaje virtual son paquetes de software que están configurados para permitir que el proceso educativo ocurra en una situación en línea.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=que%20es%20un%20entorno%20virtual%20de%20aprendizaje" alt="¿Qué es un Entorno Virtual de Aprendizaje? YouTube" />
+        <br>
+        <figcaption>¿Qué es un Entorno Virtual de Aprendizaje? YouTube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        En cuanto a la modalidad presencial, existe la. ¿para qué sirven los eva? Asimismo, según dicho autor, los entornos virtuales de.
+    </p>
+    <h3>¿Qué es un Entorno Virtual de Aprendizaje? YouTube</h3>
+    <p>Una de las particularidades más provechosas que presenta la modalidad de educación a distancia es la flexibilidad de los horarios. Son aquellos ambientes de aprendizaje que se diseñan o implementan en las organizaciones y en las instituciones educativas, apoyados con las tic. 0 (0) entorno virtual de aprendizaje : De todos estos, los que se usan en la educación básica regular son los eva, los cuales se caracterizan por:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="EDUCACIÓN CONCIENCIA 3 INTERACCIÓN EDUCATIVA EN AMBIENTES VIRTUALES" data-src="https://i2.wp.com/3.bp.blogspot.com/-i12lqDFVVmE/V4msyn-PLII/AAAAAAAAAiM/_tir2gitBTYFuVVl6hpoE4big96gvucQgCLcB/s640/entorno-virtual-aprendizaje-ventajas-y-desventajas-2-638.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: pnleducacion.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Un entorno virtual de aprendizaje es un espacio educativo alojado en la web, un conjunto de herramientas informáticas que posibilitan la interacción didáctica de manera que el alumno pueda llevar a cabo las labores propias de la docencia como son conversar, leer documentos, realizar ejercicios, formular preguntas al docente, trabajar en. En gestión ambiental con más de 11 años de.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Entorno Virtual de Aprendizaje by Bit4learn" data-src="https://i2.wp.com/bit4learn.com/es/wp-content/uploads/2019/06/Diseño-sin-título.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bit4learn.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En este espacio, los maestros se mueven sin esfuerzo entre la evaluación, la retroalimentación, el intercambio y el monitoreo sin derrumbarse en el proceso. Poseen una interface intuitiva que integra de manera coordinada las estructuras en sus diferentes módulos. De igual manera dichos entornos virtuales de aprendizaje (eva) se apoyan en los diferentes recursos que nos proporcionan las herramientas que.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un Entorno Virtual? Aulas virtuales" data-src="https://i2.wp.com/cdn-cms.f-static.net/uploads/2187206/2000_5cef183e8be27.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 5cdaf87ed8b0c.site123.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Los elementos esenciales que debe tener un entorno virtual de aprendizaje, en los cuales se ha de articular el aprendizaje y el trabajo cooperativo, son los siguientes: Poseen una interface intuitiva que integra de manera coordinada las estructuras en sus diferentes módulos. Un entorno virtual de aprendizaje (eva), también conocido como ambiente virtual de aprendizaje (ava), 1 o virtual learning.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un Entorno Virtual de Aprendizaje (EVA)? CognOTEC" data-src="https://i2.wp.com/cognotec.cognosonline.cl/wp-content/uploads/2020/07/Que-es-un-Entorno-Virtual-de-Aprendizaje-EVA-2-750x500.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cognotec.cognosonline.cl</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una de las particularidades más provechosas que presenta la modalidad de educación a distancia es la flexibilidad de los horarios. Un entorno virtual de aprendizaje o eva es un espacio educativo en la nube. De todos estos, los que se usan en la educación básica regular son los eva, los cuales se caracterizan por: Los ambientes virtuales permiten el acceso.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un Entorno Virtual? Aulas virtuales" data-src="https://i2.wp.com/static.s123-cdn-static.com/uploads/2187206/2000_5cef18248f680.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: 5cdaf87ed8b0c.site123.me</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una de las particularidades más provechosas que presenta la modalidad de educación a distancia es la flexibilidad de los horarios. Una herramienta pedagógica fundamental el uso de un entorno virtual de aprendizaje para impartir clases a estudiantes de primaria y secundaria cada vez es más común. Conjunto de aplicaciones informáticas que configuran un espacio accesible a través de la red,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Ambientes Virtuales de Aprendizaje" data-src="https://i2.wp.com/1.bp.blogspot.com/-qLziQ_Obdg0/XnMaSjHS4FI/AAAAAAAAA2Y/Y7Ypklvg14EGikMuuTOftKYHAaNESCd0wCLcBGAsYHQ/w1200-h630-p-k-no-nu/cf050587f767220ddaf3ec8a848e1e43.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: elsypacheco.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Una herramienta pedagógica fundamental el uso de un entorno virtual de aprendizaje para impartir clases a estudiantes de primaria y secundaria cada vez es más común. Ser flexibles y adaptarse a las necesidades de la organización donde se implementará. 0 (0) entorno virtual de aprendizaje : Sin embargo, es necesario que estos portales cumplan con algunos requerimientos para poder ofrecerles.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="¿Qué es un Entorno Virtual de Aprendizaje? YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/_nbpm-1SnVo/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">De todos estos, los que se usan en la educación básica regular son los eva, los cuales se caracterizan por: El intercambio de datos en tiempo real entre docentes y alumnos, así como la interacción natural que surge entre ellos, es fundamental para el éxito de cualquier emprendimiento educativo. Ser flexibles y adaptarse a las necesidades de la organización donde.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="AULA VIRTUAL BARQUISIMETO Entorno Virtual de Aprendizaje &quot;E.V.A.&quot;" data-src="https://i2.wp.com/3.bp.blogspot.com/-47JwTgocqT8/VYR78kMoxuI/AAAAAAAABFk/Ih9x77Ix6c4/s1600/qu-es-un-entorno-virtual-de-aprendizaje-2-638.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: investigacioneducativaeva.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dada la continua digitalización de la sociedad, el primer beneficio a tener en cuenta es el uso de la tecnología en sí mismo, que permite a los alumnos familiarizarse con este entorno. Los elementos esenciales que debe tener un entorno virtual de aprendizaje, en los cuales se ha de articular el aprendizaje y el trabajo cooperativo, son los siguientes: Sin.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Entorno virtual del aprendizaje (eva)" data-src="https://i2.wp.com/image.slidesharecdn.com/entornovirtualdelaprendizajeeva-161023231351/95/entorno-virtual-del-aprendizaje-eva-1-638.jpg?cb=1477264442" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.slideshare.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">En la actualidad la educación está exigiendo la creación de nuevos entornos o ambientes de aprendizaje, algunos son presenciales y otros virtuales como los denominados ambientes de aprendizaje virtual (ava) con apoyo de las tecnologías de información y comunicación. En gestión ambiental con más de 11 años de experiencia en educación a distancia y a 5 años de haber formado.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Qué es un Entorno Virtual de Aprendizaje (EVA) Desarrollo de entornos" data-src="https://i0.wp.com/www.aula1.com/wp-content/uploads/queesun-entornovirtualdeaprendizaje.png?resize=600%2C375" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blogeducativodemariaangelasangavilca.wordpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Fácil personalización de la identidad visual de los cursos en línea con logo, imágenes y esquema de. A raíz de la situación de pandemia, la educación virtual ha tomado especial relevancia este año, pero la pregunta es ¿todos los cursos virtuales que se ofrecen en la actualidad aseguran el aprendizaje? Al contrario del modelo tradicional, en el que el profesor.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="umera-name-meaning-in-urdu.html" class="be-post-title">
+				 <h6>umera name meaning in urdu </h6>
+                </a>
+                <a href="umera-name-meaning-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=umera%20name%20meaning%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="umera name meaning in urdu">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="thrive-off-ne-demek.html" class="be-post-title">
+				 <h6>thrive off ne demek </h6>
+                </a>
+                <a href="thrive-off-ne-demek.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=thrive%20off%20ne%20demek&amp;w=50&amp;h=50&amp;c=7" alt="thrive off ne demek">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-say-see-you-soon-in-korean.html" class="be-post-title">
+				 <h6>how to say see you soon in korean </h6>
+                </a>
+                <a href="how-to-say-see-you-soon-in-korean.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20say%20see%20you%20soon%20in%20korean&amp;w=50&amp;h=50&amp;c=7" alt="how to say see you soon in korean">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="muslim-name-humaira-meaning-in-hindi.html" class="be-post-title">
+				 <h6>muslim name humaira meaning in hindi </h6>
+                </a>
+                <a href="muslim-name-humaira-meaning-in-hindi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=muslim%20name%20humaira%20meaning%20in%20hindi&amp;w=50&amp;h=50&amp;c=7" alt="muslim name humaira meaning in hindi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-name-krishnaveni.html" class="be-post-title">
+				 <h6>meaning of name krishnaveni </h6>
+                </a>
+                <a href="meaning-of-name-krishnaveni.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20name%20krishnaveni&amp;w=50&amp;h=50&amp;c=7" alt="meaning of name krishnaveni">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="female-version-meaning-in-english.html" class="be-post-title">
+				 <h6>female version meaning in english </h6>
+                </a>
+                <a href="female-version-meaning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=female%20version%20meaning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="female version meaning in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="aap-sab-kaise-hain-meaning-in-english.html" class="be-post-title">
+				 <h6>aap sab kaise hain meaning in english </h6>
+                </a>
+                <a href="aap-sab-kaise-hain-meaning-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=aap%20sab%20kaise%20hain%20meaning%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="aap sab kaise hain meaning in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-an-example-of-personal-bias.html" class="be-post-title">
+				 <h6>what is an example of personal bias </h6>
+                </a>
+                <a href="what-is-an-example-of-personal-bias.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20an%20example%20of%20personal%20bias&amp;w=50&amp;h=50&amp;c=7" alt="what is an example of personal bias">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-homestay-in-vietnam.html" class="be-post-title">
+				 <h6>what is a homestay in vietnam </h6>
+                </a>
+                <a href="what-is-a-homestay-in-vietnam.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20homestay%20in%20vietnam&amp;w=50&amp;h=50&amp;c=7" alt="what is a homestay in vietnam">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="most-deadly-infectious-diseases-worldwide.html" class="be-post-title">
+				 <h6>most deadly infectious diseases worldwide </h6>
+                </a>
+                <a href="most-deadly-infectious-diseases-worldwide.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=most%20deadly%20infectious%20diseases%20worldwide&amp;w=50&amp;h=50&amp;c=7" alt="most deadly infectious diseases worldwide">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

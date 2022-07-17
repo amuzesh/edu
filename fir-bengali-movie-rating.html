@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Fir Bengali Movie Rating at Jiskha Homework Help
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Duri Najam",
+    "url": "https://www.google.com/search?q=Duri Najam"
+  },
+  "headline": "Fir Bengali Movie Rating",
+  "datePublished": "2022-03-23T03:00:33Z",
+  "image": "https://tse1.mm.bing.net/th?q=fir%20bengali%20movie%20rating",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jiskha Homework Help",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=fir%20bengali%20movie%20rating&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=fir%20bengali%20movie%20rating" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=fir%20bengali%20movie%20rating" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Jiskha Homework Help
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Fir Bengali Movie Rating at Jiskha Homework Help
+          </h1>
+          <p class="lead">
+                          Share Jiskha Homework Help 2022 . Search anything about Jiskha Homework Help in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Fir Bengali Movie Rating</h2>
+    <p><strong>Fir Bengali Movie Rating</strong>. Check out vishnu vishal&#039;s fir tamil movie release date, cast &amp; crew, trailer, songs, teaser, story, review, budget, first day collection, box office collection, ott. Fir bengali movie ankush hazra ritabhari chakrabarty shantilal mukherjee anirban mukhopadhyay.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=fir%20bengali%20movie%20rating" alt="Director Gaurav joins the cast of Vishnu Vishal&#039;s FIR Tamil Movie" />
+        <br>
+        <figcaption>Director Gaurav joins the cast of Vishnu Vishal&#039;s FIR Tamil Movie from timesofindia.indiatimes.com</figcaption>
+    </figure>
+        <p>
+        Get access to unlimited free song download, new movies, videos streaming, recent video songs, short films, latest tv shows and much more at hungama. Let us see what impact fir made at the box office. Chiefly of upland areas synonyms :
+    </p>
+    <h3>Director Gaurav joins the cast of Vishnu Vishal&#039;s FIR Tamil Movie</h3>
+    <p>Ankush hazra , bonny sengupta , falaque rashid roy , ritabhari chakraborty , 339/07/06’ starring bonny sengupta, ankush hazra, falaque rashid roy, and ritabhari chakraborty will. Get access to unlimited free song download, new movies, videos streaming, recent video songs, short films, latest tv shows and much more at hungama. Your rating rated on 13 apr 2022.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Fir Koi Aur 2020 MPrime Originals Hindi Short Film 720p HDRip 150MB" data-src="https://i2.wp.com/fs1.extraimage.org/2020/10/04/FKIA-23.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www1.bollymint.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">339/07/06’ starring bonny sengupta, ankush hazra, falaque rashid roy, and ritabhari chakraborty will. Firaaq (2008) another film to deal with the gujarat riots, firaaq was reportedly based on true incidents which happened in. He fights for justice and decides to go to any extent. Subscribe now to get access to 500+ bengali movies, hoichoi shorts and 12+ exclusive original shows.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Jamai 420 available online, Venkatesh Films lodges FIR against Regal" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-47615437,width-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-573406/47615437.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Get access to unlimited free song download, new movies, videos streaming, recent video songs, short films, latest tv shows and much more at hungama. Rrr roaring on stream pre book. Fir is a bengali movie featuring ankush hazra and bonny sengupta in the lead roles. Check out vishnu vishal&#039;s fir tamil movie release date, cast &amp; crew, trailer, songs, teaser,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Shatru Bengali Full Movie Mp4 HD Download" data-src="https://i2.wp.com/img.youtube.com/vi/xeWdCCtrz4Y/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mp4mafia.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Your rating rated on 17 may 2022. He fights for justice and decides to go to any extent. Excluding one highly controvertible islam preacher&#039;s character, the film gets its. The film is scheduled to be. Check out vishnu vishal&#039;s fir tamil movie release date, cast &amp; crew, trailer, songs, teaser, story, review, budget, first day collection, box office collection, ott.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FIR Motion Teaser Tamil Movie Trailers &amp; Promos nowrunning" data-src="https://i2.wp.com/www.nowrunning.com/content/movie/2019/fir-24389/bg-video-717201911113AM.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.nowrunning.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">339/07/06 full movie online in hd. The plot revolves around a police officer. Will he be able to punish the culprits forever? Vishnu vishal, raiza wilson, manjima mohan, reba monica john, praveen kumar, ram c. Nonresinous wood of a fir tree</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Director Gaurav joins the cast of Vishnu Vishal&#039;s FIR Tamil Movie" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-72467860,width-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-1143813/72467860.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Things take a turn as it changes everything forever. Gautham vasudev menon, manjima mohan, raiza wilson, reba monica john, vishnu vishal are part of the cast of fir (aka) flr. 339/07/06&#039; starring bonny sengupta, ankush hazra, falaque rashid roy and ritabhari chakraborty is digitally releasing on friday after a. Nonresinous wood of a fir tree Fir is an indian bengali.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Blockbuster ‘Belaseshe’ remakes now in other languages Entertainment" data-src="https://i2.wp.com/images.indianexpress.com/2015/08/belaseshe759.jpg?w=759&amp;h=422&amp;imflag=true" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: indianexpress.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Subscribe now to get access to 500+ bengali movies, hoichoi shorts and 12+ exclusive original shows today with more movies &amp; exclusive web series getting added every month. Definitions and meaning of fir in english fir noun. Get bengali full movies download. Fir bangla subtitle habib siam, 1cd (ben). Check out vishnu vishal&#039;s fir tamil movie release date, cast &amp;.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FIR Tamil Movie Movie Reviews, Showtimes nowrunning" data-src="https://i2.wp.com/www.nowrunning.com/content/movie/2019/fir-24389/bg1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.nowrunning.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">With ritabhari chakraborty, ankush hazra, santilal mukherjee, bonny sengupta. Fir is an indian bengali language crime thriller film directed by joydip mukherjee. 339/07/06&#039; starring bonny sengupta, ankush hazra, falaque rashid roy and ritabhari chakraborty is digitally releasing on friday after a. Fir was released on oct 10, 2021 and was directed by joydeep mukherjee.this movie is 2 hr 26 min.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="In further trouble Netflix, FIR against two executives for the kissing" data-src="https://i2.wp.com/1.bp.blogspot.com/-vOqPy3GBt_Q/X7ytXLPDXwI/AAAAAAAAA3Q/bfWoRAy0ZKccW_khfYecDOWUBWpvGXi1QCLcBGAsYHQ/w1200-h630-p-k-no-nu/in-further-trouble-netflix-fir-against-two-executives-for-the-kissing-scene-in-the-web-series.webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.natunnewsmonitor.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Let us see what impact fir made at the box office. Fir is a bengali movie featuring ankush hazra and bonny sengupta in the lead roles. Will he be able to punish the culprits forever? Fir bengali movie ankush hazra ritabhari chakrabarty shantilal mukherjee anirban mukhopadhyay. Things take a turn as it changes everything forever.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Pakhi Sharma aka Bobby Darling files FIR against her husband Ramnik" data-src="https://i2.wp.com/static.toiimg.com/thumb/msid-60358105,width-1070,height-580,overlay-toi_sw,pt-32,y_pad-40,resizemode-75,imgsize-236222/60358105.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: timesofindia.indiatimes.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The muslim community, which has either been overlooked or suffocated with an overdose of cliches in tamil cinema gets a breather in fir. Nonresinous wood of a fir tree Chiefly of upland areas synonyms : Firaaq (2008) another film to deal with the gujarat riots, firaaq was reportedly based on true incidents which happened in. With ritabhari chakraborty, ankush hazra,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="18+ Fir Koi Aur 2020 MPrime Originals Hindi Short Film 720p HDRip 150MB" data-src="https://i2.wp.com/hdmusic27.com/wp-content/uploads/2020/10/Fir-Koi-Aur-2020-MPrime-Originals-Hindi-Short-Film-720p-HDRip-156MB-Download-660x330.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hdmusic27.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">339/07/06 full movie online in hd. Fir is a bengali movie featuring ankush hazra and bonny sengupta in the lead roles. 339/07/06&#039; starring bonny sengupta, ankush hazra, falaque rashid roy and ritabhari chakraborty is digitally releasing on friday after a. Fir (aka) flr is a tamil movie. Get bengali full movies download.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-tamil-meaning-of-while-away.html" class="be-post-title">
+				 <h6>what is the tamil meaning of while away </h6>
+                </a>
+                <a href="what-is-the-tamil-meaning-of-while-away.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20tamil%20meaning%20of%20while%20away&amp;w=50&amp;h=50&amp;c=7" alt="what is the tamil meaning of while away">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="silly-meaning-gujarati-in-english.html" class="be-post-title">
+				 <h6>silly meaning gujarati in english </h6>
+                </a>
+                <a href="silly-meaning-gujarati-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=silly%20meaning%20gujarati%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="silly meaning gujarati in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="historical-places-in-karnataka-essay.html" class="be-post-title">
+				 <h6>historical places in karnataka essay </h6>
+                </a>
+                <a href="historical-places-in-karnataka-essay.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=historical%20places%20in%20karnataka%20essay&amp;w=50&amp;h=50&amp;c=7" alt="historical places in karnataka essay">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="tumhe-kya-chahiye-translate-in-english.html" class="be-post-title">
+				 <h6>tumhe kya chahiye translate in english </h6>
+                </a>
+                <a href="tumhe-kya-chahiye-translate-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=tumhe%20kya%20chahiye%20translate%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="tumhe kya chahiye translate in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-payal-in-english.html" class="be-post-title">
+				 <h6>what is payal in english </h6>
+                </a>
+                <a href="what-is-payal-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20payal%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is payal in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-kerala-food-in-english.html" class="be-post-title">
+				 <h6>what is kerala food in english </h6>
+                </a>
+                <a href="what-is-kerala-food-in-english.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20kerala%20food%20in%20english&amp;w=50&amp;h=50&amp;c=7" alt="what is kerala food in english">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="sebastic-word-meaning.html" class="be-post-title">
+				 <h6>sebastic word meaning </h6>
+                </a>
+                <a href="sebastic-word-meaning.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=sebastic%20word%20meaning&amp;w=50&amp;h=50&amp;c=7" alt="sebastic word meaning">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-word-interpret-in-marathi.html" class="be-post-title">
+				 <h6>meaning of word interpret in marathi </h6>
+                </a>
+                <a href="meaning-of-word-interpret-in-marathi.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20word%20interpret%20in%20marathi&amp;w=50&amp;h=50&amp;c=7" alt="meaning of word interpret in marathi">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bottle-gourd-gujarati-recipe.html" class="be-post-title">
+				 <h6>bottle gourd gujarati recipe </h6>
+                </a>
+                <a href="bottle-gourd-gujarati-recipe.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bottle%20gourd%20gujarati%20recipe&amp;w=50&amp;h=50&amp;c=7" alt="bottle gourd gujarati recipe">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="define-air-pressure-in-urdu.html" class="be-post-title">
+				 <h6>define air pressure in urdu </h6>
+                </a>
+                <a href="define-air-pressure-in-urdu.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=define%20air%20pressure%20in%20urdu&amp;w=50&amp;h=50&amp;c=7" alt="define air pressure in urdu">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Jiskha Homework Help. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>
